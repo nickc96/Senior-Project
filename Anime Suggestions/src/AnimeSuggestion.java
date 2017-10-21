@@ -9,7 +9,7 @@ public class AnimeSuggestion {
 
 	//Text document name
 	public static final String anime = ".\\src\\AnimeText";
-	public static final int DATA = 4; //The number of anime in the database
+	public static final int DATA = 45; //The number of anime in the database
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		int count = 0;
@@ -18,30 +18,62 @@ public class AnimeSuggestion {
 		String[] info;
 		String[] category;
 		Anime[] database = new Anime[DATA];
+		String yearTemp;
+		int year;
+		int minYear=2017;
 		
 		while (file.hasNext()){
 			line = file.nextLine();
+			info = line.split("~");
 			
-			info = line.split("-");
 			//System.out.println("-"+info[0]+"-");			//Prints anime name
-			
 			category = info[1].split(",");
 			for(int i=0; i<category.length; i++){			//Prints anime categories
 				//System.out.println(category[i]);
 			}
 			
-			Anime temp = new Anime(info[0], category);
+			yearTemp = info[3];
+			yearTemp = yearTemp.replaceAll("\\s","");
+			year = Integer.parseInt(yearTemp);
+			if(year<minYear)
+				minYear=year;
+				
+			Anime temp = new Anime(info[0], category, info[2], year);
 			database[count] = temp;
 			count++;
 		}
+		
+		// K-nearest neighbor
+		Anime suggestion = null;
+		double maxDist=0;
+		for (int i=0; i<DATA; i++){
+			if (database[i].getName().equals("Spice and Wolf ")){		//
+				Anime temp = database[i];
+				database[i] = null;
+				for(int j=0; j<DATA; j++){
+					if(database[j]!=null)
+					{
+						temp.distance(database[j]);
+						if (temp.distance(database[j])>maxDist){
+							maxDist = temp.distance(database[j]);
+							suggestion = database[j];
+						}
+					}	
+				}
+			}
+
+		}
+		System.out.println(suggestion.getName());
+		//System.out.println(minYear);
+		
 		//Test compareGen method
-		System.out.println("\n" + database[2].compareGen(database[2], database[3]));
+		//System.out.println("\n" + database[2].compareGen(database[2], database[3]));
 		
 		//Test randomizer
-		Anime[] test = randomizer(database);
-		for (int i=0; i<test.length; i++){
-			System.out.println (test[i].getName());
-		}
+		//Anime[] test = randomizer(database);
+		//for (int i=0; i<test.length; i++){
+		//	System.out.println (test[i].getName());
+		//}
 		
 	}
 

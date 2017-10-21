@@ -2,11 +2,16 @@ public class Anime
 {
    private String name;
    private String genre[];
+   private String studio;
+   private double year;
+   private double minYear = 1999;		// Change based on minimum year
    
-   public Anime(String n, String g [])
+   public Anime(String n, String g [], String s, int y)
    {
       name = n;
       genre = g;
+      studio = s;
+      year = y;
    }
    
    String getName()
@@ -19,6 +24,16 @@ public class Anime
       return genre;
    }
    
+   String getStudio()
+   {
+	   return studio;
+   }
+   
+   double getYear ()
+   {
+	   return year;
+   }
+   
    void setName(String a)
    {
       name = a;
@@ -27,6 +42,16 @@ public class Anime
    void setGenre(String[] a)
    {
       genre = a;
+   }
+   
+   void setStudio(String a)
+   {
+	   studio = a;
+   }
+   
+   void setYear (double a)
+   {
+	   year = a;
    }
    
    double compareGen (Anime a, Anime b)
@@ -82,7 +107,31 @@ public class Anime
 		  cont = true;
 		  seen=false;
 	  }
-	  System.out.println("icount (should be 4)= " + icount +"\nucount (should be 7)= " + ucount);
+
 	  return ((double)icount/(double)ucount);
+   }
+   
+   double compare (String a, String b)
+   {
+	   if (a.equals(b))
+		   return 1;
+	   else
+		   return 0;
+   }
+   
+   double yearFactor(Anime a)
+   {
+	   double output;
+	   output = 1-(Math.abs(this.year-a.getYear())/(2017-minYear));
+	   return output;
+   }
+   
+   double distance (Anime a)
+   {
+	   double dist;
+	   double total;
+	   total = Math.pow(2*compareGen(this, a),2) + Math.pow(compare(this.studio,a.getStudio()),2) + Math.pow(this.yearFactor(a),2);
+	   dist = Math.sqrt (total);
+	   return dist;
    }
 }
