@@ -54,60 +54,109 @@ public class Anime
 	   year = a;
    }
    
+   String[] removeDup (String[] s)
+   {
+	   String[] dirty = s;
+	   String[] clean = new String[dirty.length];
+	   
+	   for (int i=0; i<dirty.length; i++)
+	   {
+		   for (int j=i+1; j<dirty.length; j++)
+		   {
+			   if (dirty[i]!=null && dirty[j]!=null)
+				   if (dirty[i].equals(dirty[j]))
+					   dirty[j] = null;
+		   }
+		   
+		   if (dirty[i]!=null)
+			   clean[i] = dirty[i];
+	   }
+
+	   return clean;
+   }
+   
+   String[] union (Anime b)
+   {
+	   boolean seen = false;
+	   boolean cont = true;
+	   int ucount = 0;
+	   int count =0;
+	   int length = this.getGenre().length + b.getGenre().length;
+	   String[] union = new String[length];
+	   
+	   for(int k=0; k<this.getGenre().length; k++)
+	   {
+		   union[k] = this.getGenre()[k];
+		   ucount++;
+	   }
+	   
+	   for(int i=0; i<b.getGenre().length; i++)
+	   {
+		   for(int j=0; union[j]!=null && cont==true; j++)
+		   {
+			   if (union[j].equals(b.getGenre()[i]))
+			   {
+				   seen=true;
+			   }	  
+		   }
+		   if(!seen)
+		   {
+			   union[ucount] = b.getGenre()[i];
+			   ucount++;
+			   cont=false;
+		   }
+		   cont = true;
+		   seen=false;
+	   }
+	   
+	   return union;
+   }
+   
+   String[] intersection (Anime b)
+   {
+	   int length = this.getGenre().length + b.getGenre().length;
+	   String[] intersection = new String[length];
+	   int icount = 0;
+	   String[] temp = new String[length];
+	   
+	   for(int k=0; k<this.getGenre().length; k++)
+	   {
+		   temp[k] = this.getGenre()[k];
+	   }
+	   
+	   for(int i=0; i<b.getGenre().length; i++)
+	   {
+		   for(int j=0; temp[j]!=null; j++)
+		   {
+			   if(temp[j].equals(b.getGenre()[i]))
+			   {
+				   intersection[icount] = temp[j];
+				   icount++;
+			   }
+		   }
+	   }
+	   
+	   return intersection;
+   }
+   
    double compareGen (Anime a, Anime b)
    {
-	  boolean seen = false;
-	  boolean cont = true;
-	  int count = 0;
-	  int icount = 0;
 	  int ucount = 0;
-	  int length = a.getGenre().length + b.getGenre().length;
-	  String[] temp = new String[length];
-	  String[] union = new String[length];
-	  String[] intersection = new String[length];
+	  int icount = 0;
+	  String[] union = a.union(b);
+	  String[] intersection = a.intersection(b);
 	  
-	  for(int i=0; i<a.getGenre().length; i++)
-	  {
-		  temp[i] = a.getGenre()[i];
-		  union[i] = a.getGenre()[i];
-		  count++;
-	  }
-
-	  // intersection
-	  icount = 0;
-	  for(int i=0; i<b.getGenre().length; i++)
-	  {
-		  for(int j=0; temp[j]!=null; j++)
-		  {
-			  if(temp[j].equals(b.getGenre()[i]))
-			  {
-				  intersection[icount] = temp[j];
-				  icount++;
-			  }
-		  }
-	  }
-
-	  // union
-	  ucount = count;
-	  for(int i=0; i<b.getGenre().length; i++)
-	  {
-		  for(int j=0; union[j]!=null && cont==true; j++)
-		  {
-			  if (union[j].equals(b.getGenre()[i]))
-			  {
-				  seen=true;
-			  }	  
-		  }
-		  if(!seen)
-		  {
-			  union[ucount] = b.getGenre()[i];
+	  
+	  for (int i=0; i<union.length; i++){
+		  if(union[i] != null)
 			  ucount++;
-			  cont=false;
-		  }
-		  cont = true;
-		  seen=false;
 	  }
-
+	   
+	  for (int j=0; j<intersection.length; j++){
+		  if(intersection[j] != null)
+			  icount++;
+	  }
+	  
 	  return ((double)icount/(double)ucount);
    }
    
@@ -126,6 +175,7 @@ public class Anime
 	   return output;
    }
    
+   // Note: genre is weighed twice as much
    double distance (Anime a)
    {
 	   double dist;
