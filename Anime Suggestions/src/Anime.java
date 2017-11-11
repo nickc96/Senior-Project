@@ -3,15 +3,19 @@ public class Anime
    private String name;
    private String genre[];
    private String studio;
-   private double year;
+   private int year;
+   private double rating;
+   private String type;
    private double minYear = 1999;		// Change based on minimum year
    
-   public Anime(String n, String g [], String s, int y)
+   public Anime(String n, String g [], String s, int y, double r, String t)
    {
       name = n;
       genre = g;
       studio = s;
       year = y;
+      rating = r;
+      type = t;
    }
    
    String getName()
@@ -29,9 +33,19 @@ public class Anime
 	   return studio;
    }
    
-   double getYear ()
+   int getYear ()
    {
 	   return year;
+   }
+   
+   double getRating()
+   {
+	   return rating;
+   }
+   
+   String getType()
+   {
+	   return type;
    }
    
    void setName(String a)
@@ -49,9 +63,19 @@ public class Anime
 	   studio = a;
    }
    
-   void setYear (double a)
+   void setYear (int a)
    {
 	   year = a;
+   }
+   
+   void setRating (double a)
+   {
+	   rating = a;
+   }
+   
+   void setType (String a)
+   {
+	   type = a;
    }
    
    String[] removeDup (String[] s)
@@ -180,7 +204,9 @@ public class Anime
    {
 	   double dist;
 	   double total;
-	   total = Math.pow(2*compareGen(this, a),2) + Math.pow(compare(this.studio,a.getStudio()),2) + Math.pow(this.yearFactor(a),2);
+	   total = Math.pow(2*compareGen(this, a),2) + Math.pow(compare(this.studio,a.getStudio()),2) 
+			   + Math.pow(this.yearFactor(a),2) + Math.pow(.5*(1-(this.rating-a.getRating()/10)),2) 
+			   + Math.pow(.5*compare(this.type, a.getType()), 2);
 	   dist = Math.sqrt (total);
 	   return dist;
    }

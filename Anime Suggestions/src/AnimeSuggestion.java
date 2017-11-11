@@ -8,23 +8,39 @@ import java.util.Scanner;
 public class AnimeSuggestion {
 
 	//Text document name
-	public static final String anime = ".\\src\\AnimeText";
-	public static final int DATA = 45; //The number of anime in the database
+	public static final String animedatabase = ".\\src\\AnimeText";
+	public static final String animeinput = ".\\src\\AnimeInput";
+	public static final int DATA = 24; //The number of anime in the database
+	public static final int DATAI = 10; //The number of anime in the input list
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		int count = 0;
-		Scanner file = new Scanner (new File(anime));
+		int countI = 0;
+		Scanner file = new Scanner (new File(animedatabase)/*, "UTF-8"*/);
 		String line;
 		String[] info;
 		String[] category;
 		Anime[] database = new Anime[DATA];
+		Anime[] input = new Anime[DATAI];
 		
 		String yearTemp;
 		int year;
 		int minYear=2017;
 		
+		double rating;
+		
 		String[] genreAll;
-		String[] studioAll;
+		String[] studioAll;		
+		
+		// Build input list
+		String[] inputNames = new String[DATAI];
+		Scanner file2 = new Scanner (new File(animeinput), "UTF-8");
+		while (file2.hasNext()){
+			inputNames[countI] = file2.nextLine();
+			countI++;
+		}
+		
+		countI = 0;
 		
 		// Build database and gather data
 		while (file.hasNext()){
@@ -32,7 +48,6 @@ public class AnimeSuggestion {
 			info = line.split("~");
 			
 			//System.out.println("-"+info[0]+"-");			//Prints anime name
-			
 			category = info[1].split(",");
 			for (int i=0; i<category.length; i++){
 				category[i] = category[i].replaceAll("\\s","");
@@ -50,24 +65,46 @@ public class AnimeSuggestion {
 			// Find minYear
 			yearTemp = info[3];
 			yearTemp = yearTemp.replaceAll("\\s","");
-			year = Integer.parseInt(yearTemp);
+			try
+	         {
+	            year = Integer.parseInt(yearTemp);
+	         }
+	         catch (NumberFormatException e)
+	         {
+	            year = 0;
+	         }
 			if(year<minYear)
 				minYear=year;
+			
+			rating = Double.parseDouble(info[4]);
 				
-			Anime temp = new Anime(info[0], category, info[2], year);
+			Anime temp = new Anime(info[0], category, info[2], year, rating
+					, info[5]);
 			database[count] = temp;
 			count++;
+			
+			for (int i=0; i<inputNames.length; i++)
+			{
+				if (info[0].equals(inputNames[i]))
+				{
+					Anime temp2 = new Anime (info[0], category, info[2], year, rating, info[5]);
+					input[countI] = temp;
+					countI++;
+					//System.out.println(temp2.getName());
+				}
+			}
 		}
+		
 		
 		genreAll = sumG (database);
 		studioAll = sumS (database);
-		for(int i=0; i<studioAll.length; i++){
-			if (studioAll[i]!=null)
-				System.out.println (studioAll[i]);
-		}
+		//for(int i=0; i<studioAll.length; i++){
+		//	if (studioAll[i]!=null)
+		//		System.out.println (studioAll[i]);
+		//}
 		
 		// K-nearest neighbor test
-		String nntest = "Spice and Wolf ";		// Nearest neighbor test anime name
+		String nntest = "Pokemon Diamond & Pearl : Arceus Choukoku no Jikuu e";		// Nearest neighbor test anime name
 		System.out.println(nearestNeighbor(database, nntest).getName());
 			
 	}
