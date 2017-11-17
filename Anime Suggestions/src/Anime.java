@@ -6,7 +6,7 @@ public class Anime
    private int year;
    private double rating;
    private String type;
-   private double minYear = 1999;		// Change based on minimum year
+   private double minYear = 1973;		// Change based on minimum year
    
    public Anime(String n, String g [], String s, int y, double r, String t)
    {
@@ -105,7 +105,8 @@ public class Anime
 	   boolean cont = true;
 	   int ucount = 0;
 	   int count =0;
-	   int length = this.getGenre().length + b.getGenre().length;
+	   int length;
+	   length = this.getGenre().length + b.getGenre().length;
 	   String[] union = new String[length];
 	   
 	   for(int k=0; k<this.getGenre().length; k++)
@@ -167,8 +168,10 @@ public class Anime
    {
 	  int ucount = 0;
 	  int icount = 0;
-	  String[] union = a.union(b);
-	  String[] intersection = a.intersection(b);
+	  String[] union = null;
+	  union = a.union(b);
+	  String[] intersection;
+	  intersection = a.intersection(b);
 	  
 	  
 	  for (int i=0; i<union.length; i++){

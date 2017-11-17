@@ -10,13 +10,13 @@ public class AnimeSuggestion {
 	//Text document name
 	public static final String animedatabase = ".\\src\\AnimeText";
 	public static final String animeinput = ".\\src\\AnimeInput";
-	public static final int DATA = 24; //The number of anime in the database
-	public static final int DATAI = 10; //The number of anime in the input list
+	public static final int DATA = 905; //The number of anime in the database
+	public static final int DATAI = 1; //The number of anime in the input list
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		int count = 0;
 		int countI = 0;
-		Scanner file = new Scanner (new File(animedatabase)/*, "UTF-8"*/);
+		Scanner file = new Scanner (new File(animedatabase), "UTF-8");
 		String line;
 		String[] info;
 		String[] category;
@@ -39,8 +39,6 @@ public class AnimeSuggestion {
 			inputNames[countI] = file2.nextLine();
 			countI++;
 		}
-		
-		countI = 0;
 		
 		// Build database and gather data
 		while (file.hasNext()){
@@ -69,11 +67,11 @@ public class AnimeSuggestion {
 	         {
 	            year = Integer.parseInt(yearTemp);
 	         }
-	         catch (NumberFormatException e)
+	        catch (NumberFormatException e)
 	         {
 	            year = 0;
 	         }
-			if(year<minYear)
+			if(year<minYear && year!=0)
 				minYear=year;
 			
 			rating = Double.parseDouble(info[4]);
@@ -83,18 +81,18 @@ public class AnimeSuggestion {
 			database[count] = temp;
 			count++;
 			
-			for (int i=0; i<inputNames.length; i++)
+			for (int i=0; i<DATAI; i++)
 			{
 				if (info[0].equals(inputNames[i]))
 				{
 					Anime temp2 = new Anime (info[0], category, info[2], year, rating, info[5]);
-					input[countI] = temp;
-					countI++;
-					//System.out.println(temp2.getName());
+					input[i] = temp;
 				}
 			}
 		}
 		
+		// Uncomment for minYear
+		// System.out.println (minYear);
 		
 		genreAll = sumG (database);
 		studioAll = sumS (database);
@@ -104,9 +102,11 @@ public class AnimeSuggestion {
 		//}
 		
 		// K-nearest neighbor test
-		String nntest = "Pokemon Diamond & Pearl : Arceus Choukoku no Jikuu e";		// Nearest neighbor test anime name
-		System.out.println(nearestNeighbor(database, nntest).getName());
-			
+		//String nntest = "Dragon Ball Z Special 2 : Zetsubou e no Hankou ! ! Nokosareta Chousenshi";		// Nearest neighbor test anime name
+		Anime[] output = nearestNeighbor(database, input);
+		System.out.println(output[0].getName() + " - " + output[0].distance(input[0]));
+		System.out.println(output[1].getName() + " - " + output[1].distance(input[0]));
+		System.out.println(output[2].getName() + " - " + output[2].distance(input[0]));
 	}
 
 	// Creates list of all genres in database
@@ -142,6 +142,7 @@ public class AnimeSuggestion {
 		return sAll;
 	}
 	
+	
 	public static Anime[] randomizer(Anime[] a)
 	   {
 	      int num = 0;
@@ -172,28 +173,46 @@ public class AnimeSuggestion {
 	      return temp;
 	   }
 
-	// K-nearest neighbor algorithm
-	public static Anime nearestNeighbor (Anime[] input, String anime)
+	// K-nearest neighbor algorithm - returns top x (x is variable top)
+	public static Anime[] nearestNeighbor (Anime[] database, Anime[] input)
 	{
-		Anime suggestion = null;
-		double maxDist=0;
-		for (int i=0; i<DATA; i++){
-			if (input[i].getName().equals(anime)){		//
-				Anime temp = input[i];
-				input[i] = null;
-				for(int j=0; j<DATA; j++){
-					if(input[j]!=null)
-					{
-						temp.distance(input[j]);
-						if (temp.distance(input[j])>maxDist){
-							maxDist = temp.distance(input[j]);
-							suggestion = input[j];
-						}
-					}	
+		int top = 3;
+		Anime[] suggestion = new Anime[top];
+		Anime[] temp = new Anime[DATAI];
+		double[] minDist= new double[top];
+		
+		// Initialize all minDist to some arbitrary large number
+		for (int i=0; i<top; i++){
+			minDist[i] = 100;
+		}
+		
+		// Separate input anime from anime database
+		for (int i=0; i<DATAI; i++){
+			for (int j=0; j<DATA; j++){
+				if (database[j].equals(input[i])){
+					temp[i] = database[j];
+					database[i] = null;
 				}
 			}
 		}
 		
+		
+		for (int i=0; i<DATAI; i++){
+			for(int j=0; j<DATA; j++){
+				if(database[j]!=null)
+				{
+					for (int k=0; k<top; k++)
+					{
+						if (temp[i].distance(database[j])<minDist[k]){
+							minDist[k] = temp[i].distance(database[j]);
+							suggestion[k] = database[j];
+							System.out.println(suggestion[k].getName() + " - " + minDist[k]);
+							break;
+						}
+					}
+				}	
+			}
+		}
 		return suggestion;
 	}	
 	

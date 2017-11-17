@@ -1,24 +1,905 @@
-Tailenders~Action,Adventure,Cars,Sci-Fi~Picograph~2009~6.851~Movie
-Kuroshitsuji Recap~Action,Demons,Fantasy,Shounen,Supernatural~A-1 Pictures~2009~7.321~Special
-Aoi Hana ( Sweet Blue Flowers )~Romance,Slice of Life,Shoujo,Ai~J.C.Staff~2009~7.261~TV
-White Album 2nd Season ( White Album Season 2 )~Drama,Harem,Music,Romance~Seven Arcs~2009~7.001~TV
-Asobi ni Iku yo ! ( Cat Planet Cuties )~Comedy,Ecchi,Harem,Romance,Sci-Fi~AIC Plus+~2010~6.821~TV
-Tenjoubito to Akutobito Saigo no Tatakai~Action,Fantasy,Magic,Super,Power,Supernatural~Kyoto Animation~2009~7.271~Movie
-Saint Seiya : The Lost Canvas~Action,Adventure,Martial,Arts,Shounen,Super,Power,Supernatural~TMS Entertainment~2009~8.201~OVA
-Layton Kyouju to Eien no Utahime~Mystery~OLM , P.A . Works~2009~7.681~Movie
-Pokemon Diamond & Pearl : Arceus Choukoku no Jikuu e~Action,Adventure,Comedy,Drama,Fantasy,Kids~OLM~2009~7.121~Movie
-Highway Jenny~Fantasy~Toei Animation~2006~5.181~OVA
-Maihime~Historical,Drama,Romance~Toei Animation~2006~7.011~OVA
-You Shoumei Bijutsukan Line ( Yoh Shomei Art Gallery Line )~Fantasy~Toei Animation~2006~5.361~OVA
-Makaryuudo Demon Hunter~Supernatural,Demons~None found , add some~1989~5.611~OVA
-Nodame Cantabile OVA~Comedy,Josei,Music,Romance,Slice of Life~J.C.Staff~2009~7.561~OVA
-Baton~Adventure,Sci-Fi~None found , add some~2009~5.901~Movie
-Stretta The Animation~Hentai~None found , add some~2009~7.071~OVA
-Rita to Nantoka ( Rita et Machin )~Slice of Life~Nippon Animation~2010~6.101~TV
-Detective Conan OVA 08 : High School Girl Detective Sonoko Suzuki 's Case Files~Police,Comedy,Mystery,Shounen~TMS Entertainment~2008~7.301~OVA
-Mai-Otome Zwei Special~Magic~Sunrise~2008~6.891~Special
-Princess Lover !~Harem,Comedy,Ecchi,School~GoHands~2009~6.981~TV
-Daisetsusan no Yuusha Kibaou ( King Fang )~Adventure,Drama~Nippon Animation~1978~7.171~Special
-Sasameki Koto ( Whispered Words )~Comedy,Romance,School,Shoujo,Ai~AIC~2009~7.191~TV
-K�mpfer~Action,Comedy,Ecchi,Romance,School,Shoujo,Ai,Super,Power~Nomad~2009~6.671~TV
-Pokemon Monika~Action,Adventure,Comedy,Fantasy,Kids~OLM~2011~7.21~TV
+Cowboy Bebop~Action,Adventure,Comedy,Drama,Sci-Fi,Space~Sunrise~1998~8.811~TV
+Cowboy Bebop : Tengoku no Tobira ( Cowboy Bebop : The Movie )~Action,Space,Drama,Mystery,Sci-Fi~Bones~2001~8.411~Movie
+Trigun~Action,Comedy,Sci-Fi~Madhouse~1998~8.311~TV
+Witch Hunter Robin~Action,Drama,Magic,Mystery,Police,Supernatural~Sunrise~2002~7.341~TV
+Beet the Vandel Buster~Adventure,Fantasy,Shounen,Supernatural~Toei Animation~2004~7.041~TV
+Eyeshield 21~Action,Sports,Comedy,Shounen~Studio Gallop~2005~8.051~TV
+Hachimitsu to Clover ( Honey and Clover )~Comedy,Drama,Josei,Romance,Slice of Life~J.C.Staff~2005~8.151~TV
+Hungry Heart : Wild Striker~Slice of Life,Comedy,Sports,Shounen~Nippon Animation~2002~7.701~TV
+Initial D Fourth Stage~Action,Cars,Sports,Drama,Seinen~A.C.G.T .~2004~8.241~TV
+Monster~Drama,Horror,Mystery,Police,Psychological,Seinen,Thriller~Madhouse~2004~8.691~TV
+Naruto~Action,Comedy,Super,Power,Martial,Arts,Shounen~Studio Pierrot~2002~7.851~TV
+One Piece~Action,Adventure,Comedy,Super,Power,Drama,Fantasy,Shounen~Toei Animation~1999~8.551~TV
+Prince of Tennis ( The Prince of Tennis )~Action,Comedy,School,Shounen,Sports~Trans Arts~2001~8.021~TV
+Ring ni Kakero 1~Action,Shounen,Sports~Toei Animation~2004~6.641~TV
+School Rumble~Comedy,Romance,School,Shounen~Studio Comet~2004~8.031~TV
+Sunabouzu ( Desert Punk )~Action,Adventure,Comedy,Ecchi,Sci-Fi,Shounen~Gonzo~2004~7.531~TV
+Texhnolyze~Action,Sci-Fi,Psychological,Drama~Madhouse~2003~7.781~TV
+Trinity Blood~Action,Supernatural,Vampire~Gonzo~2005~7.411~TV
+Yakitate ! ! Japan~Comedy,Shounen~Sunrise~2004~8.031~TV
+Zipang~Action,Military,Sci-Fi,Historical,Drama,Seinen~Studio Deen~2004~7.551~TV
+Neon Genesis Evangelion~Action,Sci-Fi,Dementia,Psychological,Drama,Mecha~Gainax , Tatsunoko Production~1995~8.311~TV
+Neon Genesis Evangelion : Death & Rebirth~Drama,Mecha,Psychological,Sci-Fi~Gainax , Production I.G~1997~7.501~Movie
+Neon Genesis Evangelion : The End of Evangelion~Sci-Fi,Dementia,Psychological,Drama,Mecha~Gainax , Production I.G~1997~8.461~Movie
+Kenpuu Denki Berserk ( Berserk )~Action,Adventure,Demons,Drama,Fantasy,Horror,Military,Romance,Seinen,Supernatural~OLM~1997~8.431~TV
+Ghost in the Shell~Action,Sci-Fi,Police,Psychological,Mecha,Seinen~Production I.G~1995~8.341~Movie
+Rurouni Kenshin : Meiji Kenkaku Romantan~Action,Historical,Drama,Romance,Martial,Arts,Samurai~Studio Deen~1999~8.811~OVA
+Rurouni Kenshin : Meiji Kenkaku Romantan ( Rurouni Kenshin )~Action,Adventure,Comedy,Historical,Romance,Samurai~Studio Gallop , Studio Deen~1996~8.411~TV
+Rurouni Kenshin : Meiji Kenkaku Romantan~Samurai,Historical,Drama,Shounen~Studio Gallop~1997~7.631~Movie
+Akira~Action,Military,Sci-Fi,Adventure,Horror,Supernatural~Tokyo Movie Shinsha~1988~8.161~Movie
+.hack//Sign~Game,Sci-Fi,Adventure,Mystery,Magic,Fantasy~Bee Train~2002~7.111~TV
+Aa ! Megami-sama ! ( Oh ! My Goddess )~Comedy,Magic,Romance,Seinen,Supernatural~AIC~1993~7.391~OVA
+Aa ! Megami-sama ! ( TV ) ( Ah ! My Goddess )~Comedy,Supernatural,Magic,Romance,Seinen~AIC~2005~7.441~TV
+Tenshi Kinryouku ( Angel Sanctuary )~Action,Drama,Romance,Shoujo,Supernatural~Hal Film Maker~2000~6.431~OVA
+Kidou Tenshi Angelic Layer ( Battle Doll Angelic Layer )~Sci-Fi,Comedy,Sports,Drama,Shounen~Bones~2001~7.311~TV
+Ai Yori Aoshi~Comedy,Drama,Harem,Romance,Slice of Life~J.C.Staff~2002~7.221~TV
+Appleseed ( Movie )~Action,Military,Sci-Fi,Police,Drama,Mecha,Shounen~Digital Frontier~2004~7.201~Movie
+Arc the Lad~Action,Adventure,Fantasy,Horror,Sci-Fi~Bee Train~1999~6.621~TV
+Avenger~Adventure,Fantasy,Sci-Fi,Shounen~Bee Train , Xebec~2003~5.991~TV
+Beck ( Beck : Mongolian Chop Squad )~Comedy,Drama,Music,Shounen,Slice of Life~Madhouse~2004~8.381~TV
+Blue Gender~Adventure,Romance,Mecha,Military,Sci-Fi,Horror,Space,Drama~AIC~1999~7.121~TV
+Chobits~Sci-Fi,Comedy,Drama,Romance,Ecchi,Seinen~Madhouse~2002~7.541~TV
+Chrno Crusade ( Chrono Crusade )~Action,Historical,Demons,Supernatural,Romance~Gonzo~2003~7.771~TV
+D.N.Angel~Action,Comedy,Magic,Romance,Fantasy,School,Shoujo~Xebec~2003~7.321~TV
+D.C. : Da Capo ( D.C.Da Capo )~Harem,Drama,Magic,Romance~feel. , Zexcs~2003~6.891~TV
+DearS~Sci-Fi,Harem,Comedy,Romance,Ecchi~Daume~2004~6.761~TV
+Rozen Maiden~Action,Comedy,Drama,Magic,Seinen~Nomad~2004~7.541~TV
+Rozen Maiden : Träumend~Action,Comedy,Drama,Magic,Seinen~Nomad~2005~7.751~TV
+Azumanga Daioh ( Azumanga Daioh : The Animation )~Slice of Life,Comedy,School~J.C.Staff~2002~8.051~TV
+Basilisk : Kouga Ninpou Chou ( Basilisk )~Action,Adventure,Historical,Supernatural,Romance,Samurai,Fantasy~Gonzo~2005~7.671~TV
+Black Cat~Adventure,Comedy,Sci-Fi,Shounen,Super,Power~Gonzo~2005~7.501~TV
+Cluster Edge~Action,Fantasy,Military,Sci-Fi~Sunrise~2005~6.461~TV
+Full Metal Panic !~Action,Military,Sci-Fi,Comedy,Mecha~Gonzo~2002~7.771~TV
+Full Metal Panic ? Fumoffu~Action,Comedy,School~Kyoto Animation~2003~8.171~TV
+Full Metal Panic ! The Second Raid~Action,Military,Mecha~Kyoto Animation~2005~8.041~TV
+Gakuen Alice~Comedy,Magic,School,Shoujo~Group TAC~2004~7.781~TV
+Soukyuu no Fafner : Dead Aggressor ( Fafner of the Blue Sky )~Action,Drama,Mecha,Military,Sci-Fi~Xebec~2004~7.371~TV
+Mahou Shoujo Lyrical Nanoha ( Magical Girl Lyrical Nanoha )~Action,Comedy,Drama,Magic,Super,Power~Seven Arcs~2004~7.501~TV
+Mahou Shoujo Lyrical Nanoha A 's ( Magical Girl Lyrical Nanoha A 's )~Action,Comedy,Drama,Magic,Super,Power~Seven Arcs~2005~8.081~TV
+Shuffle !~Comedy,Drama,Ecchi,Fantasy,Harem,Magic,Romance,School,Seinen~Xebec , Asread~2005~7.261~TV
+Mobile Suit Gundam~Action,Military,Sci-Fi,Space,Mecha~Sunrise~1979~7.871~TV
+Mobile Suit Gundam : The 08th MS Team~Military,Sci-Fi,Adventure,Drama,Romance,Mecha~Sunrise~1996~8.111~OVA
+Mobile Suit Gundam 0080 : War in the Pocket~Military,Sci-Fi,Space,Drama,Mecha~Sunrise~1989~7.861~OVA
+Mobile Suit Gundam : The 08th MS Team~Military,Sci-Fi,Drama,Romance,Mecha~Sunrise~1998~6.941~Movie
+Mobile Suit Gundam 0083 : Stardust Memory~Military,Sci-Fi,Adventure,Space,Drama,Mecha~Sunrise~1991~7.431~OVA
+Mobile Suit Zeta Gundam~Military,Sci-Fi,Space,Drama,Mecha~Sunrise~1985~8.011~TV
+Mobile Suit Gundam ZZ~Military,Sci-Fi,Space,Comedy,Drama,Mecha~Sunrise~1986~6.771~TV
+Mobile Suit Gundam : Char 's Counterattack~Military,Sci-Fi,Space,Drama,Mecha~Sunrise , Studio Hibari~1988~7.781~Movie
+Mobile Suit Gundam F91~Military,Sci-Fi,Space,Drama,Mecha~Sunrise~1991~6.841~Movie
+Mobile Suit Victory Gundam ( Mobile Suit V Gundam )~Military,Sci-Fi,Space,Drama,Mecha~Sunrise , Studio Deen~1993~6.901~TV
+Mobile Suit Gundam Wing~Action,Military,Sci-Fi,Space,Drama,Mecha~Sunrise~1995~7.851~TV
+Mobile Suit Gundam Wing : Endless Waltz~Action,Drama,Mecha,Military,Sci-Fi,Space~Sunrise~1997~7.861~OVA
+Kidou Shin Seiki Gundam X ( After War Gundam X )~Sci-Fi,Adventure,Space,Drama,Mecha~Sunrise~1996~7.381~TV
+Mobile Suit Gundam Seed~Action,Romance,Mecha,Military,Sci-Fi,Space,Drama~Sunrise~2002~7.901~TV
+Mobile Suit Gundam Seed Destiny~Action,Drama,Mecha,Military,Romance,Sci-Fi,Space~Sunrise~2004~7.331~TV
+Turn A Gundam ( ∀ Gundam )~Action,Military,Sci-Fi,Adventure,Space,Drama,Mecha~Sunrise , Nakamura Production~1999~7.741~TV
+Mobile Fighter G Gundam~Sci-Fi,Adventure,Space,Comedy,Sports,Drama,Romance,Martial,Arts,Mecha~Sunrise~1994~7.611~TV
+Last Exile~Action,Sci-Fi,Adventure~Gonzo~2003~7.911~TV
+Mai-HiME ( My-Hime )~Action,Comedy,Drama,Fantasy,Magic,Mecha,Romance,School,Shoujo,Ai~Sunrise~2004~7.571~TV
+Mai-Otome ( My-Otome )~Comedy,Drama,Fantasy,Magic~Sunrise~2005~7.381~TV
+Shin Shirayuki-hime Densetsu Prétear~Comedy,Drama,Fantasy,Magic,Romance,Shoujo,Super,Power~Hal Film Maker~2001~7.311~TV
+Air~Slice of Life,Supernatural,Drama,Romance~Kyoto Animation~2005~7.441~TV
+Aishiteruze Baby★★~Comedy,Drama,Romance,Shoujo~TMS Entertainment~2004~7.561~TV
+Akazukin Chacha ( Red Riding Hood Chacha )~Adventure,Comedy,Fantasy,Magic,Romance,Shoujo~Studio Gallop~1994~7.471~TV
+Ayashi no Ceres ( Ceres , Celestial Legend )~Adventure,Comedy,Horror,Psychological,Supernatural,Drama,Romance,Shoujo~Studio Pierrot~2000~7.351~TV
+Boys Be ...~Slice of Life,Comedy,Romance,Shounen~Hal Film Maker~2000~6.561~TV
+Hana yori Dango~Drama,Romance,School,Shoujo~Toei Animation~1996~7.861~TV
+Ou Dorobou Jing ( Jing : King of Bandits )~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Studio Deen~2002~7.321~TV
+Ou Dorobou Jing in Seventh Heaven~Adventure,Fantasy,Psychological,Comedy,Shounen~Studio Deen~2004~7.391~OVA
+Bakuretsu Tenshi ( Burst Angel )~Adventure,Comedy,Mecha,Sci-Fi~Gonzo~2004~6.911~TV
+Chuuka Ichiban !~Action,Comedy,Drama,Shounen~Nippon Animation~1997~7.701~TV
+Corrector Yui~Sci-Fi,Adventure,Comedy,Magic~Nippon Animation~1999~6.891~TV
+Chou Henshin Cosprayers ( The Cosmopolitan Prayers )~Action,Ecchi,Adventure,Fantasy,Magic,Comedy,Super,Power,Sci-Fi~Imagin , Studio Live~2004~5.071~TV
+Uchuu no Stellvia ( Stellvia of the Universe )~Action,Romance,Sci-Fi,Space~Xebec~2003~7.461~TV
+Sakigake ! ! Cromartie Koukou ( Cromartie High School )~Comedy,School,Shounen~Production I.G~2003~8.011~TV
+El Hazard : The Alternative World~Adventure,Comedy,Fantasy~AIC~1998~6.931~TV
+El Hazard : The Wanderers ( El-Hazard : The Wanderers )~Adventure,Comedy,Romance,Fantasy~AIC~1995~7.081~TV
+El Hazard : The Magnificent World~Adventure,Comedy,Fantasy,Romance~AIC~1995~7.421~OVA
+El Hazard 2 : The Magnificent World~Adventure,Comedy,Fantasy~AIC~1997~6.961~OVA
+Final Approach~Comedy,Drama,Romance,Slice of Life~Zexcs~2004~6.661~TV
+Fruits Basket~Slice of Life,Comedy,Drama,Romance,Fantasy,Shoujo~Studio Deen~2001~7.781~TV
+Fullmetal Alchemist~Action,Adventure,Comedy,Drama,Fantasy,Magic,Military,Shounen~Bones~2003~8.301~TV
+Full Moon wo Sagashite ( Searching for the Full Moon )~Music,Comedy,Supernatural,Drama,Romance,Shoujo~Studio Deen~2002~8.061~TV
+Fushigi Yuugi ( Mysterious Play )~Adventure,Fantasy,Magic,Martial,Arts,Comedy,Romance,Historical,Drama,Shoujo~Studio Pierrot~1995~7.751~TV
+Fushigi Yuugi : Eikouden ( Mysterious Play : Eikoden )~Adventure,Fantasy,Romance,Drama,Shoujo~Studio Pierrot~2001~6.981~OVA
+Futakoi ( Twin Love )~Comedy,Romance,School~Telecom Animation Film~2004~6.611~TV
+Futakoi Alternative~Comedy,Drama,Romance~ufotable , feel. , Studio Flag~2005~7.001~TV
+Gate Keepers~Action,Comedy,Fantasy,Mecha,Sci-Fi,Shounen~Gonzo~2000~7.051~TV
+Gate Keepers 21~Action,Drama,Mecha,Sci-Fi,Shounen~Gonzo~2002~6.881~OVA
+Gensoumaden Saiyuuki ( Saiyuki )~Adventure,Comedy,Supernatural,Drama,Shounen~Studio Pierrot~2000~7.691~TV
+Saiyuuki Reload ( Saiyuki Reload )~Action,Adventure,Comedy,Drama,Fantasy,Shoujo~Studio Pierrot~2003~7.521~TV
+Saiyuuki Reload Gunlock ( Saiyuki Gunlock )~Action,Adventure,Comedy,Fantasy,Shoujo~Studio Pierrot~2004~7.541~TV
+GetBackers~Action,Comedy,Drama,Mystery,Shounen,Super,Power,Supernatural~Studio Deen~2002~7.701~TV
+Green Green~Comedy,Ecchi,Romance,School,Slice of Life~Studio Matrix~2003~6.391~TV
+Gunslinger Girl~Action,Psychological,Military,Drama,Sci-Fi~Madhouse~2003~7.531~TV
+Hikaru no Go~Comedy,Game,Shounen,Supernatural~Studio Pierrot~2001~8.181~TV
+Hunter x Hunter~Action,Adventure,Shounen,Super,Power~Nippon Animation~1999~8.471~TV
+Hunter x Hunter OVA~Action,Adventure,Shounen,Super,Power~Nippon Animation~2002~8.401~OVA
+Hunter x Hunter : Greed Island~Action,Adventure,Shounen,Super,Power~Nippon Animation~2003~8.311~OVA
+Hunter x Hunter : Greed Island Final~Action,Adventure,Shounen,Super,Power~Nippon Animation~2004~8.391~OVA
+Jinki : Extend ( Jinki : Extend )~Mecha,Sci-Fi~feel .~2005~6.241~TV
+Kamikaze Kaitou Jeanne~Adventure,Comedy,Demons,Drama,Fantasy,Magic,Mystery,Romance,Shoujo~Toei Animation~1999~7.521~TV
+Kannazuki no Miko ( Destiny of the Shrine Maiden )~Supernatural,Drama,Magic,Romance,Mecha,Shounen,Shoujo,Ai~TNK~2004~7.021~TV
+Kanon~Drama,Romance,Slice of Life,Supernatural~Toei Animation~2002~7.241~TV
+Kareshi Kanojo no Jijou ( His and Her Circumstances )~Comedy,Drama,Romance,School,Shoujo,Slice of Life~Gainax , J.C.Staff~1998~7.651~TV
+Kono Minikuku mo Utsukushii Sekai ( This Ugly Yet Beautiful World )~Sci-Fi,Comedy,Drama,Magic,Romance,Ecchi~Gainax , Shaft~2004~6.891~TV
+Kimi ga Nozomu Eien ( Rumbling Hearts )~Drama,Romance,Slice of Life~Studio Fantasia~2003~7.371~TV
+Kita e. : Diamond Dust Drops ( Diamond Daydreams )~Drama,Romance,Slice of Life~Studio Deen~2004~6.731~TV
+Loveless~Action,Mystery,Supernatural,Drama,Romance,Fantasy,Josei,Shounen,Ai~J.C.Staff~2005~7.131~TV
+Blood+~Action,Military,Mystery,Horror,Supernatural,Drama,Vampire~Production I.G~2005~7.781~TV
+Re : Cutey Honey~Action,Sci-Fi,Comedy,Ecchi,Shoujo,Ai~Gainax , Toei Animation~2004~7.141~OVA
+Solty Rei~Action,Sci-Fi,Super,Power~Gonzo~2005~7.361~TV
+Juuni Kokuki ( The Twelve Kingdoms )~Action,Adventure,Fantasy,Magic,Supernatural~Studio Pierrot~2002~8.141~TV
+Shaman King~Action,Adventure,Comedy,Supernatural,Drama,Shounen~Xebec~2001~7.831~TV
+X/1999 ( X~Action,Drama,Fantasy,Horror,Magic,Sci-Fi,Supernatural~Madhouse~1996~6.671~Movie
+X~Action,Super,Power,Drama,Magic,Romance,Fantasy,Shoujo~Madhouse~2001~7.531~TV
+Mahou Sensei Negima ! ( Negima ! )~Comedy,Ecchi,Fantasy,Harem,Magic,Romance,School,Shounen,Super,Power,Supernatural~Xebec~2005~7.081~TV
+Maria-sama ga Miteru ( Maria Watches Over Us )~Slice of Life,Drama,Romance,Shoujo,Shoujo,Ai~Studio Deen~2004~7.461~TV
+Boukyaku no Senritsu ( The Melody of Oblivion )~Adventure,Fantasy,Horror,Mecha,Psychological,Sci-Fi,Shounen,Space,Supernatural~Gainax , J.C.Staff~2004~6.411~TV
+Ima , Soko ni Iru Boku ( Now and Then , Here and There )~Adventure,Drama,Fantasy,Military,Sci-Fi~AIC~1999~7.771~TV
+Peace Maker Kurogane~Action,Comedy,Historical,Samurai,Shounen~Gonzo~2003~7.411~TV
+Pita Ten ( Pita-Ten )~Comedy,Fantasy,Kids,Romance,School,Shounen~Madhouse~2002~7.051~TV
+Power Stone~Adventure,Comedy,Fantasy,Historical,Shounen~Studio Pierrot~1999~6.561~TV
+Mononoke Hime ( Princess Mononoke )~Action,Adventure,Fantasy~Studio Ghibli~1997~8.801~Movie
+RahXephon~Action,Drama,Mecha,Music,Mystery,Psychological,Romance,Sci-Fi~Bones~2002~7.521~TV
+Samurai 7~Historical,Mecha,Samurai,Sci-Fi~Gonzo~2004~7.581~TV
+Scrapped Princess~Adventure,Comedy,Drama,Fantasy,Mecha,Sci-Fi,Shounen~Bones~2003~7.491~TV
+s.CRY.ed ( s-CRY-ed )~Action,Sci-Fi,Adventure,Super,Power,Drama~Sunrise~2001~7.441~TV
+Shingetsutan Tsukihime ( Lunar Legend Tsukihime )~Action,Horror,Mystery,Romance,Super,Power,Supernatural,Vampire~J.C.Staff~2003~7.061~TV
+Slam Dunk~Comedy,Sports,Drama,School,Shounen~Toei Animation~1993~8.551~TV
+Strange Dawn~Adventure,Drama,Fantasy~Hal Film Maker~2000~6.591~TV
+Tactics~Comedy,Drama,Fantasy,Mystery,Shounen,Super,Power~Studio Deen~2004~7.321~TV
+Tenjou Tenge ( Tenjho Tenge )~Action,Ecchi,Martial,Arts,Comedy,Super,Power,School,Shounen~Madhouse~2004~7.071~TV
+Tokyo Underground~Action,Adventure,Romance,Sci-Fi,Shounen,Super,Power~Studio Pierrot~2002~6.711~TV
+Triangle Heart : Sweet Songs Forever~Adventure,Romance~Seven Arcs~2003~6.291~OVA
+Tsubasa Chronicle ( Tsubasa RESERVoir CHRoNiCLE )~Action,Adventure,Fantasy,Magic,Romance,Supernatural,Shounen~Bee Train~2005~7.651~TV
+Ultra Maniac ( Ultramaniac~Magic,Comedy,Romance,School,Shoujo~Production Reed~2003~7.281~TV
+Ultra Maniac OVA~Magic,Comedy,Romance,School~Production Reed~2002~6.781~OVA
+Vandread~Action,Ecchi,Mecha,Sci-Fi,Shounen,Space~Gonzo~2000~7.311~TV
+Vandread : The Second Stage~Action,Ecchi,Mecha,Sci-Fi,Shounen,Space~Gonzo~2001~7.521~TV
+Tenkuu no Escaflowne ( The Vision of Escaflowne )~Adventure,Romance,Fantasy,Mecha,Shoujo~Sunrise~1996~7.781~TV
+Whistle !~School,Shounen,Sports~Studio Comet~2002~7.501~TV
+Xenosaga The Animation~Action,Mecha,Sci-Fi,Shounen,Space~Toei Animation~2005~6.451~TV
+Initial D First Stage~Action,Cars,Drama,Seinen,Sports~Studio Gallop , Studio Comet~1998~8.271~TV
+Initial D Second Stage~Action,Cars,Sports,Drama,Seinen~Pastel~1999~8.151~TV
+Initial D Third Stage~Action,Cars,Sports,Drama,Seinen~Studio Deen~2001~7.971~Movie
+Gosenzo San'e ( Masquerade )~Comedy,Hentai,Mystery,Supernatural~None found , add some~1998~6.291~OVA
+Love Hina~Comedy,Ecchi,Harem,Romance,Shounen,Slice of Life~Xebec~2000~7.251~TV
+Love Hina Again~Comedy,Drama,Ecchi,Romance,Shounen~Xebec~2002~7.341~OVA
+Love Hina Christmas Special : Silent Eve ( Love Hina Christmas Movie )~Slice of Life,Comedy,Romance~None found , add some~2000~7.421~Special
+Love Hina Haru Special : Kimi Sakura Chiru Nakare ! !~Adventure,Comedy,Romance~Xebec~2001~7.291~Special
+Maburaho~Comedy,Drama,Ecchi,Harem,Magic,Romance,School~J.C.Staff~2003~6.961~TV
+Macross Zero~Adventure,Mecha,Military,Sci-Fi,Shounen~Satelight~2002~7.661~OVA
+Onegai☆Teacher ( Please Teacher ! )~Sci-Fi,Comedy,Drama,Romance,School~Daume~2002~7.321~TV
+Onegai☆Twins ( Please Twins )~Comedy,Drama,Harem,School,Sci-Fi~Daume~2003~7.011~TV
+Rizelmine~Sci-Fi,Comedy,Romance,Ecchi,School~Madhouse , Imagin~2002~6.631~TV
+Speed Grapher~Action,Mystery,Super,Power~Gonzo~2005~7.441~TV
+Sen to Chihiro no Kamikakushi ( Spirited Away )~Adventure,Supernatural,Drama~GKIDS Studios~2001~8.921~Movie
+Tenshi na Konamaiki ( Cheeky Angel )~Comedy,Magic,Romance,Shounen~TMS Entertainment~2002~7.571~TV
+Video Girl Ai~Comedy,Drama,Ecchi,Romance~Production I.G~1992~7.291~OVA
+Wolf 's Rain~Action,Sci-Fi,Adventure,Mystery,Drama,Fantasy~Bones~2003~7.911~TV
+Words Worth~Adventure,Demons,Fantasy,Hentai,Magic~Arms~1999~6.881~OVA
+Yumeria~Action,Comedy,Ecchi,Harem,Super,Power~Studio Deen~2004~6.221~TV
+Samurai Champloo~Action,Adventure,Comedy,Historical,Samurai,Shounen~Manglobe~2004~8.501~TV
+Lodoss-tou Senki : Eiyuu Kishi Den~Action,Adventure,Drama,Magic,Romance,Fantasy~AIC~1998~7.231~TV
+Lodoss-tou Senki ( Record of Lodoss War )~Action,Adventure,Fantasy,Magic,Shounen,Supernatural~Madhouse~1990~7.531~OVA
+R.O.D OVA ( R.O.D~Action,Adventure,Historical,Magic,Mystery,Sci-Fi~Studio Deen~2001~7.761~OVA
+R.O.D the TV ( R.O.D -The TV- )~Action,Adventure,Comedy,Drama,Sci-Fi,Super,Power~J.C.Staff~2003~7.621~TV
+Ranma ½~Slice of Life,Comedy,Martial,Arts,Fantasy~Studio Deen~1989~7.851~TV
+Pure Mail~Hentai~None found , add some~2001~6.361~OVA
+Project A-Ko~Action,Adventure,Comedy,Mecha,Sci-Fi,Super,Power~APPP~1986~7.001~Movie
+Pia Carrot e Youkoso ! ! ( Welcome to Pia Carrot )~Comedy,Romance,Hentai~None found , add some~1997~6.161~OVA
+Pia Carrot e Youkoso ! ! 2 ( Welcome To Pia Carrot 2 )~Comedy,Romance,Hentai~None found , add some~1998~6.341~OVA
+Pia Carrot e Youkoso ! ! 2 DX~Comedy,Romance~None found , add some~1999~6.481~OVA
+Pia Carrot e Youkoso ! ! : Sayaka no Koi Monogatari~Comedy,Romance~Bones~2002~6.061~Movie
+Shin Angel ( New Angel )~Comedy,Drama,Hentai,Romance~None found , add some~1994~6.421~OVA
+Kidou Senkan Nadesico ( Martian Successor Nadesico )~Action,Comedy,Mecha,Military,Parody,Romance,Sci-Fi,Shounen,Space~Xebec~1996~7.591~TV
+Kidou Senkan Nadesico : The Prince of Darkness~Action,Comedy,Drama,Mecha,Psychological,Sci-Fi,Shounen,Space~Xebec~1998~6.881~Movie
+Kuro no Danshou ( Mystery of the Necronomicon )~Hentai,Horror~None found , add some~1999~5.981~OVA
+Mezzo Forte~Action,Comedy,Hentai,Sci-Fi~Arms~2000~6.731~OVA
+Mezzo DSA~Action,Adventure,Comedy,Mystery,Sci-Fi~Arms~2004~6.771~TV
+Dragon Ball~Adventure,Comedy,Super,Power,Martial,Arts,Fantasy,Shounen~Toei Animation~1986~8.151~TV
+Dragon Ball GT~Action,Adventure,Comedy,Fantasy,Magic,Sci-Fi,Shounen,Super,Power~Toei Animation~1996~6.691~TV
+Elfen Lied~Action,Horror,Psychological,Supernatural,Drama,Romance,Seinen~Arms~2004~7.791~TV
+FLCL~Action,Sci-Fi,Comedy,Parody,Dementia,Mecha~Gainax , Production I.G~2000~8.061~OVA
+Jigoku Shoujo ( Hell Girl )~Mystery,Horror,Psychological,Supernatural~Studio Deen~2005~7.761~TV
+Ninin ga Shinobuden ( Ninja Nonsense )~Comedy,Parody,Martial,Arts~ufotable~2004~7.011~TV
+Air Master~Action,Comedy,Martial,Arts,Seinen~Toei Animation~2003~7.111~TV
+Asagiri no Miko ( Shrine of the Morning Mist )~Action,Comedy,Drama,Fantasy,Magic,School,Sci-Fi,Shounen,Slice of Life,Super,Power,Supernatural~Chaos Project , GANSIS~2002~6.281~TV
+Cardcaptor Sakura~Adventure,Comedy,Drama,Magic,Romance,Fantasy,School,Shoujo~Madhouse~1998~8.191~TV
+Daa ! Daa ! Daa !~Comedy,Sci-Fi,Shoujo~J.C.Staff~2000~7.791~TV
+Dan Doh ! !~Adventure,Sports,Shounen~Tokyo Kids~2004~6.781~TV
+Detective Conan ( Case Closed )~Adventure,Comedy,Mystery,Police,Shounen~TMS Entertainment~1996~8.251~TV
+E 's Otherwise~Adventure,Comedy,Drama,Military,Sci-Fi,Shounen,Supernatural~Studio Pierrot~2003~6.721~TV
+Eureka Seven~Sci-Fi,Adventure,Drama,Romance,Mecha~Bones~2005~8.171~TV
+Rekka no Honoo ( Flame of Recca )~Action,Adventure,Martial,Arts,Shounen,Super,Power~Studio Pierrot~1997~7.421~TV
+Gankutsuou ( Gankutsuou : The Count of Monte Cristo )~Drama,Mystery,Sci-Fi,Supernatural,Thriller~Gonzo~2004~8.231~TV
+Genshiken~Slice of Life,Comedy,Parody~Palm Studio~2004~7.731~TV
+Girls Bravo : First Season ( Girls Bravo )~Comedy,Ecchi,Fantasy,Harem,Romance,School~AIC Spirits~2004~6.631~TV
+Gokusen ( The Gokusen )~Slice of Life,Comedy,Drama,School,Josei~Madhouse~2004~7.481~TV
+Gravitation~Comedy,Music,Romance,Shoujo,Shounen,Ai~Studio Deen~2000~7.221~TV
+Agatha Christie no Meitantei Poirot to Marple~Historical,Mystery~OLM~2004~6.921~TV
+Great Teacher Onizuka~Comedy,Drama,School,Shounen,Slice of Life~Studio Pierrot~1999~8.751~TV
+Groove Adventure Rave ( Rave Master )~Adventure,Comedy,Fantasy,Romance,Shounen~Studio Deen~2001~7.411~TV
+Harukanaru Toki no Naka de : Hachiyou Shou~Fantasy,Magic,Supernatural,Demons,Historical,Shoujo~None found , add some~2004~7.161~TV
+Ichigo 100 % ( Strawberry 100 % )~Comedy,Ecchi,Harem,Romance,Shounen~Madhouse~2005~6.801~TV
+InuYasha~Action,Adventure,Comedy,Demons,Fantasy,Magic,Romance,Shounen,Supernatural~Sunrise~2000~7.901~TV
+Konjiki no Gash Bell ! ! ( Zatch Bell ! )~Adventure,Comedy,Supernatural,Magic,Shounen~Toei Animation~2003~7.641~TV
+Kyou kara Maou ! ( King From Now On ! )~Adventure,Comedy,Demons,Fantasy,Shoujo~Studio Deen~2004~7.851~TV
+Madlax~Military,Mystery,Psychological,Supernatural,Drama,Magic,Shounen~Bee Train~2004~7.151~TV
+Jungle wa Itsumo Hare nochi Guu ( Haré+Guu )~Slice of Life,Comedy,School~Shin-Ei Animation~2001~7.941~TV
+Jungle wa Itsumo Hare nochi Guu Deluxe ( Haré+Guu Deluxe )~Comedy,Slice of Life~Shin-Ei Animation~2002~7.921~OVA
+Jungle wa Itsumo Hare nochi Guu Final~Slice of Life,Comedy~Shin-Ei Animation~2003~7.751~OVA
+Hoshi no Koe ( Voices of a Distant Star )~Sci-Fi,Space,Drama,Romance,Mecha~CoMix Wave Films~2002~7.451~OVA
+Ikkitousen ( Ikki Tousen )~Ecchi,Super,Power,Martial,Arts,School~J.C.Staff~2003~6.581~TV
+Hitsuji no Uta~Horror,Drama,Vampire~Madhouse~2003~6.391~OVA
+Happy☆Lesson~Comedy,Harem,Romance,School~None found , add some~2001~6.741~OVA
+Happy☆Lesson ( TV )~Comedy,Drama,Harem,Romance,Slice of Life~Studio Hibari~2002~6.781~TV
+Happy☆Lesson : Advance~Comedy,Harem,Romance,Slice of Life~Studio Hibari~2003~6.951~TV
+Happy☆Lesson : The Final~Comedy,Harem,Romance,School~Studio Hibari~2004~6.941~OVA
+Hajime no Ippo ( Fighting Spirit )~Comedy,Sports,Drama,Shounen~Madhouse~2000~8.811~TV
+Hajime no Ippo : Champion Road ( Fighting Spirit : Champion Road )~Comedy,Shounen,Sports~Madhouse~2003~8.371~Special
+Hajime no Ippo : Mashiba vs. Kimura~Comedy,Shounen,Sports~Madhouse~2003~8.281~OVA
+Gunparade March : Arata Naru Kougunka~Drama,Mecha,Military,Romance,Sci-Fi,Shounen,Slice of Life~J.C.Staff~2003~6.921~TV
+Gungrave~Action,Drama,Sci-Fi,Seinen,Super,Power~Madhouse~2003~7.951~TV
+Golden Boy~Adventure,Comedy,Ecchi~APPP~1995~8.041~OVA
+Bleach~Action,Comedy,Super,Power,Supernatural,Shounen~Studio Pierrot~2004~7.911~TV
+Hellsing~Action,Horror,Supernatural,Vampire,Seinen~Gonzo~2001~7.611~TV
+Gad Guard~Adventure,Mecha,Sci-Fi,Shounen~Gonzo~2003~6.791~TV
+Noir~Action,Mystery,Drama~Bee Train~2001~7.391~TV
+Mahoutsukai ni Taisetsu na Koto ( Someday 's Dreamers )~Slice of Life,Drama,Magic,Shounen~J.C.Staff~2003~6.851~TV
+Kiddy Grade~Action,Sci-Fi,Super,Power,Ecchi,Mecha~Gonzo~2002~7.291~TV
+Love♥Love ?~Ecchi,Comedy,Harem,Romance~Imagin , Studio Live~2004~6.021~TV
+Mahoromatic : Automatic Maiden~Comedy,Ecchi,Military,Romance,Sci-Fi~Gainax , Shaft~2001~7.271~TV
+Mahoromatic 2 ( Mahoromatic Something More Beautiful )~Comedy,Drama,Ecchi,Military,Romance,Sci-Fi~Gainax , Shaft~2002~7.261~TV
+Viewtiful Joe~Action,Sci-Fi,Comedy,Shounen~Group TAC~2004~6.871~TV
+Kyougoku Natsuhiko : Kousetsu Hyaku Monogatari~Fantasy,Historical,Horror,Mystery,Psychological,Supernatural~TMS Entertainment~2003~7.241~TV
+Animal Yokochou ( Animal Lane )~Adventure,Comedy,Fantasy,Shoujo~Studio Gallop~2005~7.031~TV
+Akane Maniax~Comedy,Mecha,Romance~None found , add some~2004~5.811~OVA
+Angel Heart~Action,Mystery,Drama,Romance,Seinen~TMS Entertainment~2005~7.361~TV
+Akage no Anne ( Anne of Green Gables )~Slice of Life,Historical,Drama~Nippon Animation~1979~7.651~TV
+Area 88 ( TV )~Action,Drama,Military,Romance,Shounen~Group TAC~2004~7.141~TV
+Argento Soma~Action,Adventure,Drama,Mecha,Military,Sci-Fi~Sunrise~2000~6.901~TV
+B'T X~Adventure,Mecha,Sci-Fi,Shounen~TMS Entertainment~1996~7.141~TV
+Grappler Baki ( TV )~Action,Sports,Martial,Arts,Shounen~Group TAC~2001~7.421~TV
+Bakuten Shoot Beyblade ( Beyblade )~Action,Sci-Fi,Adventure,Comedy,Sports,Shounen~Madhouse~2001~6.811~TV
+Comic Party~Comedy,Drama~OLM~2001~6.661~TV
+Seikai no Monshou ( Crest of the Stars )~Action,Military,Sci-Fi,Space,Romance~Sunrise~1999~7.801~TV
+D.C.S.S : Da Capo Second Season ( D.C.S.S . Da Capo Second Season )~Comedy,Harem,Romance,Supernatural,Drama~feel .~2005~7.121~TV
+Dear Boys ( Hoop Days )~Drama,Shounen,Sports~A.C.G.T .~2003~6.961~TV
+Di Gi Charat~Comedy,Fantasy,Sci-Fi~Madhouse~1999~6.831~TV
+Divergence Eve~Adventure,Comedy,Drama,Mecha,Military,Sci-Fi,Space~Radix~2003~6.031~TV
+Divergence Eve 2 : Misaki Chronicles~Adventure,Drama,Mecha,Military,Sci-Fi,Space~Radix~2004~6.381~TV
+Dragon Drive~Action,Sci-Fi,Adventure,Comedy,Fantasy,School,Shounen~Madhouse~2002~6.851~TV
+Grenadier : Hohoemi no Senshi ( Grenadier : The Beautiful Warrior )~Action,Ecchi,Adventure,Comedy,Shounen~Group TAC~2004~6.811~TV
+.hack//Tasogare no Udewa Densetsu ( .hack//Legend Of The Twilight )~Adventure,Comedy,Fantasy,Game,Sci-Fi,Shounen~Bee Train~2003~6.721~TV
+.hack//Liminality~Game,Mystery,Sci-Fi~Bee Train~2002~6.701~OVA
+3x3 Eyes~Action,Demons,Fantasy,Horror,Romance~Toei Animation~1991~6.931~OVA
+Cinderella Boy~Action,Adventure,Mystery,Comedy,Seinen~None found , add some~2003~6.351~TV
+Mirai Shounen Conan ( Future Boy Conan )~Adventure,Drama,Sci-Fi~Nippon Animation~1978~8.141~TV
+Aa ! Megami-sama ! : Chichaitte Koto wa Benri da ne~Comedy,Magic,Supernatural~OLM~1998~7.021~TV
+Aa ! Megami-sama ! Movie ( Ah ! My Goddess : The Movie )~Comedy,Magic,Romance,Seinen,Supernatural~AIC~2000~7.641~Movie
+Abashiri Ikka~Action,Comedy,Shounen~Studio Pierrot~1991~5.601~OVA
+Abenobashi Mahou☆Shoutengai ( Magical☆Shopping Arcade Abenobashi )~Comedy,Parody,Ecchi,Fantasy~Gainax , Madhouse~2002~7.361~TV
+Kerokko Demetan ( Adventures On Rainbow Pond )~Kids,Fantasy,Comedy~Tatsunoko Production~1973~5.991~TV
+Zettai Shounen~Fantasy,Drama,Mystery,Sci-Fi,Shounen~Ajia-Do~2005~7.021~TV
+Akahori Gedou Hour Rabuge ( Akahori 's Heretical Hour Love Game )~Comedy,Magic,Parody~Radix~2005~6.281~TV
+Chiisana Obake Acchi , Kocchi , Socchi ( Three Little Ghosts )~Comedy,Supernatural~Studio Pierrot~1991~6.161~TV
+Ace wo Nerae !~Sports,Drama,Romance,School,Shoujo~Madhouse~1973~7.051~TV
+Ace wo Nerae ! : Final Stage~Action,Drama,Sports~None found , add some~1989~6.591~OVA
+Ace wo Nerae ! ( 1979 ) ( Aim for the Ace ! ( 1979 ) )~Sports,Drama,Romance,School,Shoujo~Madhouse~1979~6.901~Movie
+Ace wo Nerae ! 2~Drama,Shoujo,Sports~None found , add some~1988~6.821~OVA
+Xiao Qian ( A Chinese Ghost Story )~Action,Drama,Fantasy,Romance~Triangle Staff~1997~6.731~Movie
+Nageki no Kenkou Yuuryouji ( F3 : Frantic , Frustrated & Female )~Comedy,Hentai,Yuri~None found , add some~1994~6.361~OVA
+Final Fantasy VII : Advent Children~Action,Super,Power,Fantasy~Square Enix~2005~7.901~Movie
+Hand Maid May~Comedy,Ecchi,Harem,Romance,Sci-Fi~TNK , Production Reed~2000~6.831~TV
+Happy World !~Ecchi,Fantasy,Comedy,Romance~None found , add some~2002~6.091~OVA
+A Kite ( Kite )~Action,Hentai,Police,Drama~Arms~1998~6.681~OVA
+Najica Dengeki Sakusen ( Najica Blitz Tactics )~Action,Ecchi,Comedy,Sci-Fi~Studio Fantasia , Amber Film Works~2001~6.061~TV
+Paradise Kiss~Slice of Life,Comedy,Drama,Romance,Josei~Madhouse~2005~7.911~TV
+Mousou Dairinin ( Paranoia Agent )~Mystery,Dementia,Police,Psychological,Supernatural,Drama,Thriller~Madhouse~2004~7.731~TV
+Mobile Police Patlabor : On Television ( Mobile Police Patlabor )~Comedy,Mecha,Police,Sci-Fi~Sunrise~1989~7.721~TV
+Peach Girl ( Peach Girl : Super Pop Love Hurricane )~Slice of Life,Drama,Romance,Shoujo~Studio Comet~2005~7.141~TV
+Petshop of Horrors ( Pet Shop of Horrors )~Horror,Josei,Mystery,Supernatural~Madhouse~1999~7.371~TV
+Puchi Puri Yuushi ( Petite Princess Yucie )~Comedy,Magic,Fantasy,Shoujo~Gainax~2002~7.531~TV
+Piano ( Piano : The Melody of a Young Girl 's Heart )~Music,Slice of Life,Drama,Romance,Shoujo~OLM~2002~6.081~TV
+Planetes~Drama,Romance,Sci-Fi,Seinen,Space~Sunrise~2003~8.371~TV
+Midori no Hibi ( Midori Days )~Comedy,Drama,Romance,Ecchi,Shounen~Studio Pierrot~2004~7.411~TV
+Mahoujin Guruguru ( Magical Circle Guru Guru )~Adventure,Comedy,Magic,Fantasy,Shounen~Nippon Animation~1994~7.741~TV
+Dokidoki♡Densetsu : Mahoujin Guruguru ( Magical Circle Guru Guru 2 )~Adventure,Comedy,Magic,Fantasy,Shounen~Nippon Animation~2000~7.421~TV
+Mama wa Shougaku 4 Nensei ( Mama is Just a Fourth Grade Pupil )~Comedy,Drama,Sci-Fi~Sunrise~1992~7.271~TV
+Marmalade Boy~Comedy,Drama,Romance,Shoujo~Toei Animation~1994~7.631~TV
+Matantei Loki Ragnarok ( Mythical Detective Loki Ragnarok )~Comedy,Magic,Mystery,Shounen,Supernatural~Studio Deen~2003~7.401~TV
+Ginyuu Mokushiroku Meine Liebe~Fantasy,Shoujo~Bee Train~2004~6.521~TV
+Psychic Academy~Comedy,Romance,Supernatural~E & G Films~2002~6.341~TV
+Versailles no Bara ( The Rose of Versailles )~Military,Historical,Drama,Romance,Shoujo~Tokyo Movie Shinsha~1979~8.391~TV
+Serial Experiments Lain~Dementia,Drama,Mystery,Psychological,Sci-Fi,Supernatural~Triangle Staff~1998~7.991~TV
+Mutsu Enmei Ryuu Gaiden : Shura no Toki ( Time of Shura )~Action,Historical,Martial,Arts,Samurai,Shounen~Studio Comet~2004~7.671~TV
+Spiral : Suiri no Kizuna ( Spiral : Bond of Reasoning )~Drama,Mystery,Shounen~J.C.Staff~2002~7.361~TV
+Starship Operators~Drama,Military,Sci-Fi,Space~J.C.Staff~2005~7.071~TV
+Tsukuyomi : Moon Phase~Comedy,Romance,Vampire,Fantasy,Seinen~Shaft~2004~7.131~TV
+Futatsu no Spica ( Twin Spica )~Sci-Fi,Supernatural,Drama,School~Group TAC~2003~7.461~TV
+Eikoku Koi Monogatari Emma ( Emma : A Victorian Romance )~Slice of Life,Historical,Drama,Romance,Seinen~Studio Pierrot~2005~7.791~TV
+W : Wish ( Double Wish )~Drama,Harem,Romance,School,Slice of Life~Trinet Entertainment , Picture Magic~2004~6.281~TV
+Wild Arms : Twilight Venom ( Wild Arms )~Action,Sci-Fi,Adventure,Magic,Vampire,Fantasy~Bee Train~1999~6.741~TV
+Binzume Yousei ( Bottle Fairy )~Comedy,Fantasy,Magic,Slice of Life~Xebec~2003~6.531~TV
+Magical Canan ( Magical Kanan )~Supernatural,Drama,Magic,Fantasy~AIC A.S.T.A .~2005~6.381~TV
+Ojamajo Doremi ( Magical DoReMi )~Comedy,Magic~Toei Animation~1999~7.191~TV
+Ojamajo Doremi Sharp~Comedy,Magic,Shoujo~Toei Animation~2000~7.341~TV
+Motto ! Ojamajo Doremi ( More ! Useless Witch Doremi )~Magic,Fantasy,Comedy,Shoujo~Toei Animation~2001~7.311~TV
+Ojamajo Doremi Dokkaan ! ( Useless Witch Doremi Kaboom ! )~Comedy,Magic,Shoujo~Toei Animation~2002~7.541~TV
+UG☆Ultimate Girls ( Ultimate Girls )~Comedy,Ecchi,Magic,Sci-Fi~Studio Matrix~2005~5.701~TV
+Shakugan no Shana ( Shakugan no Shana : Season I )~Action,Drama,Fantasy,Romance,School,Supernatural~J.C.Staff~2005~7.681~TV
+Fate/stay night~Action,Supernatural,Magic,Romance,Fantasy~Studio Deen~2006~7.541~TV
+Bokusatsu Tenshi Dokuro-chan ( Bludgeoning Angel Dokuro-chan )~Comedy,Ecchi,Magic~Nomad~2005~6.791~OVA
+Iriya no Sora , UFO no Natsu~Sci-Fi,Drama,Romance~Toei Animation~2005~7.081~OVA
+I'll/CKBC~Action,Sports,School,Shounen~M.S.C~2002~6.451~OVA
+Himiko-den ( Legend of Himiko )~Adventure,Supernatural,Drama,Fantasy~Group TAC~1999~6.361~TV
+Memories Off~Romance,Drama~None found , add some~2001~6.031~OVA
+Memories Off 2nd~Romance,Drama~None found , add some~2003~6.431~OVA
+Memories Off 3.5~Romance,Drama~Picture Magic , Rikuentai~2004~6.411~OVA
+Gallery Fake~Mystery,Seinen~TMS Entertainment , Tokyo Kids , Minami Machi Bugyousho~2005~7.601~TV
+Fake~Police,Comedy,Romance,Mystery,Shounen,Ai~None found , add some~1998~6.651~OVA
+AIKa ( Agent AIKa )~Action,Ecchi,Adventure,Comedy,Sci-Fi~Studio Fantasia~1997~6.021~OVA
+Akazukin Chacha OVA~Comedy,Fantasy,Magic~Studio Gallop~1995~7.191~OVA
+Bible Black~Hentai~Milky Animation Label~2001~6.851~OVA
+Boogiepop wa Warawanai : Boogiepop Phantom ( Boogiepop Phantom )~Psychological,Supernatural,Dementia,Mystery,Horror,Drama~Madhouse~2000~7.231~TV
+Burn Up Excess~Action,Adventure,Comedy,Ecchi,Police,Sci-Fi,Shounen~Magic Bus~1997~6.681~TV
+Cardcaptor Sakura Movie 1 ( Cardcaptor Sakura The Movie )~Comedy,Drama,Magic,Fantasy,Shoujo~Madhouse~1999~7.731~Movie
+Cardcaptor Sakura Movie 2 : Fuuin Sareta Card~Comedy,Drama,Magic,Romance,Fantasy,Shoujo~Madhouse~2000~8.281~Movie
+Bannou Bunka Neko-Musume ( All Purpose Cultural Cat Girl Nuku Nuku )~Sci-Fi,Adventure,Comedy,Mecha,Seinen~Studio Fantasia , Animate Film~1992~6.771~OVA
+Bannou Bunka Neko-Musume DASH !~Action,Comedy,Ecchi,Romance,Sci-Fi~Production Reed~1998~6.501~OVA
+Bannou Bunka Neko-Musume ( 1998 )~Action,Adventure,Comedy,Mecha,Sci-Fi,Seinen~Production Reed~1998~6.661~TV
+Elfen Lied Special ( Elfen Lied : In the Passing Rain )~Horror,Psychological,Supernatural,Drama,Ecchi~Arms~2005~7.311~Special
+eX-Driver~Action,Adventure,Cars,Comedy,Sci-Fi,Shounen~Actas , Production Reed~2000~6.851~OVA
+eX-Driver the Movie~Action,Adventure,Cars,Comedy,Sci-Fi,Shounen~Actas~2002~6.801~Movie
+Heppoko Jikken Animation Excel♥Saga ( Excel Saga )~Comedy,Parody,Sci-Fi,Shounen~J.C.Staff~1999~7.561~TV
+Fushigi Yuugi OVA ( Mysterious Play OVA )~Adventure,Fantasy,Romance,Comedy,Historical,Shoujo~Studio Pierrot~1996~7.251~OVA
+Fushigi Yuugi OVA 2 ( Mysterious Play OVA 2 )~Adventure,Fantasy,Martial,Arts,Romance,Historical,Drama,Shoujo~Studio Pierrot~1997~7.361~OVA
+Futari Ecchi ( Step Up Love Story )~Comedy,Ecchi,Romance,Seinen,Slice of Life~Chaos Project~2002~6.511~OVA
+Galaxy Angel~Comedy,Sci-Fi~Madhouse~2001~7.121~TV
+Gantz~Action,Sci-Fi,Horror,Psychological,Supernatural,Drama,Ecchi~Gonzo~2004~7.221~TV
+Gilgamesh~Drama,Fantasy,Sci-Fi,Supernatural~Group TAC , Japan Vistec~2003~6.761~TV
+H2~Comedy,Romance,Shounen,Sports~Production Reed~1995~7.371~TV
+Haibane Renmei~Slice of Life,Mystery,Psychological,Drama,Fantasy~Radix~2002~8.051~TV
+Capeta~Cars,Shounen,Sports~Studio Comet~2005~7.901~TV
+Karas~Action,Sci-Fi,Fantasy~Tatsunoko Production~2005~7.521~OVA
+Suzuka~Sports,Drama,Romance,Shounen~Studio Comet~2005~7.331~TV
+Tales of Phantasia The Animation ( Tales of Phantasia )~Adventure,Fantasy,Shounen~Actas~2004~6.931~OVA
+Yuu☆Yuu☆Hakusho ( Yu Yu Hakusho : Ghost Files )~Action,Comedy,Demons,Martial,Arts,Fantasy,School,Shounen~Studio Pierrot~1992~8.471~TV
+Escaflowne ( Escaflowne : A Girl in Gaea )~Adventure,Drama,Fantasy,Mecha,Romance,Sci-Fi,Shoujo~Bones , Sunrise~2000~7.171~Movie
+Ai Yori Aoshi : Enishi~Comedy,Drama,Harem,Romance,Slice of Life~J.C.Staff~2003~7.241~TV
+Gantz 2nd Stage ( Gantz : Second Stage )~Action,Sci-Fi,Horror,Psychological,Supernatural,Drama,Ecchi~Gonzo~2004~7.251~TV
+Seikai no Senki ( Banner of the Stars )~Action,Military,Romance,Sci-Fi,Space~Sunrise~2000~7.831~TV
+Seikai no Senki II ( Banner of the Stars II )~Action,Military,Romance,Sci-Fi,Space~Sunrise~2001~7.951~TV
+Seikai no Senki III~Action,Military,Romance,Sci-Fi,Space~Sunrise~2005~7.821~OVA
+Seikai no Senki Special~Action,Military,Romance,Sci-Fi,Space~Sunrise~2001~7.451~Special
+Seihou Bukyou Outlaw Star ( Outlaw Star )~Action,Sci-Fi,Adventure,Space,Comedy~Sunrise~1998~7.971~TV
+Rurouni Kenshin : Meiji Kenkaku Romantan~Romance,Samurai,Historical,Drama,Shounen~Studio Deen~2001~8.071~OVA
+Otogi Juushi Akazukin OVA~Adventure,Comedy,Magic,Fantasy~Madhouse~2005~6.671~OVA
+Hanaukyou Maid-tai~Comedy,Ecchi,Harem,Romance~Daume~2001~6.711~TV
+Bastard ! ! : Ankoku no Hakaishin ( Bastard ! ! )~Action,Adventure,Comedy,Ecchi,Fantasy,Seinen~AIC~1992~6.891~OVA
+Blood : The Last Vampire~Horror,Supernatural,Vampire~Production I.G~2000~6.991~Movie
+Buzzer Beater~Shounen,Sports~TMS Entertainment~2005~6.681~TV
+Tantei Gakuen Q ( Detective School Q )~Comedy,Drama,Mystery,Police,Shounen~Studio Pierrot~2003~7.861~TV
+Final Fantasy VII : Last Order~Action,Adventure,Drama,Fantasy,Sci-Fi~Madhouse~2005~7.431~Special
+Gun x Sword~Action,Adventure,Drama,Mecha,Sci-Fi,Shounen~AIC A.S.T.A .~2005~7.361~TV
+Kore ga Watashi no Goshujinsama ( He is My Master )~Comedy,Ecchi,Slice of Life~Gainax , Shaft~2005~6.661~TV
+Hametsu no Mars ( Mars of Destruction )~Sci-Fi,Horror~WAO World~2005~2.331~OVA
+Tonari no Yamada-kun ( My Neighbors the Yamadas )~Slice of Life,Comedy~GKIDS Studios~1999~7.331~Movie
+Kurenai no Buta ( Porco Rosso )~Action,Adventure,Comedy,Drama,Historical,Military,Romance~GKIDS Studios~1992~8.021~Movie
+Ragnarök The Animation ( Ragnarok the Animation )~Action,Magic,Fantasy~G & G Entertainment~2004~6.561~TV
+Ranma ½ : Chuugoku Nekonron Daikessen ! Okite Yaburi no Gekitou-hen ! !~Adventure,Comedy,Shounen~None found , add some~1991~7.371~Movie
+Samurai Deeper Kyou ( Samurai Deeper Kyo )~Adventure,Comedy,Historical,Supernatural,Shounen~Studio Deen~2002~7.001~TV
+Spriggan~Adventure,Military,Sci-Fi,Shounen~Studio 4°C~1998~6.781~Movie
+Stratos 4~Comedy,Military,Sci-Fi,Shounen~Studio Fantasia~2003~6.731~TV
+Stratos 4 OVA~Comedy,Military,Sci-Fi,Shounen~Studio Fantasia~2004~6.841~OVA
+Stratos 4 Advance~Comedy,Military,Sci-Fi,Shounen~None found , add some~2005~6.941~OVA
+Dirty Pair~Adventure,Comedy,Police,Sci-Fi~Sunrise~1985~7.201~TV
+Shiritsu Araiso Koutougakkou Seitokai Shikkoubu~Comedy,Sports,Shounen,Ai~Nippon Animation~2002~6.571~OVA
+Final Fantasy ( Legend of the Crystals : Final Fantasy )~Action,Adventure,Comedy,Fantasy~Madhouse~1994~6.231~OVA
+Kaleido Star~Comedy,Drama,Fantasy,Shoujo~Gonzo , Production I.G~2003~8.041~TV
+Kaleido Star : Aratanaru Tsubasa~Adventure,Comedy,Drama,Shoujo~Gonzo~2004~7.651~OVA
+Kaleido Star : Legend of Phoenix~Comedy,Drama,Shoujo~Gonzo~2005~7.981~OVA
+Fullmetal Alchemist : The Conqueror of Shamballa~Military,Comedy,Historical,Drama,Fantasy,Shounen~Bones~2005~7.711~Movie
+Howl no Ugoku Shiro ( Howl 's Moving Castle )~Adventure,Drama,Fantasy,Romance~~2004~8.741~Movie
+Iria : Zeiram The Animation~Action,Adventure,Space,Sci-Fi~Ashi Production~1994~7.191~OVA
+Kumo no Mukou , Yakusoku no Basho~Drama,Military,Romance,Sci-Fi~CoMix Wave Films~2004~7.801~Movie
+Legend of Lemnear : Kyokuguro no Tsubasa Valkisas~Action,Adventure,Fantasy~AIC~1989~5.631~OVA
+Magic Knight Rayearth~Adventure,Comedy,Drama,Fantasy,Magic,Mecha,Romance,Shoujo~Tokyo Movie Shinsha~1994~7.531~TV
+Perfect Blue~Dementia,Horror,Psychological,Drama~Madhouse~1998~8.291~Movie
+Phantom The Animation ( Phantom : The Animation )~Action,Drama,Shounen~Arcs Create~2004~6.631~OVA
+RG Veda~Adventure,Drama,Fantasy~Animate Film~1991~6.251~OVA
+Shoujo Kakumei Utena ( Revolutionary Girl Utena )~Mystery,Psychological,Drama,Fantasy,Shoujo~J.C.Staff~1997~8.211~TV
+Shoujo Kakumei Utena : Adolescence Mokushiroku~Dementia,Drama,Romance,Fantasy,Shoujo,Shoujo,Ai~J.C.Staff~1999~7.591~Movie
+Naruto Movie 1 : Dai Katsugeki ! ! Yuki Hime Shinobu Houjou Dattebayo !~Adventure,Comedy,Historical,Supernatural,Drama,Shounen~Studio Pierrot~2004~7.171~Movie
+Onegai☆Teacher : Himitsu na Futari~Comedy,Ecchi,Romance,Sci-Fi~Daume~2002~7.401~OVA
+Maria-sama ga Miteru : Haru ( Maria Watches Over Us : Printemps )~Drama,Romance,School,Shoujo,Shoujo,Ai~Studio Deen~2004~7.811~TV
+Tales of Eternia The Animation ( Tales of Eternia )~Adventure,Comedy,Fantasy,Romance,Shounen~Production I.G , Xebec~2001~6.301~TV
+Weiß Kreuz Glühen ( Knight Hunters Eternity )~Action,Drama,Shounen~ufotable~2002~6.701~TV
+Weiß Kreuz ( Knight Hunters )~Action,Drama,Shounen~Plum , Magic Bus~1998~6.821~TV
+Tenjou Tenge : The Ultimate Fight ( Tenjho Tenge : The Ultimate Fight )~Adventure,Drama,Martial,Arts,Romance,Shounen,Supernatural~Madhouse~2005~7.151~OVA
+InuYasha : Guren no Houraijima~Adventure,Comedy,Demons,Drama,Historical,Romance,Shounen,Supernatural~Sunrise~2004~7.621~Movie
+InuYasha : Kagami no Naka no Mugenjo~Adventure,Demons,Drama,Fantasy,Historical,Romance,Shounen,Supernatural~Sunrise~2002~7.751~Movie
+InuYasha : Tenka Hadou no Ken~Adventure,Comedy,Demons,Drama,Fantasy,Historical,Romance,Shounen,Supernatural~Kyoto Animation , Sunrise~2003~7.881~Movie
+InuYasha : Toki wo Koeru Omoi~Adventure,Comedy,Demons,Drama,Fantasy,Historical,Romance,Shounen,Super,Power~Kyoto Animation , Sunrise~2001~7.681~Movie
+.hack//Gift~Comedy,Fantasy,Game~Bee Train~2003~6.321~OVA
+Fantastic Children~Adventure,Fantasy,Mystery,Romance,Sci-Fi~Nippon Animation~2004~7.651~TV
+Gokujou Seitokai ( Best Student Council )~Comedy,School,Slice of Life~J.C.Staff~2005~7.031~TV
+Mushishi ( Mushi-Shi )~Adventure,Fantasy,Historical,Mystery,Seinen,Slice of Life,Supernatural~Artland~2005~8.761~TV
+Buttobi ! ! CPU ( I Dream of Mimi )~Comedy,Ecchi,Magic,Sci-Fi,Seinen~OLM~1997~6.391~OVA
+One Piece Movie 1~Action,Adventure,Comedy,Super,Power,Fantasy,Shounen~Toei Animation~2000~7.221~Movie
+One Piece Movie 2 : Nejimaki-jima no Daibouken~Action,Adventure,Comedy,Super,Power,Fantasy,Shounen~Toei Animation~2001~7.301~Movie
+One Piece Movie 3 : Chinjuu-jima no Chopper Oukoku~Action,Adventure,Comedy,Super,Power,Fantasy,Shounen~Toei Animation~2002~7.151~Movie
+One Piece Movie 4 : Dead End no Bouken ( One Piece : Dead End )~Action,Adventure,Comedy,Super,Power,Fantasy,Shounen~Toei Animation~2003~7.721~Movie
+One Piece Movie 5 : Norowareta Seiken~Action,Adventure,Comedy,Super,Power,Fantasy,Shounen~Toei Animation~2004~7.411~Movie
+One Piece Movie 6 : Omatsuri Danshaku to Himitsu no Shima~Adventure,Comedy,Fantasy,Shounen~Toei Animation~2005~7.751~Movie
+One Piece Movie 7 : Karakuri-jou no Mecha Kyohei~Adventure,Comedy,Fantasy,Shounen~Toei Animation~2006~7.431~Movie
+One Piece : Taose ! Kaizoku Ganzack~Action,Adventure,Fantasy,Comedy,Super,Power,Shounen~Production I.G~1998~6.841~OVA
+Ghost in the Shell : Stand Alone Complex~Action,Military,Sci-Fi,Police,Mecha,Seinen~Production I.G~2002~8.461~TV
+Ghost in the Shell 2 : Innocence~Military,Sci-Fi,Police,Psychological,Mecha~Production I.G~2004~7.911~Movie
+Karin~Comedy,Romance,Vampire,School,Shounen~J.C.Staff~2005~7.301~TV
+Okusama wa Joshikousei ( TV ) ( My Wife is a High School Girl )~Slice of Life,Comedy,Romance,Drama~Madhouse~2005~6.431~TV
+To Heart 2~Comedy,Drama,Harem,Romance,School,Slice of Life~OLM~2005~6.621~TV
+To Heart~Drama,Harem,Romance,School,Slice of Life~OLM~1999~6.681~TV
+Tide-Line Blue~Action,Military,Adventure,Drama,Shounen~Telecom Animation Film~2005~6.751~TV
+Macross Plus~Drama,Mecha,Military,Romance,Sci-Fi,Space~Triangle Staff~1994~7.801~OVA
+Hotori : Tada Saiwai wo Koinegau~Drama,Sci-Fi~Sunrise~2005~7.091~Movie
+Ginban Kaleidoscope ( Skating Rink Kaleidoscope )~Sports,Supernatural,Drama,Romance~Karaku~2005~7.451~TV
+Aria The Animation~Fantasy,Sci-Fi,Shounen,Slice of Life~Hal Film Maker~2005~7.771~TV
+Sousei no Aquarion ( Aquarion )~Action,Mecha,Romance,Super,Power,Supernatural,Sci-Fi~Satelight , Production Reed~2005~7.181~TV
+Ueki no Housoku ( The Law of Ueki )~Adventure,Comedy,Supernatural,Drama,Shounen~Studio Deen~2005~7.851~TV
+Yu☆Gi☆Oh ! Duel Monsters ( Yu-Gi-Oh ! )~Adventure,Game,Shounen~Studio Gallop~2000~7.571~TV
+Yu☆Gi☆Oh ! : Duel Monsters GX ( Yu-Gi-Oh ! GX )~Action,Comedy,Fantasy,Game,Shounen~Studio Gallop~2004~7.231~TV
+Kurau Phantom Memory~Action,Sci-Fi,Space,Super,Power,Drama~Bones~2004~7.441~TV
+Gensoumaden Saiyuuki Movie : Requiem~Adventure,Shounen,Supernatural~Studio Pierrot~2001~7.461~Movie
+Damekko Doubutsu~Slice of Life,Comedy~Magic Bus~2005~7.401~TV
+Kino no Tabi : The Beautiful World ( Kino 's Journey )~Action,Adventure,Slice of Life,Psychological~A.C.G.T .~2003~8.451~TV
+Girls Bravo : Second Season~Comedy,Ecchi,Fantasy,Harem,Romance,School~AIC Spirits~2005~6.851~TV
+Ichigo Mashimaro ( Strawberry Marshmallow )~Slice of Life,Comedy~Daume~2005~7.751~TV
+Kamichu !~Comedy,Drama,Slice of Life,Supernatural~Brain 's Base~2005~7.481~TV
+Paniponi Dash ! ( Pani Poni Dash ! )~Comedy,Parody,School~Shaft~2005~7.551~TV
+Armitage III : Dual-Matrix~Action,Adventure,Mecha,Sci-Fi~None found , add some~2002~6.981~Movie
+Armitage III : Poly-Matrix~Action,Military,Sci-Fi,Adventure,Police,Romance,Mecha~None found , add some~1996~7.161~Movie
+Bakuretsu Hunters ( Sorcerer Hunters )~Adventure,Comedy,Ecchi,Fantasy,Magic,Shounen,Supernatural~Xebec~1995~6.831~TV
+Kamui no Ken~Adventure,Fantasy,Historical,Drama,Shounen~Madhouse~1985~6.711~Movie
+Yami to Boushi to Hon no Tabibito~Adventure,Ecchi,Fantasy,Magic,Mystery,Shoujo,Ai~Studio Deen~2003~6.691~TV
+Haja Taisei Dangaiou ( Great Planet Evil-Destroyer Dangaio )~Action,Sci-Fi,Adventure,Mecha~AIC~1987~6.241~OVA
+Makai Toshi Shinjuku ( Demon City Shinjuku )~Adventure,Horror,Romance,Shounen,Supernatural~Madhouse~1988~6.321~OVA
+Doraemon~Adventure,Comedy,Fantasy,Kids,Shounen~None found , add some~1973~7.461~TV
+Dragon Ball Movie 1 : Shen Long no Densetsu~Action,Adventure,Comedy,Fantasy,Shounen,Super,Power~Toei Animation~1986~7.031~Movie
+Eien no Aselia ( The Eternal Aseria )~Adventure,Drama,Fantasy~None found , add some~2005~5.621~OVA
+Fatal Fury : The Motion Picture~Action,Adventure,Drama,Martial,Arts,Romance,Shounen~None found , add some~1994~6.721~Movie
+Fushigiboshi no☆Futagohime~Magic,Comedy,Shoujo~Diomedea~2005~7.421~TV
+Glass no Kamen~Drama,Romance,Shoujo~Eiken~1984~7.481~TV
+Gravitation : Lyrics of Love~Comedy,Romance,Shoujo,Shounen,Ai~Plum~1999~7.091~OVA
+Tottoko Hamtarou ( Hamtaro )~Adventure,Comedy,Kids~TMS Entertainment~2000~7.021~TV
+I My Me ! Strawberry Eggs~Comedy,Drama,Romance,School,Slice of Life~TNK~2001~6.911~TV
+Kakyuusei 2 : Hitomi no Naka no Shoujo-tachi ( Kakyusei 2 )~Comedy,Drama,Harem,Romance,School~Arms~2004~5.971~TV
+Kidou Shinsengumi Moeyo Ken TV ( Moeyo Ken TV )~Adventure,Comedy,Historical,Fantasy~Trinet Entertainment~2005~6.291~TV
+Majo no Takkyuubin ( Kiki 's Delivery Service )~Adventure,Comedy,Drama,Magic,Romance,Fantasy~GKIDS Studios~1989~8.291~Movie
+Tenkuu no Shiro Laputa ( Castle in the Sky )~Adventure,Fantasy,Romance,Sci-Fi~GKIDS Studios~1986~8.381~Movie
+Cossette no Shouzou ( Le Portrait de Petit Cossette )~Drama,Horror,Magic,Psychological,Romance,Supernatural~Daume~2004~6.971~OVA
+Hajimari no Boukensha-tachi : Legend of Crystania~Action,Adventure,Fantasy,Magic,Supernatural~Triangle Staff~1995~6.141~Movie
+Keroro Gunsou ( Sgt . Frog )~Comedy,Mecha,Parody,Sci-Fi,Shounen~Sunrise~2004~7.901~TV
+School Rumble Ichi Gakki Hoshuu~Comedy,Romance,School,Shounen~Studio Comet~2005~7.831~OVA
+Mahou no Princess Minky Momo ( Magical Princess Minky Momo )~Magic,Shoujo~Production Reed~1982~6.761~TV
+Mahoraba : Heartful days~Comedy,Drama,Romance,Shounen~J.C.Staff~2005~7.421~TV
+Marmalade Boy Movie~Romance,Shoujo~None found , add some~1995~7.481~Movie
+Mermaid Melody Pichi Pichi Pitch~Adventure,Comedy,Magic,Romance,Shoujo~Actas , SynergySP~2003~7.111~TV
+Metropolis~Adventure,Drama,Police,Romance,Sci-Fi,Shounen~Madhouse~2001~7.601~Movie
+Tonari no Totoro ( My Neighbor Totoro )~Adventure,Comedy,Supernatural~GKIDS Studios~1988~8.461~Movie
+Onegai☆Twins : Natsu wa Owaranai~Comedy,Drama,Romance~Daume~2004~7.121~OVA
+Otogizoushi ( Otogi Zoshi : The Legend of Magatama )~Adventure,Drama,Fantasy,Historical~Production I.G~2004~7.061~TV
+Boku no Chikyuu wo Mamotte ( Please Save My Earth )~Drama,Sci-Fi,Shoujo~Production I.G~1993~7.271~OVA
+Pokemon ( Pokémon )~Action,Adventure,Comedy,Kids,Fantasy~OLM~1997~7.431~TV
+Pokemon : Mewtwo no Gyakushuu ( Pokemon : The First Movie )~Action,Adventure,Comedy,Drama,Fantasy,Kids~OLM~1998~7.661~Movie
+Saishuu Heiki Kanojo ( She , The Ultimate Weapon )~Military,Sci-Fi,Drama,Romance,School~Gonzo~2002~7.291~TV
+Bishoujo Senshi Sailor Moon ( Sailor Moon )~Magic,Romance,Demons,Shoujo~Toei Animation~1992~7.731~TV
+Bishoujo Senshi Sailor Moon R : The Movie ( Sailor Moon R : The Movie )~Drama,Magic,Romance,Shoujo~Toei Animation~1993~7.781~Movie
+Bishoujo Senshi Sailor Moon S ( Sailor Moon S )~Drama,Magic,Romance,Shoujo~Toei Animation~1994~7.901~TV
+Sensei no Ojikan : Doki Doki School Hours ( Teacher 's Time )~Comedy,Slice of Life~J.C.Staff~2004~6.791~TV
+Slayers~Adventure,Comedy,Demons,Magic,Fantasy~E & G Films~1995~7.861~TV
+Slayers Next~Adventure,Comedy,Demons,Magic,Fantasy~E & G Films~1996~8.131~TV
+Slayers : The Motion Picture~Adventure,Comedy,Magic,Fantasy,Shounen~J.C.Staff~1995~7.371~Movie
+Tekken ( Tekken : The Motion Picture )~Action,Sci-Fi,Adventure,Martial,Arts~Studio Deen~1998~5.341~OVA
+Shin Tenchi Muyou ! ( Tenchi in Tokyo )~Comedy,Harem,Romance,Sci-Fi,Shounen~AIC~1997~6.941~TV
+Tenchi Muyou ! Ryououki ( Tenchi Muyo ! Ryo-Ohki )~Action,Comedy,Sci-Fi,Shounen,Space~AIC~1992~7.751~OVA
+Tenchi Muyou ! Ryououki 2nd Season ( Tenchi Muyo ! Ryo-Ohki )~Action,Comedy,Harem,Sci-Fi,Shounen,Space~AIC~1994~7.761~OVA
+Tenchi Muyou ! Ryououki 3rd Season~Action,Comedy,Harem,Sci-Fi,Shounen,Space~AIC~2003~7.401~OVA
+Vampire Hunter D ( 2000 ) ( Vampire Hunter D : Bloodlust )~Action,Drama,Fantasy,Horror,Romance,Sci-Fi,Vampire~Madhouse~2000~7.931~Movie
+Venus Senki ( Venus Wars )~Action,Sci-Fi,Adventure,Space~Triangle Staff~1989~6.901~Movie
+Mousou Kagaku Series : Wandaba Style~Comedy,Sci-Fi~TNK~2003~6.151~TV
+Wind : A Breath of Heart ( TV )~Drama,Romance,School,Supernatural~Radix~2004~6.101~TV
+Wind : A Breath of Heart OVA~Romance,Supernatural,School,Drama~None found , add some~2004~6.321~OVA
+Wonderful Days ( Sky Blue )~Action,Drama,Romance,Sci-Fi~None found , add some~2003~7.141~Movie
+Yu☆Gi☆Oh !~Action,Game,Comedy,Fantasy,Shounen~Toei Animation~1998~7.291~TV
+Grappler Baki : Saidai Tournament-hen~Action,Sports,Martial,Arts,Shounen~Group TAC~2001~7.461~TV
+Digimon Adventure ( Digimon : Digital Monsters )~Action,Adventure,Comedy,Fantasy,Kids~Toei Animation~1999~7.881~TV
+Yami no Matsuei ( Descendants of Darkness )~Comedy,Drama,Fantasy,Horror,Magic,Shoujo,Shounen,Ai,Vampire~J.C.Staff~2000~7.191~TV
+Koutetsu Tenshi Kurumi ( Steel Angel Kurumi )~Adventure,Comedy,Drama,Historical,Mecha,Military,Romance,Shounen~OLM , Production Reed~1999~6.891~TV
+Koutetsu Tenshi Kurumi 2 ( Steel Angel Kurumi 2 )~Comedy,Mecha,Romance,Sci-Fi,Shoujo,Ai,Shounen~OLM~2001~6.391~TV
+Koutetsu Tenshi Kurumi Zero~Drama,Romance,Sci-Fi~OLM~2001~6.191~OVA
+Koutetsu Tenshi Kurumi Encore ( Steel Angel Kurumi Encore )~Comedy,Historical,Romance,Sci-Fi,Shounen~OLM~2000~6.821~OVA
+Major S2~Comedy,Drama,Shounen,Sports~Studio Hibari~2005~8.371~TV
+RahXephon Interlude : Her and Herself/Thatness and Thereness~Drama,Psychological,Sci-Fi~Bones~2003~6.461~OVA
+Soukyuu no Fafner : Right of Left~Action,Drama,Mecha,Military,Sci-Fi~Production I.G , Xebec~2005~7.481~Special
+Sakura Taisen ( Sakura Wars )~Adventure,Mecha,Sci-Fi,Shounen~Madhouse~2000~6.991~TV
+Sakura Taisen : Le Nouveau Paris ( Sakura Wars : The New Paris )~Adventure,Mecha,Sci-Fi,Shounen~None found , add some~2004~6.581~OVA
+DNA²~Comedy,Romance,Sci-Fi~Madhouse , Studio Deen~1994~6.821~TV
+Puni Puni☆Poemii ( Puni Puni Poemy )~Comedy,Magic,Sci-Fi,Shounen~J.C.Staff~2001~6.661~OVA
+Steamboy~Action,Military,Sci-Fi,Adventure,Historical,Drama~Studio 4°C , Sunrise~2004~7.431~Movie
+Tetsuwan Birdy ( Birdy the Mighty )~Action,Comedy,Sci-Fi,Shounen~Madhouse~1996~7.201~OVA
+The Big O~Action,Sci-Fi,Mystery,Psychological,Mecha~Sunrise~1999~7.571~TV
+Bubblegum Crisis Tokyo 2040~Adventure,Mecha,Sci-Fi,Shounen~AIC~1998~7.181~TV
+Musekinin Kanchou Tylor ( The Irresponsible Captain Tylor )~Military,Sci-Fi,Space,Comedy,Parody~Tatsunoko Production~1993~7.951~TV
+Jin-Rou ( Jin-Roh : The Wolf Brigade )~Military,Police,Psychological,Drama,Romance~Production I.G~1999~7.851~Movie
+Moldiver~Action,Magic,Comedy,Mecha,Romance,Sci-Fi~None found , add some~1993~6.191~OVA
+Kaze no Tani no Nausicaä ( Nausicaä of the Valley of the Wind )~Adventure,Fantasy~GKIDS Studios~1984~8.471~Movie
+Saber Marionette J~Action,Adventure,Comedy,Drama,Harem,Martial,Arts,Mecha,Romance,Sci-Fi,Shounen~Studio Junio~1996~7.431~TV
+Rean no Tsubasa ( The Wings of Rean )~Fantasy,Mecha,Sci-Fi~Sunrise~2005~5.861~ONA
+Magikano~Comedy,Fantasy,Harem,Magic,Romance,Shounen~Tokyo Kids~2006~6.491~TV
+Kagihime Monogatari Eikyuu Alice Rinbukyoku~Fantasy,Magic~Trinet Entertainment , Picture Magic~2006~6.331~TV
+Hotaru no Haka ( Grave of the Fireflies )~Drama,Historical~Studio Ghibli~1988~8.561~Movie
+Battle Programmer Shirase~Comedy,Ecchi,Sci-Fi~AIC~2003~7.041~TV
+Kogepan ( Scorched Bread )~Comedy~Studio Pierrot~2001~7.011~TV
+Honoo no Labyrinth ( Labyrinth Of Flames )~Adventure,Comedy,Ecchi,Samurai~Studio Fantasia~2000~6.361~OVA
+Sexy Commando Gaiden : Sugoiyo ! ! Masaru-san~Comedy,Martial,Arts,School,Shounen~Magic Bus~1998~7.881~TV
+Noein : Mou Hitori no Kimi e ( Noein : to your other self )~Adventure,Drama,Sci-Fi,Slice of Life~Satelight~2005~7.721~TV
+Mimi wo Sumaseba ( Whisper of the Heart )~Adventure,Slice of Life,Drama,Romance,Fantasy,Shoujo~GKIDS Studios~1995~8.311~Movie
+Ayakashi : Japanese Classic Horror~Fantasy,Historical,Horror~Toei Animation~2006~7.571~TV
+Hanbun no Tsuki ga Noboru Sora ( Looking Up At The Half-Moon )~Comedy,Drama,Romance~Group TAC~2006~7.651~TV
+Itsudatte My Santa !~Ecchi,Fantasy,Romance,Comedy,Shounen~TNK~2005~6.151~OVA
+Ginga Nagareboshi Gin~Action,Adventure,Drama,Shounen~Toei Animation~1986~8.121~TV
+Kage kara Mamoru ! ( Guardian Ninja Mamoru )~Comedy,Romance,Shounen~Group TAC~2006~6.701~TV
+Amaenaide yo ! ! ( Ah My Buddha )~Comedy,Ecchi,Harem,Romance,Supernatural~Studio Deen~2005~6.631~TV
+PopoloCrois~Adventure,Fantasy~TMS Entertainment~2003~7.161~TV
+Mugen no Ryvius ( Infinite Ryvius )~Drama,Mecha,Military,Psychological,Sci-Fi,Space~Sunrise~1999~7.581~TV
+Naruto : Takigakure no Shitou~Action,Adventure,Comedy,Shounen,Super,Power~Studio Pierrot~2003~6.831~Special
+X OVA ( X : An Omen )~Mystery,Supernatural,Drama,Romance,Fantasy~Madhouse~2001~6.931~OVA
+Chobits : Chibits ( Chobits : Chibits~Romance,Comedy~Madhouse~2003~7.081~Special
+Neko no Ongaeshi ( The Cat Returns )~Adventure,Drama,Fantasy~GKIDS Studios~2002~7.951~Movie
+Jinzou Ningen Kikaider The Animation ( Android Kikaider )~Action,Drama,Mecha,Sci-Fi,Shounen~Radix~2000~7.081~TV
+Yuugen Kaisha ( Phantom Quest Corp. )~Action,Adventure,Comedy,Super,Power,Supernatural,Magic~Madhouse~1994~6.551~OVA
+Legend of Duo~Supernatural,Drama,Vampire,Shounen,Ai~Radix , Marine Entertainment~2005~5.061~TV
+Nekojiru-sou ( Cat Soup )~Comedy,Dementia,Psychological~J.C.Staff~2001~7.431~OVA
+KO Seiki Beast Sanjuushi ( KO Century Beast Warriors )~Adventure,Comedy,Fantasy,Mecha,Shounen,Supernatural~Gainax~1992~6.651~OVA
+Futari wa Precure ( Pretty Cure )~Action,Comedy,Magic,Fantasy,Shoujo~Toei Animation~2004~7.011~TV
+Mahou no Stage Fancy Lala ( Magical Stage Fancy Lala )~Music,Comedy,Drama,Magic,Romance,Shoujo~Studio Pierrot~1998~7.181~TV
+Tenshi ni Narumon ! ( I 'm Gon na Be an Angel ! )~Comedy,Fantasy,Romance~Studio Pierrot~1999~6.861~TV
+Kazemakase Tsukikage Ran ( Carried by the Wind : Tsukikage Ran )~Adventure,Comedy,Historical,Martial,Arts,Samurai~Madhouse~2000~7.181~TV
+Otogi Juushi Akazukin ( Fairy Musketeers )~Adventure,Comedy,Fantasy~Madhouse~2006~7.071~TV
+Sakura Taisen : Katsudou Shashin ( Sakura Wars : The Movie )~Adventure,Mecha,Sci-Fi,Shounen~Production I.G~2001~6.531~Movie
+Saishuu Heiki Kanojo : Another Love Song~Drama,Romance,Sci-Fi~None found , add some~2005~7.191~OVA
+Popotan~Comedy,Drama,Ecchi,Supernatural~Shaft~2003~6.431~TV
+Platonic Chain~Sci-Fi,Slice of Life~None found , add some~2002~5.711~TV
+PetoPeto-san~Comedy,Fantasy,Romance,School~Xebec~2005~6.621~TV
+Onmyou Taisenki~Adventure,Fantasy,Supernatural,Shounen~Sunrise~2004~7.281~TV
+Okusama wa Mahou Shoujo ( Madam is a Magical Girl )~Magic,Romance~J.C.Staff~2005~6.401~TV
+Nurse Witch Komugi-chan Magikarte~Comedy,Magic,Parody~Kyoto Animation , Tatsunoko Production~2002~6.741~OVA
+Nurse Angel Ririka SOS~Drama,Fantasy,Magic,Shoujo~Studio Gallop~1995~6.791~TV
+Juubee Ninpuuchou ( Ninja Scroll )~Adventure,Fantasy,Historical,Horror,Romance,Shounen,Supernatural~Madhouse~1993~7.661~Movie
+Juubee Ninpuuchou : Ryuuhougyoku-hen ( Ninja Scroll : The Series )~Adventure,Horror,Magic,Martial,Arts,Shounen,Supernatural~Madhouse~2003~6.771~TV
+Ninja Ryuukenden~Adventure,Supernatural,Demons,Thriller,Drama,Sci-Fi,Shounen~None found , add some~1991~5.771~OVA
+Mermaid Forest~Drama,Fantasy,Horror,Mystery~TMS Entertainment~2003~7.141~TV
+Night Walker : Mayonaka no Tantei~Action,Comedy,Horror,Mystery,Vampire~AIC~1998~7.061~TV
+Natsu-iro no Sunadokei ( Sandglass of Summer Colors )~Drama,Romance,Sci-Fi~None found , add some~2004~6.661~OVA
+Shichinin no Nana~Adventure,Comedy,Magic,Romance,School~A.C.G.T .~2002~6.881~TV
+Mouse~Action,Comedy,Ecchi,Harem,Shounen~Studio Deen , Studio Hibari , Production Reed~2003~6.161~TV
+Moekan The Animation~Comedy,Romance~None found , add some~2003~5.731~OVA
+Mamotte Shugogetten ! ( Protect Me , Heavenly Moon Guardian ! )~Comedy,Fantasy,Magic,Romance,Shounen~Toei Animation~1998~6.781~TV
+Major S1~Comedy,Sports,Drama,Shounen~Studio Hibari~2004~8.391~TV
+Mahoutsukai Tai ! OVA ( Magic User 's Club OVA )~Sci-Fi,Comedy,Magic,Romance,Fantasy~Production Reed~1996~7.231~OVA
+Mahoutsukai Tai ! ( Magic User 's Club )~Sci-Fi,Comedy,Magic,Romance,School~Madhouse , Production Reed~1999~6.911~TV
+Mahoromatic Summer Special~Ecchi,Romance,Comedy,Sci-Fi~Gainax , Shaft~2003~7.231~Special
+Mahoromatic End Year Special~Ecchi,Romance,Comedy,Military,Sci-Fi~Gainax , Shaft~2001~7.041~Special
+Legend of Basara~Adventure,Romance,Drama,Shoujo~None found , add some~1998~7.431~TV
+Koi Kaze~Drama,Psychological,Romance,Seinen~A.C.G.T .~2004~7.291~TV
+Juubee-chan : Lovely Gantai no Himitsu~Action,Adventure,Comedy,Drama,Shounen~Madhouse~1999~6.721~TV
+Juubee-chan 2 : Siberia Yagyuu no Gyakushuu~Adventure,Comedy,Drama,Martial,Arts,Samurai,Shounen~Madhouse~2004~6.971~TV
+Iketeru Futari~Comedy,Ecchi,Romance,School,Seinen~J.C.Staff~1999~6.751~TV
+Ichigo 100 % Special 2 ( Strawberry 100 % )~Comedy,Ecchi,Romance,Shounen~None found , add some~2005~6.981~Special
+Ichigo 100 % : Koi ga Hajimaru ? ! Satsuei Gasshuku~Ecchi,Romance,Shounen~Madhouse~2004~6.991~Special
+Hachimitsu to Clover Specials ( Honey and Clover Specials )~Comedy,Drama,Josei,Romance,Slice of Life~J.C.Staff~2005~7.811~Special
+Hikaru no Go : Journey to the North Star Cup~Game,Shounen~Studio Pierrot~2004~8.071~Special
+Haunted Junction~Comedy,Supernatural,School,Shounen~Studio Deen~1997~6.821~TV
+Harukanaru Toki no Naka de : Ajisai Yumegatari~Adventure,Fantasy,Romance,Supernatural,Demons,Historical,Drama,Shoujo~Zexcs~2002~6.421~OVA
+Tsuki wa Higashi ni Hi wa Nishi ni : Operation Sanctuary~Comedy,Drama,Harem,Romance,Sci-Fi~None found , add some~2004~6.251~TV
+Hanaukyou Maid-tai : La Verite ( Hanaukyo Maid Team : La Verite )~Comedy,Ecchi,Harem,Romance~Daume~2004~6.881~TV
+Gunsmith Cats~Action,Comedy,Police,Seinen~OLM~1995~7.271~OVA
+Green Green Thirteen : Erolutions~Comedy,Romance,Hentai~Studio Matrix~2004~6.241~OVA
+Galaxy Angel Z~Sci-Fi,Comedy~Madhouse~2002~7.271~TV
+Galaxy Angel 3~Comedy,Sci-Fi~Madhouse~2002~7.411~TV
+Galaxy Angel 3 Specials~Comedy,Sci-Fi~None found , add some~2003~7.341~Special
+Galaxy Angel 4~Comedy,Sci-Fi~Madhouse , feel .~2004~7.341~TV
+Air in Summer~Romance,Supernatural,Comedy,Historical,Drama~Kyoto Animation~2005~7.441~Special
+Touhai Densetsu Akagi : Yami ni Maiorita Tensai~Game,Psychological,Thriller,Seinen~Madhouse~2005~8.001~TV
+Azumanga Daioh : Gekijou Tanpen~Comedy,School,Slice of Life~J.C.Staff~2001~7.091~Special
+Denshin Mamotte Shugogetten~Comedy,Fantasy,Magic,Romance,Shounen~Toei Animation~2000~6.591~OVA
+Elf-ban Kakyuusei : Anata dake wo Mitsumete ...~Harem,Romance,School,Drama~None found , add some~1997~6.401~OVA
+Fullmetal Alchemist : Reflections~Adventure,Fantasy,Comedy,Military,Drama,Shounen~Bones~2005~7.371~Special
+JoJo no Kimyou na Bouken : Adventure ( JoJo 's Bizarre Adventure )~Adventure,Drama,Fantasy,Horror,Shounen,Supernatural,Vampire~APPP~2000~7.211~OVA
+JoJo no Kimyou na Bouken ( JoJo 's Bizarre Adventure )~Adventure,Drama,Fantasy,Horror,Shounen,Supernatural,Vampire~APPP~1993~7.441~OVA
+Kashimashi : Girl Meets Girl ( Girl Meets Girl )~Comedy,Drama,Romance,School,Shoujo,Ai,Slice of Life~Studio Hibari~2006~6.771~TV
+Koi Koi 7 ( Koi Koi Seven )~Comedy,Harem,Romance~Studio Flag~2005~5.921~TV
+Kujibiki Unbalance~Comedy,Romance,School~Palm Studio~2004~6.181~OVA
+Lamune~Drama,Romance,Slice of Life~Trinet Entertainment , Picture Magic~2005~6.921~TV
+Lemon Angel Project~Drama,Music~None found , add some~2006~6.771~TV
+Mai-HiME Specials ( My-Hime Specials )~Comedy~Sunrise~2005~7.041~Special
+One : Kagayaku Kisetsu e~Supernatural,Drama~None found , add some~2001~5.231~OVA
+Refrain Blue~Romance,Drama~None found , add some~2000~5.901~OVA
+Sentimental Journey~Drama,Romance,Shoujo~Sunrise~1998~6.511~TV
+Shadow Skill : Eigi~Adventure,Fantasy,Magic,Martial,Arts,Super,Power,Drama,Shounen~Studio Deen~1998~7.211~TV
+Shadow Skill ( 1996 ) ( Shadow Skill : The Movie )~Adventure,Drama,Fantasy,Shounen~Zero-G Room~1996~6.711~OVA
+Tenbatsu Angel Rabbie☆~Magic,Comedy,Sci-Fi~None found , add some~2004~5.211~OVA
+Otogi Story Tenshi no Shippo ( Angel Tales )~Fantasy,Magic,Comedy,Harem,Romance~Tokyo Kids~2001~6.641~TV
+Otogi Story Tenshi no Shippo Specials ( Angel Tales )~Comedy,Fantasy,Magic,Romance~None found , add some~2002~6.551~OVA
+Tenshi no Shippo Chu !~Fantasy,Magic,Romance~None found , add some~2003~6.611~TV
+To Heart : Remember My Memories~Drama,Harem,Romance,School,Sci-Fi,Slice of Life~OLM , AIC A.S.T.A .~2004~6.551~TV
+To Heart : Remember My Memories Specials~Parody,Martial,Arts,Comedy,Super,Power,Samurai,Sci-Fi~AIC A.S.T.A .~2006~6.251~Special
+Tokyo Mew Mew~Sci-Fi,Adventure,Comedy,Supernatural,Magic,Romance,Fantasy,Shoujo~Studio Pierrot~2002~7.041~TV
+Uta Kata ( Utakata )~Drama,Magic~Hal Film Maker~2004~6.841~TV
+Uta Kata Special~Drama,Magic~Hal Film Maker~2005~7.071~Special
+Kyuuketsuhime Miyu ( TV ) ( Vampire Princess Miyu )~Action,Demons,Drama,Horror,Vampire~AIC~1997~7.211~TV
+Yawara !~Action,Slice of Life,Martial,Arts,Sports,Comedy,Romance,Drama~Madhouse~1989~7.591~TV
+Dousou Kai ( Yesterday Once More )~Harem,Hentai,Romance~None found , add some~1998~5.891~OVA
+Burn Up Scramble~Action,Comedy,Drama,Ecchi,Police,Sci-Fi,Shounen~AIC~2004~6.311~TV
+Canvas 2 : Niji-iro no Sketch ( Canvas 2 : Rainbow Colored Sketch )~Comedy,Drama,Romance,Slice of Life~Zexcs~2005~6.871~TV
+Canvas : Sepia-iro no Motif~Comedy,Romance,Slice of Life~None found , add some~2001~5.781~OVA
+Tenchi Muyou !~Sci-Fi,Harem,Space,Comedy,Romance,Shounen~AIC~1995~7.531~TV
+Kanon Kazahana~Drama,Romance,Slice of Life,Supernatural~Toei Animation~2003~6.861~Special
+Chou Henshin Cosprayers vs. Ankoku Uchuu Shougun the Movie~Adventure,Magic,Comedy,Sci-Fi~None found , add some~2004~4.811~Movie
+Comic Party Revolution~Comedy,Drama~Radix , Chaos Project~2005~6.651~TV
+Comic Party Specials~Comedy,Drama~OLM~2003~6.521~Special
+Patapata Hikousen no Bouken~Adventure,Sci-Fi~Telecom Animation Film~2002~7.621~TV
+Mujin Wakusei Survive~Action,Adventure,Fantasy,Sci-Fi,Slice of Life~Madhouse , Telecom Animation Film~2003~7.741~TV
+Rec~Comedy,Drama,Romance~Shaft~2006~7.431~TV
+Uchuu Senkan Yamato ( Movie ) ( Space Battleship Yamato )~Military,Sci-Fi,Space,Drama~None found , add some~1977~6.961~Movie
+Zoids Genesis~Action,Adventure,Comedy,Mecha,Military~Shogakukan Music & Digital Entertainment~2005~7.361~TV
+Air Movie ( Air : The Motion Picture )~Drama,Romance,Supernatural~Toei Animation~2005~7.361~Movie
+High School ! Kimengumi ( Funny Faces in High School )~Comedy,Parody,Romance,School,Shounen~None found , add some~1985~7.441~TV
+Yume de Aetara ( If I See You in My Dreams )~Comedy,Drama,Ecchi,Romance,Seinen~J.C.Staff~1998~6.611~OVA
+Yume de Aetara ( TV ) ( If I See You in My Dreams )~Comedy,Drama,Romance,Seinen,Slice of Life~J.C.Staff~1998~6.601~TV
+Ai no Kusabi~Drama,Romance,Sci-Fi,Yaoi~AIC~1992~7.331~OVA
+Princess Tutu~Comedy,Fantasy,Magic,Romance~Hal Film Maker~2002~8.221~TV
+Baby☆Love~Comedy,Romance~None found , add some~1997~6.411~OVA
+Candy Candy ( Movie )~Slice of Life,Drama,Shoujo~Toei Animation~1992~6.811~Movie
+Enzai~Hentai,Horror,Yaoi~None found , add some~2004~5.501~OVA
+First Kiss Monogatari ( First Kiss Story )~Drama,Romance~None found , add some~2000~5.201~OVA
+Kingyo Chuuihou ! ( Goldfish Forecast ! )~Comedy,Kids,Shoujo~Toei Animation~1991~6.901~TV
+Hiatari Ryoukou ! ( Sunny Ryoko )~Comedy,Sports,Romance,School,Shoujo~None found , add some~1987~7.211~TV
+Houkago no Shokuinshitsu ( After School in the Lounge )~Drama,Romance,Shounen,Ai~None found , add some~Apr~5.211~OVA
+Interstella5555 : The 5tory of The 5ecret 5tar 5ystem~Adventure,Drama,Music,Sci-Fi~Toei Animation~2003~8.171~Music
+Vampire Hunter D~Action,Sci-Fi,Horror,Supernatural,Vampire~Production Reed~1985~7.231~Movie
+Kizuna~Romance,Drama,Yaoi~None found , add some~1994~6.431~OVA
+Kizuna : Koi no kara Sawagi ( Kizuna : Much Ado About Nothing )~Drama,Romance,Yaoi~Zexcs~2001~6.901~OVA
+Keiraku no Houteishiki Level-C ( Level-C )~Hentai,Drama,Yaoi~J.C.Staff~1995~6.001~OVA
+MÄR~Action,Adventure,Comedy,Fantasy,Shounen~SynergySP~2005~7.401~TV
+Bishoujo Senshi Sailor Moon R ( Sailor Moon R )~Demons,Magic,Romance,Shoujo~Toei Animation~1993~7.751~TV
+Sensitive Pornograph~Comedy,Drama,Hentai,Romance,Yaoi~Ajia-Do~2004~7.011~OVA
+Umi ga Kikoeru ( The Ocean Waves )~Drama,Romance,School,Slice of Life~J.C.Staff , Studio Ghibli~1993~6.911~Special
+Trouble Chocolate~Comedy,Romance,Sci-Fi,Shounen~AIC~1999~6.671~TV
+Papa to Kiss in the Dark~Comedy,Drama,Romance,Yaoi~TNK~2005~6.401~OVA
+Haru wo Daite Ita ( Embracing Love )~Drama,Romance,Yaoi~Trinet Entertainment~2005~6.951~OVA
+True Love Story ( True Love Story Summer Days , and yet ... )~Romance~None found , add some~2003~6.201~OVA
+Nanami-chan~Kids,Comedy~None found , add some~2004~6.311~TV
+Binchou-tan~Slice of Life,Comedy~Studio Deen~2006~6.991~TV
+Bomberman Jetters~Action,Sci-Fi,Adventure,Mystery,Comedy,Shounen~Studio Deen~2002~7.101~TV
+Osakana wa Ami no Naka ( Fish in the Trap )~Drama,Shounen,Ai~J.C.Staff~1994~5.091~OVA
+Chijoku Shinsatsushitsu ( Doctor Shameless )~Hentai~None found , add some~2003~6.381~OVA
+Yuki no Joou ( TV ) ( The Snow Queen )~Adventure,Drama,Fantasy~TMS Entertainment~2005~7.181~TV
+Boku no Sexual Harassment ( My Sexual Harassment )~Hentai,Yaoi~None found , add some~1994~5.911~OVA
+School Days ONA~Romance,School,Drama~None found , add some~2005~6.191~ONA
+Kaze wo Mita Shounen ( The Boy Who Saw the Wind )~Adventure,Drama,Fantasy~Brain 's Base~2000~6.841~Movie
+RahXephon : Pluralitas Concentio ( RahXephon : Harmonic Convergence )~Action,Drama,Mecha,Psychological,Romance,Sci-Fi~Bones~2003~7.141~Movie
+Tokyo Godfathers~Comedy,Drama~Madhouse~2003~8.311~Movie
+Tenjou Tenge : The Past Chapter ( TenjhoTenge : The Past Chapter )~Adventure,Drama,Martial,Arts,Romance,Shounen,Supernatural~Madhouse~2005~7.141~Movie
+Naruto : Akaki Yotsuba no Clover wo Sagase~Adventure,Comedy,Shounen~Studio Pierrot~2003~6.561~Special
+Bleach : Memories in the Rain~Action,Adventure,Supernatural,Drama,Shounen~Studio Pierrot~2005~7.211~Special
+Zoids~Action,Adventure,Comedy,Mecha,Sci-Fi~Xebec~1999~7.471~TV
+Zoids Shinseiki/Zero ( Zoids Shin Seiki/Zero )~Adventure,Comedy,Mecha,Sci-Fi,Shounen,Sports~Xebec~2001~7.441~TV
+Chou Henshin Cosprayers Specials~Adventure,Magic,Comedy,Sci-Fi~None found , add some~2004~5.101~Special
+Kishin Houkou Demonbane~Comedy,Drama,Mecha,Sci-Fi~Group TAC , View Works~2004~6.191~OVA
+Burn Up !~Action,Sci-Fi,Comedy,Police,Ecchi~AIC~1991~6.211~OVA
+Burn Up ! W~Sci-Fi,Comedy,Ecchi,Mecha,Shounen~AIC~1996~6.481~OVA
+Pale Cocoon~Drama,Sci-Fi~Studio Rikka~2005~7.491~OVA
+Ginyuu Mokushiroku Meine Liebe Wieder~Drama,Fantasy,Shoujo~Bee Train~2006~6.801~TV
+Tenamonya Voyagers~Ecchi,Adventure,Comedy,Mecha,Sci-Fi~Studio Pierrot~1999~6.311~OVA
+Nanaka 6/17~Slice of Life,Comedy,Drama,Romance,Shounen~J.C.Staff~2003~6.721~TV
+Hellsing Ultimate~Action,Military,Horror,Supernatural,Vampire,Seinen~Madhouse , Satelight , Graphinica~2006~8.551~OVA
+Detective Conan Movie 01 : The Timed Skyscraper~Adventure,Mystery,Comedy,Police,Shounen~TMS Entertainment~1997~7.971~Movie
+Detective Conan Movie 02 : The Fourteenth Target~Adventure,Mystery,Comedy,Police,Shounen~TMS Entertainment~1998~8.011~Movie
+Detective Conan Movie 03 : The Last Wizard of the Century~Adventure,Mystery,Comedy,Police,Shounen~TMS Entertainment~1999~8.151~Movie
+Gasaraki~Drama,Mecha,Military,Psychological,Supernatural~Sunrise~1998~6.711~TV
+Miami Guns~Comedy,Ecchi,Police,Shounen~Group TAC~2000~6.621~TV
+Otaku no Video~Comedy,Drama,Historical,Magic,Mecha,Sci-Fi~Gainax~1991~7.201~OVA
+Pugyuru~Comedy,Fantasy,School~Creators Dot Com~2004~5.881~TV
+Eiken : Eikenbu yori Ai wo Komete ( Eiken )~Ecchi,Comedy,Harem,School~J.C.Staff~2003~4.581~OVA
+Shinigami no Ballad . ( Momo , Girl God of Death )~Drama,Fantasy,Psychological,Supernatural~Group TAC , Ginga Ya~2006~7.021~TV
+Ergo Proxy~Sci-Fi,Mystery,Psychological~Manglobe~2006~8.001~TV
+Arion~Action,Adventure,Fantasy,Magic,Drama,Seinen~Sunrise~1986~6.351~Movie
+Ranma ½ : Kessen Tougenkyou ! Hanayome wo Torimodose !~Adventure,Comedy,Shounen~None found , add some~1992~7.501~Movie
+xxxHOLiC Movie : Manatsu no Yoru no Yume~Mystery,Comedy,Psychological,Supernatural,Drama~Production I.G~2005~8.031~Movie
+Oniisama e ... ( Brother , Dear Brother )~Drama,School,Shoujo,Shoujo,Ai~Tezuka Productions~1991~7.861~TV
+Mahoujin Guru Guru Movie ( Magical Circle Guru Guru Movie )~Adventure,Comedy,Fantasy,Magic,Shounen~Nippon Animation~1996~7.011~Movie
+Hanaukyou Maid-tai OVA~Comedy,Ecchi,Harem,Romance~Daume~2001~6.791~OVA
+Yomigaeru Sora : Rescue Wings~Drama,Military,Seinen~J.C.Staff~2006~7.511~TV
+Kokoro Toshokan~Comedy,Drama,Slice of Life~Studio Deen~2001~6.581~TV
+NieA Under 7~Comedy,Sci-Fi,Slice of Life~Triangle Staff~2000~6.951~TV
+Ghost in the Shell : Stand Alone Complex 2nd GIG~Action,Military,Sci-Fi,Mystery,Police,Mecha,Seinen~Production I.G~2004~8.561~TV
+Tsubasa Chronicle : Tori Kago no Kuni no Himegimi~Action,Adventure,Fantasy,Drama,Shounen~Production I.G~2005~7.391~Movie
+Bakuretsu Hunters OVA ( Sorcerer Hunters )~Action,Adventure,Harem,Comedy,Super,Power,Magic,Romance,Ecchi,Fantasy,Shounen~Xebec , Production Reed~1996~6.681~OVA
+Android Ana Maico 2010 ( Android Announcer Maico 2010 )~Comedy,Drama,Sci-Fi,Seinen~None found , add some~1998~6.561~TV
+I '' s Pure~Comedy,Drama,Ecchi,Romance,School~Studio Pierrot , Arms~2005~7.011~OVA
+Chikyuu Shoujo Arjuna ( Arjuna )~Adventure,Drama,Magic,Sci-Fi~Satelight~2001~6.961~TV
+Dragon Ball Z~Action,Adventure,Comedy,Fantasy,Martial,Arts,Shounen,Super,Power~Toei Animation~1989~8.311~TV
+Prince of Tennis : Atobe 's Gift~Comedy,Shounen,Sports~Trans Arts~2005~7.591~Movie
+Prince of Tennis : The Two Samurai , The First Game~Action,Shounen,Sports~Production I.G~2005~7.451~Movie
+Nanako Kaitai Shinsho ( Amazing Nurse Nanako )~Comedy,Mecha,Military,Sci-Fi~Radix~1999~5.761~OVA
+Tactical Roar~Comedy,Military,Romance,Sci-Fi~Actas~2006~6.521~TV
+Sakura Tsuushin ( Sakura Diaries )~Comedy,Drama,Romance,Slice of Life~Shaft~1997~6.311~OVA
+Boku wa Imouto ni Koi wo Suru~Romance,Shoujo~Vega Entertainment~2005~6.511~OVA
+Ginga Eiyuu Densetsu ( Legend of the Galactic Heroes )~Military,Sci-Fi,Space,Drama~Artland , Magic Bus~1988~9.101~OVA
+Initial D Battle Stage~Action,Cars,Drama,Seinen,Sports~Pastel~2002~7.631~OVA
+Initial D Extra Stage~Action,Cars,Sports,Drama,Seinen~Pastel~2001~7.451~OVA
+Virgin Night~Hentai,Romance~None found , add some~2001~6.521~OVA
+Guardian Hearts~Comedy,Ecchi,Magic,Romance,School~None found , add some~2003~5.981~OVA
+King of Fighters : Another Day~Adventure,Drama,Shounen~Production I.G~2005~6.441~ONA
+Uba ( Milk Money )~Hentai~Y.O.U.C~2004~6.021~OVA
+Jinshin Yuugi ( Love Lessons )~Hentai~None found , add some~2001~5.901~OVA
+Sexfriend~Hentai~None found , add some~2004~6.791~OVA
+Chicchana Yukitsukai Sugar ( A Little Snow Fairy Sugar )~Comedy,Fantasy,Slice of Life~J.C.Staff~2001~7.171~TV
+Ginsoukikou Ordian~Mecha,Sci-Fi~None found , add some~2000~5.851~TV
+Choujuushin Gravion ( Super Heavy God Gravion )~Action,Comedy,Mecha,Sci-Fi,Shounen~Gonzo~2002~6.471~TV
+Bleach : The Sealed Sword Frenzy~Adventure,Fantasy,Comedy,Supernatural,Drama,Shounen~Studio Pierrot~2006~7.051~Special
+Sister Princess : Re Pure~Drama,Romance~Zexcs~2002~6.341~TV
+Sister Princess~Comedy,Drama,Harem,Romance,Slice of Life~Zexcs~2001~6.541~TV
+Kyou no 5 no 2 ( Today in Class 5-2 )~Comedy,Ecchi,School,Seinen~Shinkuukan~2006~7.301~OVA
+Narutaru : Mukuro Naru Hoshi Tama Taru Ko ( Shadow Star Narutaru )~Drama,Seinen,Thriller~Planet~2003~6.231~TV
+Samurai Spirits 2 : Asura Zanmaden ( Samurai Spirits 2 )~Action,Fantasy,Martial,Arts,Samurai,Super,Power~Ajia-Do~1999~6.271~OVA
+Narue no Sekai ( The World of Narue )~Comedy,Romance,Sci-Fi~Studio Live~2003~6.691~TV
+Colorful~Comedy,Ecchi,Slice of Life~Triangle Staff , Studio Wombat~1999~6.241~TV
+Ushio to Tora ( Ushio and Tora )~Action,Comedy,Horror~Pastel~1992~7.231~OVA
+Konjiki no Gash Bell ! ! : 101 Banme no Mamono~Adventure,Shounen,Supernatural~Toei Animation~2004~7.401~Movie
+Kiba~Adventure,Fantasy,Shounen~Madhouse~2006~7.411~TV
+School Rumble Ni Gakki ( School Rumble 2nd Semester )~Comedy,Romance,School,Shounen~Studio Comet~2006~8.121~TV
+Jinki : Extend OVA ( Jinki : Extend )~Mecha,Sci-Fi~feel .~2006~6.311~OVA
+Suzumiya Haruhi no Yuuutsu ( The Melancholy of Haruhi Suzumiya )~Comedy,Mystery,Parody,School,Sci-Fi,Slice of Life~Kyoto Animation~2006~8.011~TV
+Gakuen Heaven~Comedy,Drama,Romance,School,Josei,Shounen,Ai~Tokyo Kids~2006~6.761~TV
+Kyou kara Ore wa ! !~Comedy,Shounen~Studio Pierrot~1992~8.121~OVA
+Gokinjo Monogatari ( Neighborhood Stories )~Slice of Life,Comedy,Drama,Romance~Toei Animation~1995~7.531~TV
+Ouran Koukou Host Club ( Ouran High School Host Club )~Comedy,Harem,Romance,School,Shoujo~Bones~2006~8.361~TV
+Soul Link~Action,Adventure,Space,Comedy,Romance,Military,Sci-Fi~Picture Magic~2006~6.241~TV
+Strawberry Panic~Drama,Romance,School,Shoujo,Ai~Madhouse~2006~7.421~TV
+Utawarerumono~Action,Sci-Fi,Drama,Fantasy~OLM~2006~7.761~TV
+Air Gear~Action,Comedy,Ecchi,Shounen,Sports~Toei Animation~2006~7.661~TV
+Gunparade Orchestra~Drama,Mecha,Military,Romance,Sci-Fi,Slice of Life~Brain 's Base~2005~6.011~TV
+Digimon Savers ( Digimon Data Squad )~Adventure,Comedy,Drama,Fantasy,Shounen~Toei Animation~2006~7.081~TV
+Makai Senki Disgaea ( Disgaea )~Action,Comedy,Demons,Fantasy,Magic~OLM~2006~6.871~TV
+xxxHOLiC~Mystery,Comedy,Psychological,Supernatural,Drama~Production I.G~2006~8.091~TV
+Joshikousei : Girl 's High ( High School Girls )~Comedy,Drama,Ecchi,School,Slice of Life~Arms~2006~6.661~TV
+Mobile Suit Gundam Seed MSV Astray~Mecha,Military,Sci-Fi,Shounen,Space~Sunrise~2004~6.441~OVA
+Kikou Senki Dragonar ( Metal Armor Dragonar )~Adventure,Mecha,Sci-Fi,Shounen,Space~Sunrise~1987~6.841~TV
+Slayers Premium~Adventure,Comedy,Fantasy,Magic,Shounen~Hal Film Maker~2001~7.301~Movie
+Slayers Gorgeous~Adventure,Comedy,Fantasy,Magic,Supernatural~J.C.Staff~1998~7.411~Movie
+Slayers Great ( Slayers Movie 3 )~Adventure,Comedy,Fantasy,Magic,Shounen~J.C.Staff~1997~7.401~Movie
+Slayers Return ( Slayers Movie 2 )~Adventure,Comedy,Fantasy,Magic,Shounen~J.C.Staff~1996~7.411~Movie
+Dragon Half~Comedy,Fantasy,Parody~Production I.G~1993~7.011~OVA
+Mahou Shoujo-tai Arusu ( Tweeny Witches )~Adventure,Comedy,Fantasy,Magic~Studio 4°C~2004~7.211~TV
+.hack//Roots~Adventure,Fantasy,Game,Drama,Sci-Fi~Bee Train~2006~7.041~TV
+Digimon Tamers~Adventure,Comedy,Drama,Fantasy,Shounen~Toei Animation~2001~7.651~TV
+Mind Game~Adventure,Comedy,Dementia,Psychological,Romance~Studio 4°C~2004~7.861~Movie
+Street Fighter II V ( Street Fighter II : The Animated Series )~Adventure,Drama,Mystery,Shounen~Studio Hibari , Production Reed~1995~7.151~TV
+Nana~Comedy,Drama,Music,Romance,Shoujo,Slice of Life~Madhouse~2006~8.521~TV
+Zegapain~Action,Mecha,Romance,Sci-Fi~Sunrise~2006~7.441~TV
+Simoun~Military,Drama,Magic,Romance,Shoujo,Ai~Studio Deen~2006~7.551~TV
+Aa ! Megami-sama ! : Sorezore no Tsubasa~Comedy,Magic,Romance,Seinen,Supernatural~AIC~2006~7.671~TV
+Green Green OVA~Comedy,Ecchi,Romance,School~None found , add some~2002~6.101~OVA
+Yuu☆Yuu☆Hakusho ( Movie ) ( Yu Yu Hakusho : The Movie )~Action,Adventure,Comedy~Studio Pierrot~1993~6.941~Movie
+Yuu☆Yuu☆Hakusho : Meikai Shitou-hen~Action,Comedy~Studio Pierrot~1994~7.321~Movie
+Shin Angyo Onshi ( Blade of the Phantom Master )~Action,Fantasy~OLM Digital~2004~6.971~Movie
+Tenshi no Tamago ( Angel 's Egg )~Fantasy,Dementia,Drama~Studio Deen~1985~7.601~OVA
+Amaenaide yo ! ! Katsu ! ! ( Ah My Buddha Katsu )~Comedy,Ecchi,Harem,Romance,Supernatural~Studio Deen~2006~6.851~TV
+Megami Kouhosei Special Curriculum~Action,Mecha,Military,Sci-Fi,Space~None found , add some~2002~6.421~OVA
+Megami Kouhosei~Action,Mecha,Military,Sci-Fi,Space~Xebec~2000~6.531~TV
+Black Lagoon~Action,Seinen~Madhouse~2006~8.141~TV
+Yuusha-Ou GaoGaiGar ( King of Braves GaoGaiGar )~Adventure,Mecha,Sci-Fi,Shounen~Sunrise~1997~7.921~TV
+Dragon Ball Movie 2 : Majinjou no Nemuri Hime~Action,Adventure,Comedy,Fantasy,Sci-Fi,Shounen,Super,Power~Toei Animation~1987~7.011~Movie
+Dragon Ball Movie 3 : Makafushigi Daibouken~Action,Adventure,Comedy,Fantasy,Sci-Fi,Shounen,Super,Power~Toei Animation~1988~7.071~Movie
+Dragon Ball Movie 4 : Saikyou e no Michi~Action,Adventure,Comedy,Fantasy,Sci-Fi,Shounen,Super,Power~Toei Animation~1996~7.301~Movie
+Dragon Ball Z Movie 01 : Ora no Gohan wo Kaese ! !~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1989~6.901~Movie
+Dragon Ball Z Movie 02 : Kono Yo de Ichiban Tsuyoi Yatsu~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1990~6.851~Movie
+Dragon Ball Z Movie 03 : Chikyuu Marugoto Choukessen~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1990~6.961~Movie
+Dragon Ball Z Movie 04 : Super Saiyajin da Son Gokuu~Sci-Fi,Adventure,Fantasy,Shounen~Toei Animation~1991~6.811~Movie
+Dragon Ball Z Movie 05 : Tobikkiri no Saikyou tai Saikyou~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1991~7.221~Movie
+Dragon Ball Z Movie 06 : Gekitotsu ! ! 100-oku Power no Senshi-tachi~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1992~7.061~Movie
+Dragon Ball Z Movie 07 : Kyokugen Battle ! ! Sandai Super Saiyajin~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1992~7.111~Movie
+Dragon Ball Z Movie 08 : Moetsukiro ! ! Nessen , Ressen , Chougekisen~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1993~7.571~Movie
+Dragon Ball Z Movie 09 : Ginga Girigiri ! ! Bucchigiri no Sugoi Yatsu~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1993~7.331~Movie
+Dragon Ball Z Movie 10 : Kiken na Futari ! Super Senshi wa Nemurenai~Action,Adventure,Comedy,Demons,Fantasy,Martial,Arts,Shounen,Super,Power~Toei Animation~1994~7.071~Movie
+Dragon Ball Z Movie 11 : Super Senshi Gekiha ! ! Katsu no wa Ore da~Action,Adventure,Comedy,Fantasy,Martial,Arts,Shounen,Super,Power~Toei Animation~1994~6.231~Movie
+Dragon Ball Z Movie 12 : Fukkatsu no Fusion ! ! Gokuu to Vegeta~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1995~7.701~Movie
+Dragon Ball Z Movie 13 : Ryuuken Bakuhatsu ! ! Goku ga Yaraneba Dare ga Yaru~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1995~7.511~Movie
+Princess Princess~Comedy,School,Shoujo~Studio Deen~2006~7.141~TV
+Fullmetal Alchemist : Premium Collection~Fantasy,Comedy,Shounen~Bones~2006~7.431~OVA
+Geneshaft~Adventure,Mecha,Sci-Fi,Space~Satelight~2001~6.471~TV
+Himawari !~Adventure,Comedy,Martial,Arts~Arms~2006~6.421~TV
+Konjiki no Gash Bell ! ! : Mecha Vulkan no Raishuu~Adventure,Shounen,Supernatural~Toei Animation~2005~7.201~Movie
+Ninkuu~Adventure,Shounen~Studio Pierrot~1995~7.131~TV
+Kakutou Bijin Wulong ( Fighting Beauty Wulong )~Action,Ecchi,Martial,Arts~TMS Entertainment~2005~6.741~TV
+Ike ! Ina-chuu Takkyuubu ( The Ping-Pong Club )~Comedy,Ecchi,School,Sports~Studio Hibari~1995~7.681~TV
+Ginga Densetsu Weed~Adventure,Drama,Shounen~Studio Deen~2005~7.311~TV
+Tokkou ( Tokko )~Action,Comedy,Horror,Mystery,Police,Supernatural~AIC Spirits , Group TAC~2006~6.691~TV
+Riding Bean~Action,Cars,Police,Seinen~AIC , Artmic~1989~7.151~OVA
+Gintama~Action,Sci-Fi,Comedy,Historical,Parody,Samurai,Shounen~Sunrise~2006~9.021~TV
+Ray The Animation~Drama,Romance,Sci-Fi~OLM~2006~6.771~TV
+Nurse Witch Komugi-chan Magikarte Special~Comedy,Magic,Parody~Kyoto Animation , Tatsunoko Production~2003~6.561~Special
+Nurse Witch Komugi-chan Magikarte Z~Comedy,Magic,Parody~Tatsunoko Production~2004~6.801~OVA
+Transformers : Choujin Master Force~Adventure,Mecha,Sci-Fi,Shounen~Toei Animation~1988~6.831~TV
+Transformers Headmasters ( Transformers The Headmasters )~Adventure,Mecha,Sci-Fi,Shounen~Toei Animation~1987~6.681~TV
+Transformers Victory~Adventure,Mecha,Sci-Fi,Shounen~Toei Animation~1989~6.801~TV
+Transformers Superlink ( Transformers Energon )~Adventure,Mecha,Sci-Fi,Shounen~Actas~2004~6.331~TV
+Transformers Galaxy Force ( Transformers Cybertron )~Adventure,Mecha,Sci-Fi,Shounen~Gonzo~2005~6.731~TV
+Seisenshi Dunbine ( Aura Battler Dunbine )~Action,Sci-Fi,Adventure,Drama,Fantasy,Mecha~Sunrise~1983~7.201~TV
+Densetsu Kyojin Ideon ( Space Runaway Ideon )~Sci-Fi,Space,Drama,Mecha~Sunrise~1980~7.041~TV
+Ichigeki Sacchuu ! ! Hoihoi-san~Comedy,Sci-Fi,Slice of Life~Daume~2004~6.151~OVA
+Dai Mahou Touge ( Magical Witch Punie-Chan )~Comedy,Magic,Supernatural~Diomedea~2006~7.071~OVA
+Higurashi no Naku Koro ni ( When They Cry )~Mystery,Dementia,Horror,Psychological,Supernatural,Thriller~Studio Deen~2006~8.121~TV
+Witchblade~Action,Sci-Fi,Super,Power~Gonzo~2006~7.381~TV
+Naruto Movie 2 : Dai Gekitotsu ! Maboroshi no Chiteiiseki Dattebayo !~Adventure,Comedy,Drama,Fantasy,Shounen,Supernatural~Studio Pierrot~2005~6.991~Movie
+Appleseed~Action,Sci-Fi,Adventure,Police,Mecha~Gainax~1988~6.761~OVA
+Shin Getter Robo tai Neo Getter Robo~Action,Mecha,Sci-Fi,Shounen~None found , add some~2000~7.161~OVA
+Inukami !~Comedy,Ecchi,Romance,Shounen,Supernatural~Seven Arcs~2006~7.371~TV
+Renkin San-kyuu Magical ? Pokaan~Comedy,Ecchi,Magic,Parody,Vampire~Remic~2006~7.081~TV
+Nishi no Yoki Majo : Astraea Testament ( The Good Witch Of The West )~Mystery,Comedy,Drama,Romance,Fantasy~Hal Film Maker~2006~6.891~TV
+Yume Tsukai~Drama,Fantasy,Magic,Slice of Life~Madhouse~2006~6.551~TV
+The Third : Aoi Hitomi no Shoujo~Action,Adventure,Sci-Fi,Seinen~Xebec~2006~7.391~TV
+Top wo Nerae ! Gunbuster ( Gunbuster )~Action,Military,Sci-Fi,Space,Comedy,Drama,Mecha,Shounen~Gainax~1988~7.951~OVA
+Street Fighter Alpha : Generations~Adventure,Shounen~APPP~2005~6.571~Movie
+Chibi Maruko-chan~Comedy,Slice of Life,Shoujo~Nippon Animation~1990~7.811~TV
+Magical Nyan Nyan Taruto ( Magical Meow Meow Taruto )~Comedy,Magic~Madhouse , TNK~2001~6.401~TV
+Jyu Oh Sei ( Jyu-Oh-Sei : Planet of the Beast King )~Action,Sci-Fi,Adventure,Mystery,Drama,Shoujo~Bones~2006~7.371~TV
+Daikuu Maryuu Gaiking ( Dino Mech Gaiking )~Adventure,Mecha,Sci-Fi,Shounen~Toei Animation~1976~6.961~TV
+Saiunkoku Monogatari ( The Story of Saiunkoku )~Adventure,Fantasy,Comedy,Romance,Historical,Drama~Madhouse~2006~8.051~TV
+HeatGuy J~Action,Adventure,Mecha,Police,Sci-Fi~Satelight~2002~7.301~TV
+Shin Chou Kyou Ryo : Condor Hero ( The Legend of Condor Hero )~Adventure,Drama,Historical,Romance~Nippon Animation~2001~7.501~TV
+Shin Chou Kyou Ryo : Condor Hero II ( Legend of the Condor Hero II )~Adventure,Drama,Historical,Romance~Nippon Animation~2005~7.471~TV
+Virtua Fighter~Action,Adventure,Martial,Arts,Comedy,Shounen~Tokyo Movie Shinsha~1995~7.141~TV
+Aria The Natural~Fantasy,Sci-Fi,Shounen,Slice of Life~Hal Film Maker~2006~8.271~TV
+Love Hina : Motoko no Sentaku , Koi ka Ken ... `` Naku na ''~Drama,Romance,Slice of Life~None found , add some~2000~7.341~Special
+Hit wo Nerae !~Comedy,Ecchi~Imagin , Studio Live~2004~5.611~TV
+Yoshinaga-san'chi no Gargoyle ( Gargoyle of Yoshinaga House )~Comedy,Fantasy,Slice of Life~Studio Hibari~2006~6.881~TV
+Crayon Shin-chan ( Shin Chan )~Slice of Life,Comedy,Kids,Ecchi,School,Seinen~Shin-Ei Animation~1992~7.731~TV
+Hokuto no Ken ( Fist of the North Star )~Action,Sci-Fi,Drama,Martial,Arts,Shounen~Toei Animation~1984~7.981~TV
+Kakutou Bijin Wulong : Rebirth ( Fighting Beauty Wulong Rebirth )~Action,Comedy,Martial,Arts,School,Shounen~None found , add some~2006~7.091~TV
+Tsubasa Chronicle 2nd Season~Action,Adventure,Fantasy,Romance,Supernatural,Drama,Mystery,Shounen~Bee Train~2006~7.691~TV
+Yokoyama Mitsuteru Sangokushi~Adventure,Historical~None found , add some~1991~7.501~TV
+Astro Boy : Tetsuwan Atom ( Astro Boy ( 2003 ) )~Action,Sci-Fi,Adventure,Super,Power,Kids,Mecha,Shounen~Tezuka Productions~2003~7.011~TV
+Bible Black Gaiden ( Bible Black Origins )~Hentai,Supernatural~Studio Jam~2002~6.871~OVA
+Glass no Kantai : La Legende du Vent de l'Univers~Adventure,Sci-Fi~Gonzo , Satelight~2006~6.651~TV
+Dead Leaves~Adventure,Psychological,Comedy,Sci-Fi~Production I.G~2004~7.261~Movie
+Yokohama Kaidashi Kikou~Sci-Fi,Seinen,Slice of Life~Ajia-Do~1998~7.361~OVA
+Yokohama Kaidashi Kikou : Quiet Country Cafe~Sci-Fi,Slice of Life,Seinen~Ajia-Do~2002~7.311~OVA
+Ginga Teikoku no Metsubou Gaiden : Aoki Ookami-tachi no Densetsu~Action,Mecha,Hentai,Sci-Fi,Yaoi~Phoenix Entertainment~1996~5.521~OVA
+Change ! ! Getter Robo : Sekai Saigo no Hi ( Getter Robo : Armageddon )~Action,Psychological,Adventure,Mecha,Sci-Fi,Horror,Shounen~Brain 's Base~1998~7.801~OVA
+Street Fighter Zero The Animation ( Street Fighter Alpha : The Movie )~Action,Drama,Martial,Arts,Shounen,Super,Power~Plum~1999~6.661~Movie
+Rikujou Bouei-tai Mao-chan ( Ground Defense Force ! Mao-chan )~Comedy,Kids,Magic,Military,Sci-Fi~Xebec~2002~6.351~TV
+Ichigo 100 % OVA ( Ichigo 100 % Original DVD Animation )~Comedy,Ecchi,Harem,Romance,School,Shounen~Madhouse~2005~7.011~OVA
+Cosplay Complex~Comedy,Ecchi,Parody,School~TNK~2002~5.961~OVA
+Cosplay Complex : Extra Identification~Comedy~TNK~2004~5.871~OVA
+Dragon Ball Z : Saiya-jin Zetsumetsu Keikaku~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1993~7.041~OVA
+Dragon Ball Z Special 2 : Zetsubou e no Hankou ! ! Nokosareta Chousenshi~Adventure,Drama,Fantasy,Shounen~Toei Animation~1993~7.831~Special
+Dragon Ball Z Special 1 : Tatta Hitori no Saishuu Kessen~Adventure,Comedy,Fantasy,Sci-Fi,Shounen~Toei Animation~1990~7.731~Special
+Dragon Ball GT : Goku Gaiden ! Yuuki no Akashi wa Suushinchuu~Action,Adventure,Comedy,Super,Power,Martial,Arts,Fantasy,Shounen~Toei Animation~1997~6.711~Special
+Shinshaku Sengoku Eiyuu Densetsu : Sanada Juu Yuushi The Animation~Action,Comedy,Historical,Military,Samurai~Group TAC , G & G Entertainment~2005~6.401~TV
+Shinshaku Sengoku Eiyuu Densetsu : Sanada Juu Yuushi~Historical,Military~T.P.O~2005~6.151~Special
+Kamisama Kazoku~Fantasy,Romance,Comedy,Drama~Toei Animation~2006~7.241~TV
+Usagi-chan de Cue ! !~Action,Comedy,Ecchi,Magic,Romance~None found , add some~2001~5.781~OVA
+Dual Parallel ! Trouble Adventures~Action,Comedy,Harem,Mecha,Sci-Fi,Shounen~AIC~1999~7.161~TV
+Dual Parallel ! Trouble Adventures Special~Comedy,Harem,Mecha,Romance,Drama,Sci-Fi~None found , add some~1999~7.021~Special
+Sin in the Rain~Mystery~Mook Animation~2006~5.191~OVA
+Prince of Tennis : The National Tournament~Action,Comedy,Shounen,Sports~M.S.C~2006~8.071~OVA
+Bishoujo Senshi Sailor Moon : Sailor Stars~Adventure,Comedy,Drama,Fantasy,Magic,Romance,Shoujo~Toei Animation~1996~7.991~TV
+Bishoujo Senshi Sailor Moon S : Kaguya Hime no Koibito~Adventure,Fantasy,Magic,Comedy,Romance,Drama,Shoujo~Toei Animation , Production Reed~1994~7.761~Movie
+Blue Seed~Action,Adventure,Comedy,Demons,Drama,Ecchi,Horror,Mystery,Romance,Sci-Fi~Production I.G , Production Reed~1994~7.121~TV
+Blue Seed 2 ( Blue Seed Beyond )~Action,Comedy,Drama,Ecchi,Horror,Mystery,Sci-Fi,Supernatural~Production I.G~1996~6.561~OVA
