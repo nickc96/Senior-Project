@@ -101,12 +101,17 @@ public class AnimeSuggestion {
 		//		System.out.println (studioAll[i]);
 		//}
 		
+		System.out.println(2*database[0].compareGen(database[898], database[897]));
+		System.out.println(2*database[0].compareGen(database[897], database[898]));
+		
 		// K-nearest neighbor test
 		//String nntest = "Dragon Ball Z Special 2 : Zetsubou e no Hankou ! ! Nokosareta Chousenshi";		// Nearest neighbor test anime name
 		Anime[] output = nearestNeighbor(database, input);
-		System.out.println(output[0].getName() + " - " + output[0].distance(input[0]));
-		System.out.println(output[1].getName() + " - " + output[1].distance(input[0]));
-		System.out.println(output[2].getName() + " - " + output[2].distance(input[0]));
+		//System.out.println(output[0].getName() + " - " + input[0].distance(output[0]));
+		//System.out.println(output[1].getName() + " - " + input[0].distance(output[1]));
+		//System.out.println(output[2].getName() + " - " + input[0].distance(output[2]));
+		
+		System.out.println(database[0].compareGen(database[1], database[0]));
 	}
 
 	// Creates list of all genres in database
@@ -201,13 +206,24 @@ public class AnimeSuggestion {
 			for(int j=0; j<DATA; j++){
 				if(database[j]!=null)
 				{
-					for (int k=0; k<top; k++)
-					{
-						if (temp[i].distance(database[j])<minDist[k]){
-							minDist[k] = temp[i].distance(database[j]);
-							suggestion[k] = database[j];
-							System.out.println(suggestion[k].getName() + " - " + minDist[k]);
-							break;
+					if (temp[i].distance(database[j])<minDist[2]){
+						if (temp[i].distance(database[j])<minDist[1]){
+							if (temp[i].distance(database[j])<minDist[0]){
+								minDist[0] = temp[i].distance(database[j]);
+								suggestion[0] = database[j];
+								//System.out.println(suggestion[0].getName() + " - " + minDist[0]);
+								//break;
+							}
+							else{
+								minDist[1] = temp[i].distance(database[j]);
+								suggestion[1] = database[j];
+								//break;
+							}
+						}
+						else{
+							minDist[2] = temp[i].distance(database[j]);
+							suggestion[2] = database[j];
+							//break;
 						}
 					}
 				}	

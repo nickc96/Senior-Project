@@ -151,9 +151,13 @@ public class Anime
 	   
 	   for(int i=0; i<b.getGenre().length; i++)
 	   {
-		   for(int j=0; temp[j]!=null; j++)
+		   for(int j=0; j<temp.length; j++)
 		   {
-			   if(temp[j].equals(b.getGenre()[i]))
+			   if (temp[j]==null){
+				   j++;
+			   }
+			   
+			   else if(temp[j].equals(b.getGenre()[i]))
 			   {
 				   intersection[icount] = temp[j];
 				   icount++;
@@ -208,7 +212,7 @@ public class Anime
 	   double dist;
 	   double total;
 	   total = Math.pow(2*compareGen(this, a),2) + Math.pow(compare(this.studio,a.getStudio()),2) 
-			   + Math.pow(this.yearFactor(a),2) + Math.pow(.5*(1-(this.rating-a.getRating()/10)),2) 
+			   + Math.pow(this.yearFactor(a),2) + Math.pow(.25*(1-Math.abs(((this.rating-a.getRating())/100))),2) 
 			   + Math.pow(.5*compare(this.type, a.getType()), 2);
 	   dist = Math.sqrt (total);
 	   return dist;
