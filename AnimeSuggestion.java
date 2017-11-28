@@ -203,11 +203,11 @@ public class AnimeSuggestion {
          //System.out.println(j+": "+suggestion[j].getName());
 				try {
             if (suggestion[j].getName().equals(input[i].getName())){
-					/*Anime a = suggestion[seen-i];
+					Anime a = suggestion[seen-i];
 					temp[i] = suggestion[j];
 					suggestion[seen-i] = null;
-					suggestion[j] = a;*/
-               suggestion[j] = null;
+					suggestion[j] = a;
+               //suggestion[j] = null;
 				} } catch (NullPointerException e) {}
 			}
 		}
@@ -403,7 +403,7 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       System.out.println("W-wait! I didn't mean it like that!");
       System.out.println("Y-you p-pervert!");
       
-      System.out.println("\nAnyway, trynot to forget that some special characters might not be compatible with the database.");
+      System.out.println("\nAnyway, try not to forget that some special characters might not be compatible with the database.");
       System.out.println("D-did you get all that, because I am NOT going to repeat it!");
    }
    
@@ -716,7 +716,8 @@ public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user 
       for (int i=0; i<num; i++)
          try
          {
-            System.out.println(output[i].getName());
+            for (int j=0; j<c; j++)
+               System.out.println(output[j].getName() + " - " + b[i].distance(output[j]));
          } catch (NullPointerException e) {}
    }
    return null;
