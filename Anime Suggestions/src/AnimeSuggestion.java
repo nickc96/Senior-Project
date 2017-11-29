@@ -724,7 +724,7 @@ public class AnimeSuggestion {
 	            	output = nearestNeighbor(a, b[i], c);
 	            	out1[3*i+j] = output[j].getName();
 	            	out2[3*i+j] = b[i].distance((output[j]));
-	            	System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
+	            	//System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
 	            }
 	         } catch (NullPointerException e) {}
 	      
