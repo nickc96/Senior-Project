@@ -296,517 +296,519 @@ public class AnimeSuggestion {
 	}
 
    
-   public static void shell(Anime[] a, int b)
-   {
-      Scanner scan = new Scanner(System.in);
-      String response = ""; //store user responses
-      int len = b;
-      boolean quit = false;
-      boolean tsundere = false; //easter egg
-      
-      Anime[] animeOptions = new Anime[b]; //creates array of options based on user's search
-      int numOptions = 0; //stores number of matches for user search
-      int count = 0;
-      
-      Anime[] seen = new Anime[10];//stores anime user has decided to use for searching
-      int numSeen = 0; //keeps track of number of anime user has decided to use for searching
-      
-      System.out.println("Hello!\nWelcome to Nick & John's Anime Suggestor!"); // USER INSTRUCTIONS
-      options(tsundere);
-      System.out.println("\nTo begin, type in one of the above commands.");
-            
-      while (true)
-      {
-         if (tsundere == false)
-            System.out.println("\nWhat would you like to do?");
-         else
-            System.out.println("\nSo you're still here, huh?\nWell I guess if you're still here, I have no choice.\nWhat do you want to do next?");
-         response = scan.nextLine(); //read input from user
-         response = response.toLowerCase();
-         
-         switch (response)
-         {
-            case "quit": 
-               quit = true;
-               break;
-            case "search": 
-               seen = search(a, len, tsundere);
-               break;
-            case "remove": 
-               seen = remove(seen, numSeen, tsundere);
-               break;
-            case "options":
-               options(tsundere);
-               break;
-            case "view":
-               view(seen, numSeen, tsundere);
-               break;
-            case "run":
-               run(a, seen, numSeen, tsundere);
-               break;
-            case "clear":
-               clear(seen, numSeen, tsundere);
-               numSeen = 0;
-               break;
-            case "tsundere":
-               tsundere = true;
-               break;
-            default: 
-               if (tsundere == false)
-                  System.out.println("Error: invalid input.");
-               else
-                  System.out.println("What are you trying to pull you idiot! That's not a valid input!\nUgh! Why do you have to be such an idiot all the time!"); 
-         }
-         
-         numSeen = 0;
-         for (int i=0; i<10; i++)
-            if (seen[i] != null)
-               numSeen++;
-                  
-         if (quit == true)
-         {
-            if (tsundere == false)
-               System.out.println("Goodbye!");
-            else
-               System.out.println("You're leaving already?\nDon't get the wrong idea!\nIt's n-not like I w-wanted you to stay or anything...\nBut you better come back!\nI mean, b-because otherwise...\nWho's going to use my amazing program?");
-            return;
-         }
-         
-         if (numSeen != 0)
-         {
-            System.out.println("\nYour list of anime so far is:\n"); // prints the user's anime selections thus far
-            for(int i=0; i<numSeen; i++)
-               System.out.println(seen[i].getName());               
-         }
-       }
-   }
-
-public static Anime[] search (Anime[] a, int b, boolean t)
-{
-   if (t == false)
-   {
-      System.out.println("You have decided to search for anime."); // user instructions
-      System.out.println("\nWhatever you type in next, this program will search our database for it.");
-      System.out.println("It could be a single word, a whole title, or even a few letters.");
-      System.out.println("Please keep in mind though, that some special characters might not be compatible with the database.");
-   }
-   else
-   {
-      System.out.println("Well you big dummy, it looks like you want to search for anime.");
-      System.out.println("I know you're kind of stupid, so I guess I'll help you out just this once.");
-      System.out.println("But don't get the wrong idea!");
-      System.out.println("It's not because I l-like you or anything!");
-      
-      System.out.println("\nWhatever you type in next, my amazing program will search huge database for it.");
-      System.out.println("It could be a single word, a whole title, or even a few letters.");
-      System.out.println("The size doesn't really matter.");
-      System.out.println("W-wait! I didn't mean it like that!");
-      System.out.println("Y-you p-pervert!");
-      
-      System.out.println("\nAnyway, try not to forget that some special characters might not be compatible with the database.");
-      System.out.println("D-did you get all that, because I am NOT going to repeat it!");
-   }
-   
-   String response = "";
-   int len = b;
-   Scanner scan = new Scanner(System.in);
-   Anime[] animeOptions = new Anime[len];
-   int numOptions = 0;
-   int count = 0;
-   Anime[] seen = new Anime[10];
-   int numSeen = 0;
-   
-   if (t == false)
-      System.out.println("\nYou can enter \"quit\" if you changed your mind.\nOtherwise, please enter the name of an anime to search:");
-   else
-      System.out.println("\nI know how indecisive you can be, so just type \"quit\" if you want to stop searching.\nOtherwise, just hurry up and enter the name of an anime to search:");
-   while(true)
-   {
-      response = scan.nextLine(); //read input from user
-      response = response.toLowerCase();
-      
-      if (response.equals("quit"))
-         return(seen);
-            
-         for (int i=0; i<len; i++)//search database for name of anime
-         {
-            if (a[i].getName().toLowerCase().contains(response))
-            {
-               animeOptions[numOptions] = a[i];
-               numOptions++;
-            }
-         }
-         
-         if (animeOptions[0] == null)
-            if (t == false)
-               System.out.println("Sorry, no results were found matching your search. Please try again.");
-            else
-               System.out.println("What are you? Stupid? We don't have that anime! Try searching for something we actually HAVE!\nIdiot!");
-         else
-         {
-            if (t == false)
-               System.out.println("\nYour options are:\n");//print results of search
-            else
-               System.out.println("\nHere's what my amazing code came up with.\nFeel free to praise me!\n");
-            for (int i=0; i<numOptions; i++)
-            {
-               System.out.println(count + ": " + animeOptions[i].getName());
-               count++;
-            }
-         
-            while(true) // allows users to add search results to the list of seen anime
-            {
-               if (t == false)
-               {
-                  System.out.println("\nPlease enter the number next to an anime to add it to your list.");
-                  System.out.println("Enter \"done\" at any time to start another search");
-               }
-               else
-               {
-                  System.out.println("\nWasn't that incredible?\nDon't worry, it's only natural to want to praise me.\nJust don't forget to make good use of my code by typing one of those numbers next an anime.\nThat'll add it to your list, in case you were too stupid to tell.");
-                  System.out.println("Of course, if you ARE satisfied, you can just type \"done\" at any time to start another search.");
-               }
-               response = scan.nextLine();
-               if(response.toLowerCase().equals("quit")) // if user types "quit", exits shell
-                  return null;
-               if(response.toLowerCase().equals("done")) // if user types "done", breaks loop and allows them to search again
-                  break;
-               try 
-               {
-                  if (Integer.parseInt(response) < count && numSeen < 10 && Integer.parseInt(response) > -1) // checks to make sure a valid number has been entered
-                  {
-                     if (numSeen > 0) // checks if seen[] is empty
-                     {  
-                        int oldNumSeen = numSeen;
-                        boolean duplicate = false;
-                        for (int i=0; i<oldNumSeen; i++) // compares user selction with everything in the seen[] array to prevent duplicates
-                           if (seen[i].getName().equals(animeOptions[Integer.parseInt(response)].getName()))
-                              duplicate = true;
-                           
-                        if (duplicate == true)
-                           if (t == false)
-                              System.out.println("Error: You have already selected that anime.");
-                           else
-                              System.out.println("Are you an idiot?\nYou already added that anime to your list! BAKA!");
-                        else
-                        {
-                           seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
-                           numSeen++;
-                        }   
-                        
-                     }
-                     else
-                     {
-                        seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
-                        numSeen++;
-                     }
-                  }
-                  else
-                     if (t == false)
-                        System.out.println("Error: Invalid entry. Please enter a number next to an anime that has been printed.");
-                     else
-                        System.out.println("ANTA BAKA? Enter one of the numbers that appears on the screen!\nJeez, you really are an idiot!");
-               } catch (NumberFormatException e)
-                  {
-                     if (t ==false)
-                        System.out.println("Error: Invalid entry. Please enter a number next to an anime that has been printed."); 
-                     else
-                        System.out.println("Jeez! Just how much of an IDIOT are you?\nThat's not even a number!");
-                  }
-            }
-         
-            if (t == false)
-               System.out.println("\nYour list of anime so far is:\n"); // prints the user's anime selections thus far
-            else
-               System.out.println("\nHere's your list so far, and it's all thanks to my AMAZING programming skills:");
-            for(int i=0; i<numSeen; i++)
-               System.out.println(seen[i].getName());
-            if (t == true)
-               System.out.println("Feel free to shower me with praise!");
-                 
-            if (t == false)
-            {
-               System.out.println("\nPlease enter another anime name to search again.");
-               System.out.println("Or enter \"quit\" to stop searching.");
-            }
-            else
-            {
-               System.out.println("\nIsn't my program simply AMAZING!");
-               System.out.println("I hope you realize now just how superior I am compared to an idiot like you!");
-               System.out.println("\nI realize you probably can't get enough of my genius, so feel free to search for more anime.");
-               System.out.println("Of course, if your tiny brain is on overload, you can always type \"quit\". Of course, that would just make you a coward.");
-            }   
-            for(int i=0; i<numOptions; i++) // resets items necessary for another search
-               animeOptions[i] = null;
-            numOptions = 0;
-            count = 0;
-         }
-            
-            
-  
-   }
-}
-
-public static Anime[] remove (Anime [] a, int b, boolean t) // removes anime from the user's list
-{
-   if (t == false)
-   {
-      System.out.println("You have decided to remove anime from your list."); // user instructions
-      System.out.println("\nPlease follow the instructions below to remove items properly.");
-   }
-   else
-   {
-      System.out.println("See! I knew you'd mess something up you IDIOT!");
-      System.out.println("\nGuess I'll have to tell you how to remove anime properly.");
-      System.out.println("You better listen up though!\nI can't have you messing up my masterful code!");
-   }
-   
-   Anime[] seen = a;
-   int numSeen = b;
-   Scanner scan = new Scanner(System.in);
-   String response = "";
-   
-   if (numSeen > 0)
-   {
-      while(true)
-      {
-         if (t == false)
-            System.out.println("\nHere is your list so far:\n");//print current list
-         else
-            System.out.println("\nHere's the list you managed to mess up:\n");
-         for(int i=0; i<numSeen; i++)
-            System.out.println(i + ": " + seen[i].getName());
-            
-         if (t == false)
-         {
-            System.out.println("\nPlease enter the number of the anime you would like to remove.");
-            System.out.println("Or enter \"done\" to stop removing anime");
-         }
-         else
-         {
-            System.out.println("\nNow I'll keep this really simple so your tiny brain can handle it.");
-            System.out.println("All you have to do is enter the number next to the anime you want to remove.");
-            System.out.println("Or, if you managed to fix this mess that YOU caused, enter \"done\".");
-            System.out.println("Got it?");
-            System.out.println("Now try not to mess this up!");
-         }
-               
-         response = scan.nextLine(); //read input from user
-         response = response.toLowerCase();
-         if (response.equals("done"))
-            break;
-                          
-         try
-         {
-            if (Integer.parseInt(response) > -1 && Integer.parseInt(response) < numSeen)
-            {
-               int deleted = Integer.parseInt(response);
-               seen[deleted] = null; // delete selected anime
-                        
-               if (deleted == (numSeen - 1))// if deleted anime is last in array
-                  numSeen--;
-               else if (deleted == 0) // if deleted anime is first in array
-               {
-                  for (int i=0; i<numSeen; i++)
-                  seen[i] = seen[i+1];
-                  numSeen--;
-               }
-               else //if deleted anime is in middle of list
-               {
-                  for (int i=deleted; i<numSeen; i++)
-                  seen[i] = seen[i+1];
-                  numSeen--;
-               }
-            }
-            else
-            {
-               if (t == false)
-                  System.out.println("Error: Please enter a number next to one of the anime.");
-               else
-                  System.out.println("Jeez! The numbers are on the freaking screen!\nCan't you read?");
-            }
-         } catch (NumberFormatException e)
-            {
-               if (t == false)
-                  System.out.println("Error: Invalid entry. Please enter a number.");
-               else
-                  System.out.println("Are you kidding!\nI said to enter a NUMBER!\nA NUMBER!\nJUST HOW STUPID CAN YOU BE!");
-            }
-      }
-   }
-   else // if user tries to reomove from an empty array
-      if (t == false)
-         System.out.println("Error: your list is already empty.");
-      else
-         System.out.println("What are you? Stupid?\nYour list is EMPTY!\nYou can't remove something from an empty list!\nBAKA!");
-   return seen;
-}
-
-public static void options(boolean t)
-{
-   if (t == false)
-   {
-      System.out.println("Here are your options:\n");
-      System.out.println("\"quit\": Exits the program");
-      System.out.println("\"search\": Lets you search for anime to add to your list");
-      System.out.println("\"remove\": Lets you remove anime from your list");
-      System.out.println("\"options\": Displays the controls");
-      System.out.println("\"view\": Displays the current list of anime");
-      System.out.println("\"run\": Runs the program to give suggestions based on the current anime in the list");
-      System.out.println("\"clear\": Clears the user's anime list");
-      System.out.println("\nHope this helped!");
-   }
-   else
-   {
-      System.out.println("Jeez!\nI knew you'd need my help!");
-      System.out.println("You better listen up, because I'm only going to say this once!\nHere are the controls:\n");
-      System.out.println("\"quit\": Exits the program");
-      System.out.println("\"search\": Lets you search for anime to add to your list");
-      System.out.println("\"remove\": Lets you remove anime from your list");
-      System.out.println("\"options\": Displays the controls");
-      System.out.println("\"view\": Displays the current list of anime");
-      System.out.println("\"run\": Runs the program to give suggestions based on the current anime in the list");
-      System.out.println("\"clear\": Clears the user's anime list");
-      System.out.println("\nThey're pretty self-explanatory, but maybe you'd better write them down or something.");
-      System.out.println("Anyway, don't ask me again.\nI mean, it's not like I HATED helping you or anything...\nB-but don't get the wrong idea!\nI mean...\nIt's not like I l-liked helping you either.\nDummy.");
-   }
-   return;
-}
-
-public static void view(Anime[] a, int b, boolean t)
-{
-   if (b == 0)
-      if (t == false)
-         System.out.println("Your list is currently empty.");
-      else
-         System.out.println("Are you a complete idiot?\nYour list is EMPTY!\nIDIOT!");
-   else
-      for (int i=0; i<b; i++)
-         System.out.println(a[i].getName());
-   return;
-}
-
-public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user list of seen anime and suggests new anime
-{
-   if (c == 0) // checks if user list is empty
-   {
-      if (t == false)
-         System.out.println("Error: Your list is empty. Please add items to your list before attempting to run the suggestion algorithm.");
-      else
-         System.out.println("What are you, stupid or something? I can't suggest any new anime if don't tell me what you like!\nGo back and add some anime to your list first!\nD-dummy!");
-      return null;
-   }
-   else // if list is not empty, runs code
-   {
-      if (t == false)
-         System.out.println("We will now search our database for other anime you might like. Please wait a moment.");
-      else
-         System.out.println("Get ready to see how amazing my program is!\nIn no time at all, I'll have a bunch of new anime for you to try!");
-      
-      int num = 3*c; // number of outputs
-      //System.out.println(num);
-      Anime[] output = new Anime[num];
-      String[] out1 = new String[num];
-      double[] out2 = new double[num];
-      
-      if (t == false)
-         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
-      else
-         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
-      
-      for (int i=0; i<c; i++)
-         try
-         {
-            for (int j=0; j<3; j++){
-            	output = nearestNeighbor(a, b[i], c);
-            	out1[3*i+j] = output[j].getName();
-            	out2[3*i+j] = b[i].distance((output[j]));
-            	System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
-            }
-         } catch (NullPointerException e) {}
-      
-      // Remove duplicates
-      for (int i=0; i<num; i++)
+	public static void shell(Anime[] a, int b)
 	   {
-		   for (int j=i+1; j<num; j++)
+	      Scanner scan = new Scanner(System.in);
+	      String response = ""; //store user responses
+	      int len = b;
+	      boolean quit = false;
+	      boolean tsundere = false; //easter egg
+	      
+	      Anime[] animeOptions = new Anime[b]; //creates array of options based on user's search
+	      int numOptions = 0; //stores number of matches for user search
+	      int count = 0;
+	      
+	      Anime[] seen = new Anime[10];//stores anime user has decided to use for searching
+	      int numSeen = 0; //keeps track of number of anime user has decided to use for searching
+	      
+	      System.out.println("Hello!\nWelcome to Nick & John's Anime Suggestor!"); // USER INSTRUCTIONS
+	      options(tsundere);
+	      System.out.println("\nTo begin, type in one of the above commands.");
+	            
+	      while (true)
+	      {
+	         if (tsundere == false)
+	            System.out.println("\nWhat would you like to do?");
+	         else
+	            System.out.println("\nSo you're still here, huh?\nWell I guess if you're still here, I have no choice.\nWhat do you want to do next?");
+	         response = scan.nextLine(); //read input from user
+	         response = response.toLowerCase();
+	         
+	         switch (response)
+	         {
+	            case "quit": 
+	               quit = true;
+	               break;
+	            case "search": 
+	               seen = search(a, seen, len, numSeen, tsundere);
+	               break;
+	            case "remove": 
+	               seen = remove(seen, numSeen, tsundere);
+	               break;
+	            case "options":
+	               options(tsundere);
+	               break;
+	            case "view":
+	               view(seen, numSeen, tsundere);
+	               break;
+	            case "run":
+	               run(a, seen, numSeen, tsundere);
+	               break;
+	            case "clear":
+	               clear(seen, numSeen, tsundere);
+	               numSeen = 0;
+	               break;
+	            case "tsundere":
+	               tsundere = true;
+	               break;
+	            default: 
+	               if (tsundere == false)
+	                  System.out.println("Error: invalid input.");
+	               else
+	                  System.out.println("What are you trying to pull you idiot! That's not a valid input!\nUgh! Why do you have to be such an idiot all the time!"); 
+	         }
+	         
+	         numSeen = 0;
+	         for (int i=0; i<10; i++)
+	            if (seen[i] != null)
+	               numSeen++;
+	                  
+	         if (quit == true)
+	         {
+	            if (tsundere == false)
+	               System.out.println("Goodbye!");
+	            else
+	               System.out.println("You're leaving already?\nDon't get the wrong idea!\nIt's n-not like I w-wanted you to stay or anything...\nBut you better come back!\nI mean, b-because otherwise...\nWho's going to use my amazing program?");
+	            return;
+	         }
+	         
+	         if (numSeen != 0)
+	         {
+	            System.out.println("\nYour list of anime so far is:\n"); // prints the user's anime selections thus far
+	            for(int i=0; i<numSeen; i++)
+	               System.out.println(seen[i].getName());               
+	         }
+	       }
+	   }
+
+	public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean t)
+	{
+	   if (t == false)
+	   {
+	      System.out.println("You have decided to search for anime."); // user instructions
+	      System.out.println("\nWhatever you type in next, this program will search our database for it.");
+	      System.out.println("It could be a single word, a whole title, or even a few letters.");
+	      System.out.println("Please keep in mind though, that some special characters might not be compatible with the database.");
+	   }
+	   else
+	   {
+	      System.out.println("Well you big dummy, it looks like you want to search for anime.");
+	      System.out.println("I know you're kind of stupid, so I guess I'll help you out just this once.");
+	      System.out.println("But don't get the wrong idea!");
+	      System.out.println("It's not because I l-like you or anything!");
+	      
+	      System.out.println("\nWhatever you type in next, my amazing program will search huge database for it.");
+	      System.out.println("It could be a single word, a whole title, or even a few letters.");
+	      System.out.println("The size doesn't really matter.");
+	      System.out.println("W-wait! I didn't mean it like that!");
+	      System.out.println("Y-you p-pervert!");
+	      
+	      System.out.println("\nAnyway, try not to forget that some special characters might not be compatible with the database.");
+	      System.out.println("D-did you get all that, because I am NOT going to repeat it!");
+	   }
+	   
+	   String response = "";
+	   int len = b;
+	   Scanner scan = new Scanner(System.in);
+	   Anime[] animeOptions = new Anime[len];
+	   int numOptions = 0;
+	   int count = 0;
+	   Anime[] seen = options;
+	   int numSeen = c;
+	   
+	   if (t == false)
+	      System.out.println("\nYou can enter \"quit\" if you changed your mind.\nOtherwise, please enter the name of an anime to search:");
+	   else
+	      System.out.println("\nI know how indecisive you can be, so just type \"quit\" if you want to stop searching.\nOtherwise, just hurry up and enter the name of an anime to search:");
+	   while(true)
+	   {
+	      response = scan.nextLine(); //read input from user
+	      response = response.toLowerCase();
+	      
+	      if (response.equals("quit"))
+	         return(seen);
+	            
+	         //System.out.println(len);
+	         for (int i=0; i<len; i++)//search database for name of anime
+	         {
+	            if (a[i].getName().toLowerCase().contains(response))
+	            {
+	               animeOptions[numOptions] = a[i];
+	               numOptions++;
+	               //System.out.println(animeOptions[numOptions-1].getName());
+	            }
+	            //System.out.println(i);
+	         }
+	         
+	         if (animeOptions[0] == null)
+	            if (t == false)
+	               System.out.println("Sorry, no results were found matching your search. Please try again.");
+	            else
+	               System.out.println("What are you? Stupid? We don't have that anime! Try searching for something we actually HAVE!\nIdiot!");
+	         else
+	         {
+	            if (t == false)
+	               System.out.println("\nYour options are:\n");//print results of search
+	            else
+	               System.out.println("\nHere's what my amazing code came up with.\nFeel free to praise me!\n");
+	            for (int i=0; i<numOptions; i++)
+	            {
+	               System.out.println(count + ": " + animeOptions[i].getName());
+	               count++;
+	            }
+	         
+	            while(true) // allows users to add search results to the list of seen anime
+	            {
+	               if (t == false)
+	               {
+	                  System.out.println("\nPlease enter the number next to an anime to add it to your list.");
+	                  System.out.println("Enter \"done\" at any time to start another search");
+	               }
+	               else
+	               {
+	                  System.out.println("\nWasn't that incredible?\nDon't worry, it's only natural to want to praise me.\nJust don't forget to make good use of my code by typing one of those numbers next an anime.\nThat'll add it to your list, in case you were too stupid to tell.");
+	                  System.out.println("Of course, if you ARE satisfied, you can just type \"done\" at any time to start another search.");
+	               }
+	               response = scan.nextLine();
+	               if(response.toLowerCase().equals("quit")) // if user types "quit", exits shell
+	                  return null;
+	               if(response.toLowerCase().equals("done")) // if user types "done", breaks loop and allows them to search again
+	                  break;
+	               try 
+	               {
+	                  if (Integer.parseInt(response) < count && numSeen < 10 && Integer.parseInt(response) > -1) // checks to make sure a valid number has been entered
+	                  {
+	                     if (numSeen > 0) // checks if seen[] is empty
+	                     {  
+	                        int oldNumSeen = numSeen;
+	                        boolean duplicate = false;
+	                        for (int i=0; i<oldNumSeen; i++) // compares user selction with everything in the seen[] array to prevent duplicates
+	                           if (seen[i].getName().equals(animeOptions[Integer.parseInt(response)].getName()))
+	                              duplicate = true;
+	                           
+	                        if (duplicate == true)
+	                           if (t == false)
+	                              System.out.println("Error: You have already selected that anime.");
+	                           else
+	                              System.out.println("Are you an idiot?\nYou already added that anime to your list! BAKA!");
+	                        else
+	                        {
+	                           seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
+	                           numSeen++;
+	                        }   
+	                        
+	                     }
+	                     else
+	                     {
+	                        seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
+	                        numSeen++;
+	                     }
+	                  }
+	                  else
+	                     if (t == false)
+	                        System.out.println("Error: Invalid entry. Please enter a number next to an anime that has been printed.");
+	                     else
+	                        System.out.println("ANTA BAKA? Enter one of the numbers that appears on the screen!\nJeez, you really are an idiot!");
+	               } catch (NumberFormatException e)
+	                  {
+	                     if (t ==false)
+	                        System.out.println("Error: Invalid entry. Please enter a number next to an anime that has been printed."); 
+	                     else
+	                        System.out.println("Jeez! Just how much of an IDIOT are you?\nThat's not even a number!");
+	                  }
+	            }
+	         
+	            if (t == false)
+	               System.out.println("\nYour list of anime so far is:\n"); // prints the user's anime selections thus far
+	            else
+	               System.out.println("\nHere's your list so far, and it's all thanks to my AMAZING programming skills:");
+	            for(int i=0; i<numSeen; i++)
+	               System.out.println(seen[i].getName());
+	            if (t == true)
+	               System.out.println("Feel free to shower me with praise!");
+	                 
+	            if (t == false)
+	            {
+	               System.out.println("\nPlease enter another anime name to search again.");
+	               System.out.println("Or enter \"quit\" to stop searching.");
+	            }
+	            else
+	            {
+	               System.out.println("\nIsn't my program simply AMAZING!");
+	               System.out.println("I hope you realize now just how superior I am compared to an idiot like you!");
+	               System.out.println("\nI realize you probably can't get enough of my genius, so feel free to search for more anime.");
+	               System.out.println("Of course, if your tiny brain is on overload, you can always type \"quit\". Of course, that would just make you a coward.");
+	            }   
+	            for(int i=0; i<numOptions; i++) // resets items necessary for another search
+	               animeOptions[i] = null;
+	            numOptions = 0;
+	            count = 0;
+	         }
+	            
+	            
+	  
+	   }
+	}
+
+	public static Anime[] remove (Anime [] a, int b, boolean t) // removes anime from the user's list
+	{
+	   if (t == false)
+	   {
+	      System.out.println("You have decided to remove anime from your list."); // user instructions
+	      System.out.println("\nPlease follow the instructions below to remove items properly.");
+	   }
+	   else
+	   {
+	      System.out.println("See! I knew you'd mess something up you IDIOT!");
+	      System.out.println("\nGuess I'll have to tell you how to remove anime properly.");
+	      System.out.println("You better listen up though!\nI can't have you messing up my masterful code!");
+	   }
+	   
+	   Anime[] seen = a;
+	   int numSeen = b;
+	   Scanner scan = new Scanner(System.in);
+	   String response = "";
+	   
+	   if (numSeen > 0)
+	   {
+	      while(true)
+	      {
+	         if (t == false)
+	            System.out.println("\nHere is your list so far:\n");//print current list
+	         else
+	            System.out.println("\nHere's the list you managed to mess up:\n");
+	         for(int i=0; i<numSeen; i++)
+	            System.out.println(i + ": " + seen[i].getName());
+	            
+	         if (t == false)
+	         {
+	            System.out.println("\nPlease enter the number of the anime you would like to remove.");
+	            System.out.println("Or enter \"done\" to stop removing anime");
+	         }
+	         else
+	         {
+	            System.out.println("\nNow I'll keep this really simple so your tiny brain can handle it.");
+	            System.out.println("All you have to do is enter the number next to the anime you want to remove.");
+	            System.out.println("Or, if you managed to fix this mess that YOU caused, enter \"done\".");
+	            System.out.println("Got it?");
+	            System.out.println("Now try not to mess this up!");
+	         }
+	               
+	         response = scan.nextLine(); //read input from user
+	         response = response.toLowerCase();
+	         if (response.equals("done"))
+	            break;
+	                          
+	         try
+	         {
+	            if (Integer.parseInt(response) > -1 && Integer.parseInt(response) < numSeen)
+	            {
+	               int deleted = Integer.parseInt(response);
+	               seen[deleted] = null; // delete selected anime
+	                        
+	               if (deleted == (numSeen - 1))// if deleted anime is last in array
+	                  numSeen--;
+	               else if (deleted == 0) // if deleted anime is first in array
+	               {
+	                  for (int i=0; i<numSeen; i++)
+	                  seen[i] = seen[i+1];
+	                  numSeen--;
+	               }
+	               else //if deleted anime is in middle of list
+	               {
+	                  for (int i=deleted; i<numSeen; i++)
+	                  seen[i] = seen[i+1];
+	                  numSeen--;
+	               }
+	            }
+	            else
+	            {
+	               if (t == false)
+	                  System.out.println("Error: Please enter a number next to one of the anime.");
+	               else
+	                  System.out.println("Jeez! The numbers are on the freaking screen!\nCan't you read?");
+	            }
+	         } catch (NumberFormatException e)
+	            {
+	               if (t == false)
+	                  System.out.println("Error: Invalid entry. Please enter a number.");
+	               else
+	                  System.out.println("Are you kidding!\nI said to enter a NUMBER!\nA NUMBER!\nJUST HOW STUPID CAN YOU BE!");
+	            }
+	      }
+	   }
+	   else // if user tries to reomove from an empty array
+	      if (t == false)
+	         System.out.println("Error: your list is already empty.");
+	      else
+	         System.out.println("What are you? Stupid?\nYour list is EMPTY!\nYou can't remove something from an empty list!\nBAKA!");
+	   return seen;
+	}
+
+	public static void options(boolean t)
+	{
+	   if (t == false)
+	   {
+	      System.out.println("Here are your options:\n");
+	      System.out.println("\"quit\": Exits the program");
+	      System.out.println("\"search\": Lets you search for anime to add to your list");
+	      System.out.println("\"remove\": Lets you remove anime from your list");
+	      System.out.println("\"options\": Displays the controls");
+	      System.out.println("\"view\": Displays the current list of anime");
+	      System.out.println("\"run\": Runs the program to give suggestions based on the current anime in the list");
+	      System.out.println("\"clear\": Clears the user's anime list");
+	      System.out.println("\nHope this helped!");
+	   }
+	   else
+	   {
+	      System.out.println("Jeez!\nI knew you'd need my help!");
+	      System.out.println("You better listen up, because I'm only going to say this once!\nHere are the controls:\n");
+	      System.out.println("\"quit\": Exits the program");
+	      System.out.println("\"search\": Lets you search for anime to add to your list");
+	      System.out.println("\"remove\": Lets you remove anime from your list");
+	      System.out.println("\"options\": Displays the controls");
+	      System.out.println("\"view\": Displays the current list of anime");
+	      System.out.println("\"run\": Runs the program to give suggestions based on the current anime in the list");
+	      System.out.println("\"clear\": Clears the user's anime list");
+	      System.out.println("\nThey're pretty self-explanatory, but maybe you'd better write them down or something.");
+	      System.out.println("Anyway, don't ask me again.\nI mean, it's not like I HATED helping you or anything...\nB-but don't get the wrong idea!\nI mean...\nIt's not like I l-liked helping you either.\nDummy.");
+	   }
+	   return;
+	}
+
+	public static void view(Anime[] a, int b, boolean t)
+	{
+	   if (b == 0)
+	      if (t == false)
+	         System.out.println("Your list is currently empty.");
+	      else
+	         System.out.println("Are you a complete idiot?\nYour list is EMPTY!\nIDIOT!");
+	   else
+	      for (int i=0; i<b; i++)
+	         System.out.println(a[i].getName());
+	   return;
+	}
+
+	public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user list of seen anime and suggests new anime
+	{
+	   if (c == 0) // checks if user list is empty
+	   {
+	      if (t == false)
+	         System.out.println("Error: Your list is empty. Please add items to your list before attempting to run the suggestion algorithm.");
+	      else
+	         System.out.println("What are you, stupid or something? I can't suggest any new anime if don't tell me what you like!\nGo back and add some anime to your list first!\nD-dummy!");
+	      return null;
+	   }
+	   else // if list is not empty, runs code
+	   {
+	      if (t == false)
+	         System.out.println("We will now search our database for other anime you might like. Please wait a moment.");
+	      else
+	         System.out.println("Get ready to see how amazing my program is!\nIn no time at all, I'll have a bunch of new anime for you to try!");
+	      
+	      int num = 3*c; // number of outputs
+	      //System.out.println(num);
+	      Anime[] output = new Anime[num];
+	      String[] out1 = new String[num];
+	      double[] out2 = new double[num];
+	      
+	      if (t == false)
+	         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
+	      else
+	         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
+	      
+	      for (int i=0; i<c; i++)
+	         try
+	         {
+	            for (int j=0; j<3; j++){
+	            	output = nearestNeighbor(a, b[i], c);
+	            	out1[3*i+j] = output[j].getName();
+	            	out2[3*i+j] = b[i].distance((output[j]));
+	            	System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
+	            }
+	         } catch (NullPointerException e) {}
+	      
+	      // Remove duplicates
+	      for (int i=0; i<num; i++)
 		   {
-			   if (out1[i]!=null && out1[j]!=null)
-				   if (out1[i].equals(out1[j])){
-					   if (out2[i]<out2[j]){
-						   out1[i] = null;
-						   out2[i] = 0;
+			   for (int j=i+1; j<num; j++)
+			   {
+				   if (out1[i]!=null && out1[j]!=null)
+					   if (out1[i].equals(out1[j])){
+						   if (out2[i]<out2[j]){
+							   out1[i] = null;
+							   out2[i] = 0;
+							   }
+						   else{
+							   out1[j] = null;
+							   out2[j] = 0;
 						   }
-					   else{
-						   out1[j] = null;
-						   out2[j] = 0;
 					   }
 				   }
-			   }
+		   }
+	      
+	      // Sort
+	      for(int j=num-1; j>=0; j--){
+				for (int k=1; k<j+1; k++){
+					//if(out1[k]!=null)
+					//{
+						if (out2[k-1] < out2[k]){
+							double m = out2[k-1];
+							String z = out1[k-1];
+							out2[k-1] = out2[k];
+							out1[k-1] = out1[k];
+							out2[k] = m;
+							out1[k] = z;
+						}
+					//}
+				}
+	      }
+	      
+	      // Remove suggestions that are already on list
+	      int count = 0;
+	      for (int i=0; i<c; i++){
+	    	  for (int j=0; j<num; j++){
+	    		  if (b[i].getName().equals(out1[j])){
+	    			  out1[j]=null;
+	    			  count++;
+	    		  }
+	    	  }
+	      }
+	      
+	      // Print results
+	      System.out.println("\n-------------\n");
+	      for (int i=0; i<num; i++){
+	    	  if (out1[i]!=null)
+	    		  System.out.println((i+1) + ".  " + out1[i] + " - " + out2[i]);
+	      }
+	      System.out.println("Number suggested that is already on list: " + count);
+	      
 	   }
-      
-      // Sort
-      for(int j=num-1; j>=0; j--){
-			for (int k=1; k<j+1; k++){
-				//if(out1[k]!=null)
-				//{
-					if (out2[k-1] < out2[k]){
-						double m = out2[k-1];
-						String z = out1[k-1];
-						out2[k-1] = out2[k];
-						out1[k-1] = out1[k];
-						out2[k] = m;
-						out1[k] = z;
-					}
-				//}
-			}
-      }
-      
-      // Remove suggestions that are already on list
-      int count = 0;
-      for (int i=0; i<c; i++){
-    	  for (int j=0; j<num; j++){
-    		  if (b[i].getName().equals(out1[j])){
-    			  out1[j]=null;
-    			  count++;
-    		  }
-    	  }
-      }
-      
-      // Print results
-      System.out.println("\n-------------\n");
-      for (int i=0; i<num; i++){
-    	  if (out1[i]!=null)
-    		  System.out.println(out1[i] + " - " + out2[i]);
-      }
-      System.out.println(count);
-      
-   }
-   return null;
-}
+	   return null;
+	}
 
-public static void clear (Anime[] a, int b, boolean t) // clears the entire list of anime
-{
-   if (b == 0) // prints error message if list is empty
-      if (t == false)
-         System.out.println("Error: List is already empty.");
-      else
-         System.out.println("Anta Baka? The list is already empty you moron!");
-   else
-   {
-      if (t == false)
-         System.out.println("\nYour anime list will now be cleared.");
-      else
-         System.out.println("\nJeez! I just knew you'd mess this up!\nGuess I have no choice. I'll delete your anime list for you.");
-      
-      for (int i=0; i<b; i++) // deletes all user entries
-         a[i] = null;
-         
-      if (t == false)
-         System.out.println("\nYour anime list has been successfully cleared.");
-      else
-         System.out.println("\nThere! Your list is all clear again!\nJust try not to mess it up again.");
-   }
-}
 
+	public static void clear (Anime[] a, int b, boolean t) // clears the entire list of anime
+	{
+	   if (b == 0) // prints error message if list is empty
+	      if (t == false)
+	         System.out.println("Error: List is already empty.");
+	      else
+	         System.out.println("Anta Baka? The list is already empty you moron!");
+	   else
+	   {
+	      if (t == false)
+	         System.out.println("\nYour anime list will now be cleared.");
+	      else
+	         System.out.println("\nJeez! I just knew you'd mess this up!\nGuess I have no choice. I'll delete your anime list for you.");
+	      
+	      for (int i=0; i<b; i++) // deletes all user entries
+	         a[i] = null;
+	         
+	      if (t == false)
+	         System.out.println("\nYour anime list has been successfully cleared.");
+	      else
+	         System.out.println("\nThere! Your list is all clear again!\nJust try not to mess it up again.");
+	   }
+	}
 }
-
