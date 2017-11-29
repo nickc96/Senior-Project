@@ -32,7 +32,7 @@ public static void shell(Anime[] a, int b)
                quit = true;
                break;
             case "search": 
-               seen = search(a, len, tsundere);
+               seen = search(a, seen, len, numSeen, tsundere);
                break;
             case "remove": 
                seen = remove(seen, numSeen, tsundere);
@@ -83,7 +83,7 @@ public static void shell(Anime[] a, int b)
        }
    }
 
-public static Anime[] search (Anime[] a, int b, boolean t)
+public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean t)
 {
    if (t == false)
    {
@@ -105,7 +105,7 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       System.out.println("W-wait! I didn't mean it like that!");
       System.out.println("Y-you p-pervert!");
       
-      System.out.println("\nAnyway, trynot to forget that some special characters might not be compatible with the database.");
+      System.out.println("\nAnyway, try not to forget that some special characters might not be compatible with the database.");
       System.out.println("D-did you get all that, because I am NOT going to repeat it!");
    }
    
@@ -115,8 +115,8 @@ public static Anime[] search (Anime[] a, int b, boolean t)
    Anime[] animeOptions = new Anime[len];
    int numOptions = 0;
    int count = 0;
-   Anime[] seen = new Anime[10];
-   int numSeen = 0;
+   Anime[] seen = options;
+   int numSeen = c;
    
    if (t == false)
       System.out.println("\nYou can enter \"quit\" if you changed your mind.\nOtherwise, please enter the name of an anime to search:");
@@ -130,13 +130,16 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       if (response.equals("quit"))
          return(seen);
             
+         //System.out.println(len);
          for (int i=0; i<len; i++)//search database for name of anime
          {
             if (a[i].getName().toLowerCase().contains(response))
             {
                animeOptions[numOptions] = a[i];
                numOptions++;
+               //System.out.println(animeOptions[numOptions-1].getName());
             }
+            //System.out.println(i);
          }
          
          if (animeOptions[0] == null)
@@ -406,20 +409,86 @@ public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user 
          System.out.println("Get ready to see how amazing my program is!\nIn no time at all, I'll have a bunch of new anime for you to try!");
       
       int num = 3*c; // number of outputs
-      System.out.println(num);
+      //System.out.println(num);
       Anime[] output = new Anime[num];
-      output = nearestNeighbor(a, b);
+      String[] out1 = new String[num];
+      double[] out2 = new double[num];
       
       if (t == false)
          System.out.println("\nHere are the suggestions the algorithm came up with:\n");
       else
          System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
       
+      for (int i=0; i<c; i++)
+         try
+         {
+            for (int j=0; j<3; j++){
+            	output = nearestNeighbor(a, b[i], c);
+            	out1[3*i+j] = output[j].getName();
+            	out2[3*i+j] = b[i].distance((output[j]));
+            	System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
+            }
+         } catch (NullPointerException e) {}
+      
+      // Remove duplicates
       for (int i=0; i<num; i++)
-         System.out.println(output[i].getName());
+	   {
+		   for (int j=i+1; j<num; j++)
+		   {
+			   if (out1[i]!=null && out1[j]!=null)
+				   if (out1[i].equals(out1[j])){
+					   if (out2[i]<out2[j]){
+						   out1[i] = null;
+						   out2[i] = 0;
+						   }
+					   else{
+						   out1[j] = null;
+						   out2[j] = 0;
+					   }
+				   }
+			   }
+	   }
+      
+      // Sort
+      for(int j=num-1; j>=0; j--){
+			for (int k=1; k<j+1; k++){
+				//if(out1[k]!=null)
+				//{
+					if (out2[k-1] < out2[k]){
+						double m = out2[k-1];
+						String z = out1[k-1];
+						out2[k-1] = out2[k];
+						out1[k-1] = out1[k];
+						out2[k] = m;
+						out1[k] = z;
+					}
+				//}
+			}
+      }
+      
+      // Remove suggestions that are already on list
+      int count = 0;
+      for (int i=0; i<c; i++){
+    	  for (int j=0; j<num; j++){
+    		  if (b[i].getName().equals(out1[j])){
+    			  out1[j]=null;
+    			  count++;
+    		  }
+    	  }
+      }
+      
+      // Print results
+      System.out.println("\n-------------\n");
+      for (int i=0; i<num; i++){
+    	  if (out1[i]!=null)
+    		  System.out.println(out1[i] + " - " + out2[i]);
+      }
+      System.out.println(count);
+      
    }
    return null;
 }
+
 
 public static void clear (Anime[] a, int b, boolean t) // clears the entire list of anime
 {
