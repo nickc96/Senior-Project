@@ -9,8 +9,9 @@ public class AnimeSuggestion {
 
 	//Text document name
 	public static final String animedatabase = "AnimeText.txt";
+   public static final int MAXNUMSEEN = 50;
 	//public static final String animeinput = ".\\src\\AnimeInput";
-	public static final int DATA = 905; //The number of anime in the database
+	public static final int DATA = 9575; //The number of anime in the database
 	public static final int DATAI = 1; //The number of anime in the input list
 	
 	public static void main(String[] args) throws FileNotFoundException {
@@ -39,11 +40,23 @@ public class AnimeSuggestion {
 			inputNames[countI] = file2.nextLine();
 			countI++;
 		}*/
-		
+      
+      System.out.println("Building the database...\n");
+      
+		int blah = 0;
+      char first = ' ';
 		// Build database and gather data
 		while (file.hasNext()){
 			line = file.nextLine();
 			info = line.split("~");
+         
+         
+         if (blah == 0)
+            first = info[0].charAt(0);
+            
+         if (info[0].charAt(0) == first)
+            info[0] = info[0].substring(1);
+         blah++;
 			
 			//System.out.println("-"+info[0]+"-");			//Prints anime name
 			category = info[1].split(",");
@@ -96,8 +109,10 @@ public class AnimeSuggestion {
 		
 		genreAll = sumG (database);
 		studioAll = sumS (database);
-      
-      shell(database, DATA);
+      for (int i=0; i<DATA; i++)
+         if (database[i].getYear() > 2018 || database[i].getYear() < 1967)
+            System.out.println(i+": "+database[i].getName()+" - "+database[i].getYear());
+      //shell(database, DATA);
 		//for(int i=0; i<studioAll.length; i++){
 		//	if (studioAll[i]!=null)
 		//		System.out.println (studioAll[i]);
@@ -183,7 +198,7 @@ public class AnimeSuggestion {
 
 	// K-nearest neighbor algorithm - returns top x (x is variable top)
 	// Note that we look at maxDist because of how distance is calculated in Anime.java
-	public static Anime[] nearestNeighbor (Anime[] database, Anime[] input, int seen)
+	public static Anime[] nearestNeighbor (Anime[] database, Anime input, int seen)
 	{
 		Anime[] suggestion = new Anime[DATA];
 		Anime[] temp = new Anime[seen];
@@ -202,7 +217,7 @@ public class AnimeSuggestion {
 			for (int j=0; j<DATA; j++){
          //System.out.println(j+": "+suggestion[j].getName());
 				try {
-            if (suggestion[j].getName().equals(input[i].getName())){
+            if (suggestion[j].getName().equals(input.getName())){
 					Anime a = suggestion[seen-i];
 					temp[i] = suggestion[j];
 					suggestion[seen-i] = null;
@@ -213,7 +228,7 @@ public class AnimeSuggestion {
 		}
 		
 		// Calculate all distances
-		for (int i=0; i<DATAI; i++){
+		for (int i=0; i<seen; i++){
 			for (int j=0; j<DATA; j++){
 				try 
             {
@@ -225,7 +240,7 @@ public class AnimeSuggestion {
 			}
 		}
 		
-		for (int i=0; i<DATAI; i++){
+		for (int i=0; i<seen; i++){
 			for(int j=DATA-1; j>=0; j--){
 				for (int k=1; k<j; k++){
 					if(suggestion[k]!=null)
@@ -308,7 +323,7 @@ public class AnimeSuggestion {
       int numOptions = 0; //stores number of matches for user search
       int count = 0;
       
-      Anime[] seen = new Anime[10];//stores anime user has decided to use for searching
+      Anime[] seen = new Anime[MAXNUMSEEN];//stores anime user has decided to use for searching
       int numSeen = 0; //keeps track of number of anime user has decided to use for searching
       
       System.out.println("Hello!\nWelcome to Nick & John's Anime Suggestor!"); // USER INSTRUCTIONS
@@ -330,7 +345,7 @@ public class AnimeSuggestion {
                quit = true;
                break;
             case "search": 
-               seen = search(a, len, tsundere);
+               seen = search(a, seen, len, numSeen, tsundere);
                break;
             case "remove": 
                seen = remove(seen, numSeen, tsundere);
@@ -350,6 +365,9 @@ public class AnimeSuggestion {
                break;
             case "tsundere":
                tsundere = true;
+               break;
+            case "normal":
+               tsundere = false;
                break;
             default: 
                if (tsundere == false)
@@ -381,7 +399,7 @@ public class AnimeSuggestion {
        }
    }
 
-public static Anime[] search (Anime[] a, int b, boolean t)
+public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean t)
 {
    if (t == false)
    {
@@ -389,6 +407,7 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       System.out.println("\nWhatever you type in next, this program will search our database for it.");
       System.out.println("It could be a single word, a whole title, or even a few letters.");
       System.out.println("Please keep in mind though, that some special characters might not be compatible with the database.");
+      System.out.println("You may enter a maximum of 50 anime in your list.");
    }
    else
    {
@@ -397,13 +416,14 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       System.out.println("But don't get the wrong idea!");
       System.out.println("It's not because I l-like you or anything!");
       
-      System.out.println("\nWhatever you type in next, my amazing program will search huge database for it.");
+      System.out.println("\nWhatever you type in next, my amazing program will search our huge database for it.");
       System.out.println("It could be a single word, a whole title, or even a few letters.");
       System.out.println("The size doesn't really matter.");
       System.out.println("W-wait! I didn't mean it like that!");
       System.out.println("Y-you p-pervert!");
       
       System.out.println("\nAnyway, try not to forget that some special characters might not be compatible with the database.");
+      System.out.println("Also, you can only add up to 50 anime in your list.\nIf that's not enough then that's really sad.\nI mean jeez! How boring can you be?");
       System.out.println("D-did you get all that, because I am NOT going to repeat it!");
    }
    
@@ -413,8 +433,10 @@ public static Anime[] search (Anime[] a, int b, boolean t)
    Anime[] animeOptions = new Anime[len];
    int numOptions = 0;
    int count = 0;
-   Anime[] seen = new Anime[10];
-   int numSeen = 0;
+   Anime[] seen = options;
+   int numSeen = c;
+   int rating = 0;
+   boolean validRating = false;
    
    if (t == false)
       System.out.println("\nYou can enter \"quit\" if you changed your mind.\nOtherwise, please enter the name of an anime to search:");
@@ -428,16 +450,19 @@ public static Anime[] search (Anime[] a, int b, boolean t)
       if (response.equals("quit"))
          return(seen);
             
+         //System.out.println(len);
          for (int i=0; i<len; i++)//search database for name of anime
          {
             if (a[i].getName().toLowerCase().contains(response))
             {
                animeOptions[numOptions] = a[i];
                numOptions++;
+               //System.out.println(animeOptions[numOptions-1].getName());
             }
+            //System.out.println(i);
          }
          
-         if (animeOptions[0] == null)
+         if (animeOptions[0] == null) // checks if search results list is empty
             if (t == false)
                System.out.println("Sorry, no results were found matching your search. Please try again.");
             else
@@ -468,12 +493,12 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                }
                response = scan.nextLine();
                if(response.toLowerCase().equals("quit")) // if user types "quit", exits shell
-                  return null;
+                  return seen;
                if(response.toLowerCase().equals("done")) // if user types "done", breaks loop and allows them to search again
                   break;
                try 
                {
-                  if (Integer.parseInt(response) < count && numSeen < 10 && Integer.parseInt(response) > -1) // checks to make sure a valid number has been entered
+                  if (Integer.parseInt(response) < count && numSeen < MAXNUMSEEN && Integer.parseInt(response) > -1) // checks to make sure a valid number has been entered
                   {
                      if (numSeen > 0) // checks if seen[] is empty
                      {  
@@ -483,7 +508,7 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                            if (seen[i].getName().equals(animeOptions[Integer.parseInt(response)].getName()))
                               duplicate = true;
                            
-                        if (duplicate == true)
+                        if (duplicate == true)// checks for duplicates
                            if (t == false)
                               System.out.println("Error: You have already selected that anime.");
                            else
@@ -492,6 +517,37 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                         {
                            seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
                            numSeen++;
+                           
+                           
+                           while (validRating == false) // allows users to enter a rating
+                           {
+                              if (t == false) 
+                                 System.out.println("\nNow please rate this anime on a scale from 1 to 10, with 10 being the highest.");
+                              else
+                                 System.out.println("\nWow! I'm actually impressed you made it this far!\nThere's just one more thing left: you have to rate the anime on a scale from 1 to 10.\nTen is obviously the highest, in case you were too stupid to figure that out.");
+                           
+                              response = scan.nextLine();
+                           
+                              try
+                              {
+                                 if (Integer.parseInt(response) > 0 && Integer.parseInt(response) < 11) // checks if rating is valid
+                                 {
+                                    rating = Integer.parseInt(response);
+                                    validRating = true;
+                                 }
+                                 else
+                                    if (t == false)
+                                       System.out.println("\nError: Please enter an integer between 1 and 10");
+                                    else
+                                       System.out.println("\nAre you an idiot?\nI said a number between 1 and 10!\nThis isn't that difficult!\nI can't believe you're this stupid!");
+                              } catch (NumberFormatException e)
+                              {
+                                 if (t == false)
+                                    System.out.println("Error: Invalid entry. Please enter a number between 1 and 10.");
+                                 else
+                                    System.out.println("Incredible! You really are a complete moron!\nI said a NUMBER between 1 and 10!\nBut you couldn't even get the number part right!\nIDIOT!");
+                              }
+                           }
                         }   
                         
                      }
@@ -499,13 +555,48 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                      {
                         seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
                         numSeen++;
+                        
+                        while (validRating == false) // allows users to enter a rating
+                        {
+                           if (t == false)
+                                 System.out.println("\nNow please rate this anime on a scale from 1 to 10, with 10 being the highest.");
+                              else
+                                 System.out.println("\nWow! I'm actually impressed you made it this far!\nThere's just one more thing left: you have to rate the anime on a scale from 1 to 10.\nTen is obviously the highest, in case you were too stupid to figure that out.");
+                           
+                              response = scan.nextLine();
+                           
+                              try
+                              {
+                                 if (Integer.parseInt(response) > 0 && Integer.parseInt(response) < 11) // checks if rating is valid
+                                 {
+                                    rating = Integer.parseInt(response);
+                                    validRating = true;
+                                 }
+                                 else
+                                    if (t == false)
+                                       System.out.println("\nError: Please enter an integer between 1 and 10");
+                                    else
+                                       System.out.println("\nAre you an idiot?\nI said a number between 1 and 10!\nThis isn't that difficult!\nI can't believe you're this stupid!");
+                              } catch (NumberFormatException e)
+                              {
+                                 if (t == false)
+                                    System.out.println("Error: Invalid entry. Please enter a number between 1 and 10.");
+                                 else
+                                    System.out.println("Incredible! You really are a complete moron!\nI said a NUMBER between 1 and 10!\nBut you couldn't even get the number part right!\nIDIOT!");
+                              }
+                           }
                      }
                   }
-                  else
+                  else if (numSeen < MAXNUMSEEN)
                      if (t == false)
                         System.out.println("Error: Invalid entry. Please enter a number next to an anime that has been printed.");
                      else
                         System.out.println("ANTA BAKA? Enter one of the numbers that appears on the screen!\nJeez, you really are an idiot!");
+                  else
+                     if (t == false)
+                        System.out.println("Error: Your list is full. Please delete an anime before adding more.");
+                     else
+                        System.out.println("Your list is already full!\nJeez, how stupid can you be!");
                } catch (NumberFormatException e)
                   {
                      if (t ==false)
@@ -513,6 +604,7 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                      else
                         System.out.println("Jeez! Just how much of an IDIOT are you?\nThat's not even a number!");
                   }
+               validRating = false;
             }
          
             if (t == false)
@@ -540,6 +632,9 @@ public static Anime[] search (Anime[] a, int b, boolean t)
                animeOptions[i] = null;
             numOptions = 0;
             count = 0;
+            validRating = false;
+            
+            System.out.println("Rating: " + rating);
          }
             
             
@@ -687,41 +782,103 @@ public static void view(Anime[] a, int b, boolean t)
 }
 
 public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user list of seen anime and suggests new anime
-{
-   if (c == 0) // checks if user list is empty
-   {
-      if (t == false)
-         System.out.println("Error: Your list is empty. Please add items to your list before attempting to run the suggestion algorithm.");
-      else
-         System.out.println("What are you, stupid or something? I can't suggest any new anime if don't tell me what you like!\nGo back and add some anime to your list first!\nD-dummy!");
-      return null;
-   }
-   else // if list is not empty, runs code
-   {
-      if (t == false)
-         System.out.println("We will now search our database for other anime you might like. Please wait a moment.");
-      else
-         System.out.println("Get ready to see how amazing my program is!\nIn no time at all, I'll have a bunch of new anime for you to try!");
-      
-      int num = 3*c; // number of outputs
-      //System.out.println(num);
-      Anime[] output = new Anime[num];
-      output = nearestNeighbor(a, b, c);
-      
-      if (t == false)
-         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
-      else
-         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
-      
-      for (int i=0; i<num; i++)
-         try
-         {
-            for (int j=0; j<c; j++)
-               System.out.println(output[j].getName() + " - " + b[i].distance(output[j]));
-         } catch (NullPointerException e) {}
-   }
-   return null;
-}
+	{
+	   if (c == 0) // checks if user list is empty
+	   {
+	      if (t == false)
+	         System.out.println("Error: Your list is empty. Please add items to your list before attempting to run the suggestion algorithm.");
+	      else
+	         System.out.println("What are you, stupid or something? I can't suggest any new anime if don't tell me what you like!\nGo back and add some anime to your list first!\nD-dummy!");
+	      return null;
+	   }
+	   else // if list is not empty, runs code
+	   {
+	      if (t == false)
+	         System.out.println("We will now search our database for other anime you might like. Please wait a moment.");
+	      else
+	         System.out.println("Get ready to see how amazing my program is!\nIn no time at all, I'll have a bunch of new anime for you to try!");
+	      
+	      int num = 3*c; // number of outputs
+	      //System.out.println(num);
+	      Anime[] output = new Anime[num];
+	      String[] out1 = new String[num];
+	      double[] out2 = new double[num];
+	      
+	      if (t == false)
+	         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
+	      else
+	         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
+	      
+	      for (int i=0; i<c; i++)
+	         try
+	         {
+	            for (int j=0; j<3; j++){
+	            	output = nearestNeighbor(a, b[i], c);
+	            	out1[3*i+j] = output[j].getName();
+	            	out2[3*i+j] = b[i].distance((output[j]));
+	            	//System.out.println(out1[3*i+j] + " - " + out2[3*i+j]);
+	            }
+	         } catch (NullPointerException e) {}
+	      
+	      // Remove duplicates
+	      for (int i=0; i<num; i++)
+		   {
+			   for (int j=i+1; j<num; j++)
+			   {
+				   if (out1[i]!=null && out1[j]!=null)
+					   if (out1[i].equals(out1[j])){
+						   if (out2[i]<out2[j]){
+							   out1[i] = null;
+							   out2[i] = 0;
+							   }
+						   else{
+							   out1[j] = null;
+							   out2[j] = 0;
+						   }
+					   }
+				   }
+		   }
+	      
+	      // Sort
+	      for(int j=num-1; j>=0; j--){
+				for (int k=1; k<j+1; k++){
+					//if(out1[k]!=null)
+					//{
+						if (out2[k-1] < out2[k]){
+							double m = out2[k-1];
+							String z = out1[k-1];
+							out2[k-1] = out2[k];
+							out1[k-1] = out1[k];
+							out2[k] = m;
+							out1[k] = z;
+						}
+					//}
+				}
+	      }
+	      
+	      // Remove suggestions that are already on list
+	      int count = 0;
+	      for (int i=0; i<c; i++){
+	    	  for (int j=0; j<num; j++){
+	    		  if (b[i].getName().equals(out1[j])){
+	    			  out1[j]=null;
+	    			  count++;
+	    		  }
+	    	  }
+	      }
+	      
+	      // Print results
+	      System.out.println("\n-------------\n");
+	      for (int i=0; i<num; i++){
+	    	  if (out1[i]!=null)
+	    		  System.out.println((i+1) + ".  " + out1[i] + " - " + out2[i]);
+	      }
+	      System.out.println("Number suggested that is already on list: " + count);
+	      
+	   }
+	   return null;
+	}
+
 
 public static void clear (Anime[] a, int b, boolean t) // clears the entire list of anime
 {
