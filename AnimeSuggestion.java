@@ -11,7 +11,7 @@ public class AnimeSuggestion {
 	public static final String animedatabase = "AnimeText.txt";
    public static final int MAXNUMSEEN = 50;
 	//public static final String animeinput = ".\\src\\AnimeInput";
-	public static final int DATA = 9575; //The number of anime in the database
+	public static final int DATA = 14033; //The number of anime in the database
 	public static final int DATAI = 1; //The number of anime in the input list
 	
 	public static void main(String[] args) throws FileNotFoundException {
@@ -53,6 +53,8 @@ public class AnimeSuggestion {
          
          if (blah == 0)
             first = info[0].charAt(0);
+         
+         //System.out.println(blah+" - "+info[0]);
             
          if (info[0].charAt(0) == first)
             info[0] = info[0].substring(1);
@@ -84,7 +86,10 @@ public class AnimeSuggestion {
 	         {
 	            year = 0;
 	         }
-			if(year<minYear && year!=0)
+			if (year < 1900)
+            year = 2017;
+         
+         if(year<minYear && year!=0)
 				minYear=year;
 			
 			rating = Double.parseDouble(info[4]);
@@ -109,10 +114,12 @@ public class AnimeSuggestion {
 		
 		genreAll = sumG (database);
 		studioAll = sumS (database);
-      for (int i=0; i<DATA; i++)
-         if (database[i].getYear() > 2018 || database[i].getYear() < 1967)
-            System.out.println(i+": "+database[i].getName()+" - "+database[i].getYear());
-      //shell(database, DATA);
+      /*for (int i=0; i<DATA; i++)
+         if (database[i].getYear() > 2018 || database[i].getYear() < 1900)
+            System.out.println(i+": "+database[i].getName()+" - "+database[i].getYear());*/
+      //
+      
+      shell(database, DATA);
 		//for(int i=0; i<studioAll.length; i++){
 		//	if (studioAll[i]!=null)
 		//		System.out.println (studioAll[i]);
@@ -326,7 +333,7 @@ public class AnimeSuggestion {
       Anime[] seen = new Anime[MAXNUMSEEN];//stores anime user has decided to use for searching
       int numSeen = 0; //keeps track of number of anime user has decided to use for searching
       
-      System.out.println("Hello!\nWelcome to Nick & John's Anime Suggestor!"); // USER INSTRUCTIONS
+      System.out.println("Hello!\nWelcome to Nick & John's\nSuper Happy Mega Fun Heart Lovey-Dovey Anime Suggester!"); // USER INSTRUCTIONS
       options(tsundere);
       System.out.println("\nTo begin, type in one of the above commands.");
             
@@ -377,7 +384,7 @@ public class AnimeSuggestion {
          }
          
          numSeen = 0;
-         for (int i=0; i<10; i++)
+         for (int i=0; i<MAXNUMSEEN; i++)
             if (seen[i] != null)
                numSeen++;
                   
@@ -394,7 +401,7 @@ public class AnimeSuggestion {
          {
             System.out.println("\nYour list of anime so far is:\n"); // prints the user's anime selections thus far
             for(int i=0; i<numSeen; i++)
-               System.out.println(seen[i].getName());               
+               System.out.println(seen[i].getName() + " - " + seen[i].getURating());               
          }
        }
    }
@@ -515,7 +522,7 @@ public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean 
                               System.out.println("Are you an idiot?\nYou already added that anime to your list! BAKA!");
                         else
                         {
-                           seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds it to array
+                           seen[numSeen] = animeOptions[Integer.parseInt(response)]; // if number is valid, adds selected anime to array
                            numSeen++;
                            
                            
@@ -534,6 +541,7 @@ public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean 
                                  {
                                     rating = Integer.parseInt(response);
                                     validRating = true;
+                                    seen[numSeen-1].setURating(rating);
                                  }
                                  else
                                     if (t == false)
@@ -571,6 +579,7 @@ public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean 
                                  {
                                     rating = Integer.parseInt(response);
                                     validRating = true;
+                                    seen[numSeen-1].setURating(rating);
                                  }
                                  else
                                     if (t == false)
@@ -612,7 +621,7 @@ public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean 
             else
                System.out.println("\nHere's your list so far, and it's all thanks to my AMAZING programming skills:");
             for(int i=0; i<numSeen; i++)
-               System.out.println(seen[i].getName());
+               System.out.println(seen[i].getName() + " - " + seen[i].getURating());
             if (t == true)
                System.out.println("Feel free to shower me with praise!");
                  
@@ -634,7 +643,7 @@ public static Anime[] search (Anime[] a, Anime[] options, int b, int c, boolean 
             count = 0;
             validRating = false;
             
-            System.out.println("Rating: " + rating);
+            //System.out.println("Rating: " + rating);
          }
             
             
@@ -777,7 +786,7 @@ public static void view(Anime[] a, int b, boolean t)
          System.out.println("Are you a complete idiot?\nYour list is EMPTY!\nIDIOT!");
    else
       for (int i=0; i<b; i++)
-         System.out.println(a[i].getName());
+         System.out.println(a[i].getName() + " - " + a[i].getURating());
    return;
 }
 
@@ -803,11 +812,6 @@ public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user 
 	      Anime[] output = new Anime[num];
 	      String[] out1 = new String[num];
 	      double[] out2 = new double[num];
-	      
-	      if (t == false)
-	         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
-	      else
-	         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
 	      
 	      for (int i=0; i<c; i++)
 	         try
@@ -839,6 +843,18 @@ public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user 
 				   }
 		   }
 	      
+         // Remove suggestions that are already on list
+	      int count = 0;
+	      for (int i=0; i<c; i++){
+	    	  for (int j=0; j<num; j++){
+	    		  if (b[i].getName().equals(out1[j])){
+	    			  out1[j]=null;
+                 out2[j]=0;
+	    			  count++;
+	    		  }
+	    	  }
+	      }
+         
 	      // Sort
 	      for(int j=num-1; j>=0; j--){
 				for (int k=1; k<j+1; k++){
@@ -856,21 +872,16 @@ public static Anime[] run(Anime[] a, Anime[] b, int c, boolean t) // takes user 
 				}
 	      }
 	      
-	      // Remove suggestions that are already on list
-	      int count = 0;
-	      for (int i=0; i<c; i++){
-	    	  for (int j=0; j<num; j++){
-	    		  if (b[i].getName().equals(out1[j])){
-	    			  out1[j]=null;
-	    			  count++;
-	    		  }
-	    	  }
-	      }
-	      
 	      // Print results
-	      System.out.println("\n-------------\n");
+	      
+         if (t == false)
+	         System.out.println("\nHere are the suggestions the algorithm came up with:\n");
+	      else
+	         System.out.println("\nAlright, here's what my genius algorithm came up with!\nI guarantee that they'll all become your new favorite shows!\n");
+            
+         System.out.println("\n-------------\n");
 	      for (int i=0; i<num; i++){
-	    	  if (out1[i]!=null)
+           if (out1[i]!=null && i<30)
 	    		  System.out.println((i+1) + ".  " + out1[i] + " - " + out2[i]);
 	      }
 	      System.out.println("Number suggested that is already on list: " + count);
